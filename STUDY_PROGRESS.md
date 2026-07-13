@@ -15,8 +15,8 @@
 
 - **正在学习：** 数组与字符串基础
 - **当前题目：** [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
-- **当前状态：** 已 Accepted，108 / 108 测试通过；正在比较自己的实现与 `StringBuilder + while + substring` 写法
-- **下一步重点：** 理解两种实现时间复杂度都为 O(n)，以及 `StringBuilder` 为什么比循环中的字符串 `+` 更合适
+- **当前状态：** Day 1 已完成；Accepted，108 / 108 测试通过，并已理解参考写法的主要思路
+- **下一步重点：** 明天先用 `StringBuilder + while + substring` 独立重写一次，再根据结果决定是否进入 HashMap 入门
 
 ## 数据结构学习路线
 
@@ -67,7 +67,7 @@
 
 - **今日任务：** [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
 - **核心目标：** 把字符串理解成“有下标的一排格子”，掌握 `length()`、`charAt()`、结果变量初始化、循环与 `return`
-- **实际完成：** 自己设计“同时遍历 + 处理剩余字符”的方案，逐步修复编译错误，最终 108 / 108 测试通过
+- **实际完成：** 自己设计“同时遍历 + 处理剩余字符”的方案，逐步修复编译错误，最终 108 / 108 测试通过；随后阅读并理解了 `StringBuilder + while + substring` 的更简洁写法
 - **完成方式：** B（在语法提示帮助下完成，主要算法思路由自己提出）
 - **已经理解：**
   - `String.length()` 与数组 `.length` 的区别
@@ -75,18 +75,20 @@
   - 变量必须先初始化才能在右侧使用
   - 返回类型为 `String` 的方法必须 `return` 一个字符串
   - 一个字符串先结束后，需要继续追加另一个字符串的剩余部分
+  - `StringBuilder` 更适合循环拼接，`substring(i, length)` 可以一次追加剩余部分
 - **仍需巩固：**
   - `for`、`while` 和 `if` 的职责区别
   - 更简洁的循环边界写法：`i < word.length()`
-  - `StringBuilder`、`append()`、`substring()` 的作用
+  - 独立写出 `StringBuilder + while + substring` 版本
   - 不把 LeetCode 单次 runtime 百分位当作可靠算法快慢结论
-- **下一次任务：** 先读懂并重写 `StringBuilder + while + substring` 版本，再进入下一题
+- **Day 1 状态：** 已完成
+- **下一次任务：** 明天先闭卷重写优化版；成功后进入 HashMap 入门
 
 ## 题目记录
 
 | 日期 | 题目 | 主题 | 结果 | 掌握等级 | 是否需要复刷 |
 |---|---|---|---|---|---|
-| 2026-07-13 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 数组与字符串 | Accepted，108 / 108 | B | 是：用 StringBuilder 独立重写 |
+| 2026-07-13 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 数组与字符串 | Accepted，108 / 108；已理解参考写法 | B | 是：明天用 StringBuilder 独立重写 |
 
 ## SQL 与项目面试
 
