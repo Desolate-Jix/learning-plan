@@ -15,8 +15,8 @@
 
 - **正在学习：** 数组与字符串基础
 - **当前题目：** [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
-- **当前状态：** 已完成第一次独立尝试，当前卡在 Java 基础语法和循环写法，尚未通过编译
-- **下一步重点：** 先修正 `length()`、`for` 语法、`charAt()`、分号、结果字符串初始化和 `return`
+- **当前状态：** 已 Accepted，108 / 108 测试通过；正在比较自己的实现与 `StringBuilder + while + substring` 写法
+- **下一步重点：** 理解两种实现时间复杂度都为 O(n)，以及 `StringBuilder` 为什么比循环中的字符串 `+` 更合适
 
 ## 数据结构学习路线
 
@@ -60,35 +60,33 @@
 
 - **完成内容：** 建立在线学习进度文档，确定 Java 为刷题主语言
 - **重要反馈：** 数据结构第一次学习时就没有理解，后续必须从直觉、图示和实际操作重新学习
-- **当前任务：** Merge Strings Alternately
-- **完成情况：** 等待反馈
-- **下一次任务：** 根据这道题的实际反馈决定；不机械推进旧的六周题表
 
 ---
 
 ### 2026-07-13｜Day 1：数组与字符串入门
 
 - **今日任务：** [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
-- **核心目标：** 把字符串理解成“有下标的一排格子”，掌握 `length()`、`charAt()`、`StringBuilder.append()` 和循环逐步拼接结果
-- **第一次反馈：** 已主动写出初版思路，并运行代码；当前出现 10 个编译错误
-- **已经表现出的思路：** 尝试同时遍历两个字符串，并在长度不同时处理剩余字符
-- **当前卡点：**
-  - 把 `length()` 写成了 `length`
-  - 在变量声明中错误使用 `<=`
-  - `for` 循环三个部分之间应使用分号，不是逗号
-  - `chatAt` 应为 `charAt`
-  - 多处缺少分号
-  - 结果变量 `word` 尚未初始化
-  - 方法最后缺少 `return`
-- **完成方式：** 进行中，尚未评定 A / B / C / D
-- **下一步任务：** 不直接看完整答案，先把代码修到可以编译，再检查循环是否越界
+- **核心目标：** 把字符串理解成“有下标的一排格子”，掌握 `length()`、`charAt()`、结果变量初始化、循环与 `return`
+- **实际完成：** 自己设计“同时遍历 + 处理剩余字符”的方案，逐步修复编译错误，最终 108 / 108 测试通过
+- **完成方式：** B（在语法提示帮助下完成，主要算法思路由自己提出）
+- **已经理解：**
+  - `String.length()` 与数组 `.length` 的区别
+  - 合法下标范围是 `0` 到 `length() - 1`
+  - 变量必须先初始化才能在右侧使用
+  - 返回类型为 `String` 的方法必须 `return` 一个字符串
+  - 一个字符串先结束后，需要继续追加另一个字符串的剩余部分
+- **仍需巩固：**
+  - `for`、`while` 和 `if` 的职责区别
+  - 更简洁的循环边界写法：`i < word.length()`
+  - `StringBuilder`、`append()`、`substring()` 的作用
+  - 不把 LeetCode 单次 runtime 百分位当作可靠算法快慢结论
+- **下一次任务：** 先读懂并重写 `StringBuilder + while + substring` 版本，再进入下一题
 
 ## 题目记录
 
 | 日期 | 题目 | 主题 | 结果 | 掌握等级 | 是否需要复刷 |
 |---|---|---|---|---|---|
-| 2026-07-11 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 数组与字符串 | 等待反馈 | 未评估 | 待定 |
-| 2026-07-13 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 数组与字符串 | 第一次独立尝试，当前编译失败 | 进行中 | 是 |
+| 2026-07-13 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 数组与字符串 | Accepted，108 / 108 | B | 是：用 StringBuilder 独立重写 |
 
 ## SQL 与项目面试
 
