@@ -15,8 +15,8 @@
 
 - **正在学习：** 数组与字符串基础
 - **当前题目：** [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
-- **当前状态：** 第一天目标已安排，等待完成反馈
-- **下一步重点：** 理解字符串下标、`length()`、`charAt()`、`StringBuilder.append()` 和循环如何逐步执行
+- **当前状态：** 已完成第一次独立尝试，当前卡在 Java 基础语法和循环写法，尚未通过编译
+- **下一步重点：** 先修正 `length()`、`for` 语法、`charAt()`、分号、结果字符串初始化和 `return`
 
 ## 数据结构学习路线
 
@@ -70,36 +70,25 @@
 
 - **今日任务：** [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
 - **核心目标：** 把字符串理解成“有下标的一排格子”，掌握 `length()`、`charAt()`、`StringBuilder.append()` 和循环逐步拼接结果
-- **两小时安排：**
-  - 0–20 分钟：手动画 `word1 = "abc"`、`word2 = "pqrs"` 的每一步取字符过程
-  - 20–40 分钟：复习 Java 的 `String.length()`、`String.charAt()`、`StringBuilder.append()`、`toString()`
-  - 40–90 分钟：独立写题，允许查 Java API，不直接搜索完整答案
-  - 90–110 分钟：运行测试，记录卡点和复杂度
-  - 110–120 分钟：用中文解释这段循环为什么能处理两个字符串长度不同的情况
-- **完成标准：** Accepted；能解释为什么下标从 0 开始；能说明当一个字符串先结束时怎么处理剩余字符
-- **完成情况：** 等待反馈
-- **下一次任务：** 根据反馈决定是巩固字符串循环，还是进入 HashMap 入门 Two Sum
-
----
-
-### 后续记录模板
-
-#### YYYY-MM-DD｜主题
-
-- **今日任务：**
-- **实际完成：**
-- **完成方式：** A / B / C / D
-- **查阅内容：**
-- **已经理解：**
-- **仍然困惑：**
-- **下一次任务：**
+- **第一次反馈：** 已主动写出初版思路，并运行代码；当前出现 10 个编译错误
+- **已经表现出的思路：** 尝试同时遍历两个字符串，并在长度不同时处理剩余字符
+- **当前卡点：**
+  - 把 `length()` 写成了 `length`
+  - 在变量声明中错误使用 `<=`
+  - `for` 循环三个部分之间应使用分号，不是逗号
+  - `chatAt` 应为 `charAt`
+  - 多处缺少分号
+  - 结果变量 `word` 尚未初始化
+  - 方法最后缺少 `return`
+- **完成方式：** 进行中，尚未评定 A / B / C / D
+- **下一步任务：** 不直接看完整答案，先把代码修到可以编译，再检查循环是否越界
 
 ## 题目记录
 
 | 日期 | 题目 | 主题 | 结果 | 掌握等级 | 是否需要复刷 |
 |---|---|---|---|---|---|
 | 2026-07-11 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 数组与字符串 | 等待反馈 | 未评估 | 待定 |
-| 2026-07-13 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 数组与字符串 | 今日任务已安排 | 未评估 | 待定 |
+| 2026-07-13 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 数组与字符串 | 第一次独立尝试，当前编译失败 | 进行中 | 是 |
 
 ## SQL 与项目面试
 
