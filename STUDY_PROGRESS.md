@@ -15,7 +15,7 @@
 
 - **正在学习：** 数组与字符串基础
 - **当前题目：** [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
-- **当前状态：** 尚未反馈完成结果
+- **当前状态：** 第一天目标已安排，等待完成反馈
 - **下一步重点：** 理解字符串下标、`length()`、`charAt()`、`StringBuilder.append()` 和循环如何逐步执行
 
 ## 数据结构学习路线
@@ -66,6 +66,22 @@
 
 ---
 
+### 2026-07-13｜Day 1：数组与字符串入门
+
+- **今日任务：** [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
+- **核心目标：** 把字符串理解成“有下标的一排格子”，掌握 `length()`、`charAt()`、`StringBuilder.append()` 和循环逐步拼接结果
+- **两小时安排：**
+  - 0–20 分钟：手动画 `word1 = "abc"`、`word2 = "pqrs"` 的每一步取字符过程
+  - 20–40 分钟：复习 Java 的 `String.length()`、`String.charAt()`、`StringBuilder.append()`、`toString()`
+  - 40–90 分钟：独立写题，允许查 Java API，不直接搜索完整答案
+  - 90–110 分钟：运行测试，记录卡点和复杂度
+  - 110–120 分钟：用中文解释这段循环为什么能处理两个字符串长度不同的情况
+- **完成标准：** Accepted；能解释为什么下标从 0 开始；能说明当一个字符串先结束时怎么处理剩余字符
+- **完成情况：** 等待反馈
+- **下一次任务：** 根据反馈决定是巩固字符串循环，还是进入 HashMap 入门 Two Sum
+
+---
+
 ### 后续记录模板
 
 #### YYYY-MM-DD｜主题
@@ -83,6 +99,7 @@
 | 日期 | 题目 | 主题 | 结果 | 掌握等级 | 是否需要复刷 |
 |---|---|---|---|---|---|
 | 2026-07-11 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 数组与字符串 | 等待反馈 | 未评估 | 待定 |
+| 2026-07-13 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 数组与字符串 | 今日任务已安排 | 未评估 | 待定 |
 
 ## SQL 与项目面试
 
