@@ -1,6 +1,24 @@
 # 面试学习进度
 
-> 每次学习反馈后更新本页。详细知识、语法错误和代码审查保存在每日复习文件中。
+> 本页只保存总体进度、当前目标和每日笔记索引。每天的知识点、代码、错误与 Reviewer 点评只保存在当天唯一的日期文件中。
+
+## 仓库结构
+
+```text
+STUDY_PROGRESS.md                 # 当前进度与索引
+ROADMAP_TO_2026-09-22.md          # 截止 9 月 22 日的总体路线
+daily/
+  2026-07-13.md                   # Day 1 当天唯一笔记
+  2026-07-14.md                   # Day 2 当天唯一笔记
+```
+
+### 每日笔记规则
+
+- 每个自然日只允许一个笔记文件：`daily/YYYY-MM-DD.md`；
+- 当天做多道题时，全部追加到同一个日期文件；
+- 同一天不再创建 `DAY2_题名.md`、`DAILY_REVIEW.md` 等额外文件；
+- 每次反馈后同时更新当天日期文件和本页进度；
+- 总体路线只有在截止日期或学习节奏明显变化时才更新。
 
 ## 当前目标
 
@@ -9,9 +27,13 @@
 - **刷题语言：** Java
 - **主线：** LeetCode 75
 - **完整路线图：** [2026-09-22 刷题路线图](./ROADMAP_TO_2026-09-22.md)
-- **Day 1 详细笔记：** [每日知识与错题复习笔记](./DAILY_REVIEW.md)
-- **Day 2 字符串与 List：** [StringBuilder、ArrayList 与线性扫描](./DAY2_REVIEW_2026-07-14.md)
-- **Day 2 数组边界：** [Can Place Flowers 调试记录](./DAY2_CAN_PLACE_FLOWERS_2026-07-14.md)
+
+## 每日笔记索引
+
+| 日期 | 内容 | 当天结果 |
+|---|---|---|
+| [2026-07-13](./daily/2026-07-13.md) | Java 字符串、循环、Merge Strings Alternately | 1 道新题 Accepted |
+| [2026-07-14](./daily/2026-07-14.md) | StringBuilder 复刷、ArrayList、线性扫描、数组边界 | 2 道新题 Accepted + 1 次复刷 |
 
 ## 当前进度
 
@@ -20,13 +42,43 @@
   1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
   2. [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)
   3. [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)
-- **当前掌握等级：** 三题均为 B
-- **当前阶段：** 数组与字符串主线；通过题目即时补充 Java 语法、集合和边界处理
+- **掌握等级：** 当前三题均为 B
+- **当前阶段：** 数组与字符串主线；通过做题即时补充 Java 语法与数据结构
 - **本周目标：** 2026-07-19 前再完成 4 道 LeetCode 75 新题
 
-## 下一道任务
+## 当前已掌握 / 初步接触
 
-等待下一学习日安排。今天已经完成两道新题和一道优化复刷，可以结束。
+- 字符串下标、`length()`、`charAt()`、`substring()`；
+- `StringBuilder`、`append()`、`toString()`；
+- 变量初始化、作用域、`return`；
+- `if`、`for`、`while` 的基本职责；
+- 数组与 List 的区别；
+- `List<Boolean>`、`ArrayList<>()`、`add/get/set/size`；
+- 基本类型和包装类型；
+- 两遍线性扫描仍为 `O(n)`；
+- 数组边界、首尾特殊情况；
+- `=` 与 `==`；
+- Java 大括号决定代码块范围；
+- 修改数组状态解决相邻约束问题。
+
+## 近期需要复习
+
+- [ ] 2026-07-16～07-17：10～15 分钟重写 Merge Strings 优化版本
+- [ ] 三天内：用直接布尔表达式重写 Kids With Candies
+- [ ] 三天内：尝试 Can Place Flowers 单循环边界版本
+
+## 下一道候选任务
+
+[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)
+
+重点将是：
+
+- 双指针；
+- 字符串转字符数组；
+- 判断元音；
+- 两端交换。
+
+实际当天任务仍以用户询问“今天的任务是什么”时的安排为准。
 
 ## 学习原则
 
@@ -35,7 +87,7 @@
 - 允许查 Java 语法和 API，不应一开始搜索完整答案；
 - 一道题 Accepted 后只做一次必要 Code Review，不长时间打磨基础 Easy；
 - A 题每周抽查，B 题 3 天内复刷，C / D 题 48 小时内重做；
-- 每次反馈都记录知识点、语法错误、自己的代码和改进写法。
+- 每次反馈记录：知识点、提问、语法错误、自己的代码、调试过程、复杂度和改进写法。
 
 ## 数据结构路线
 
@@ -51,67 +103,3 @@
 - [ ] 回溯
 - [ ] 动态规划
 - [ ] 区间、贪心、位运算与 Trie
-
-## 每日记录
-
-### 2026-07-13｜Day 1
-
-- **题目：** Merge Strings Alternately
-- **结果：** Accepted，108 / 108
-- **完成方式：** B；算法方向由自己提出，Java 语法接受提示
-- **主要收获：** `length()`、`charAt()`、下标边界、变量初始化、`return`、字符串拼接
-- **主要问题：** `for` 语法、漏分号、`length` / `length()`、`charAt` 拼写、字符串反复 `+`
-
-### 2026-07-14｜Day 2
-
-#### 任务 A：Merge Strings Alternately 优化复刷
-
-- **结果：** Accepted
-- **完成方式：** B；整体结构独立写出，查过少量语法
-- **主要收获：** `new StringBuilder()`、变量作用域、`substring(start, end)` 的 `[start, end)` 规则
-- **出现的错误：**
-  - `New` 应写为 `new`
-  - `new StringBuilder` 漏写 `()`
-  - 大括号不匹配导致 `reached end of file while parsing`
-  - 循环内声明的 `i` 无法在循环外使用
-  - `substring` 的结束位置不包含，不能使用 `length - 1`
-
-#### 任务 B：Kids With the Greatest Number of Candies
-
-- **结果：** Accepted
-- **完成方式：** B；两遍扫描算法由自己提出，List 语法接受提示
-- **算法：** 第一遍找最大值，第二遍判断加糖后是否达到最大值
-- **主要收获：**
-  - 数组和 List 的区别
-  - `List<Boolean>`、`ArrayList<>()`
-  - `add()`、`get()`、`set()`、`size()`
-  - 泛型使用 `Boolean`，不能使用基本类型 `boolean`
-  - 两个线性循环仍然是 `O(n)`
-- **出现的错误：**
-  - `boolean candy[]` 与方法要求的 `List<Boolean>` 不匹配
-  - `return candy[]` 不是合法返回语法
-  - 比较表达式漏掉 `>`
-  - `list<boolean>`、`Arraylist` 大小写及泛型类型错误
-  - 把 List 当数组写成 `candy[b]`
-
-#### 任务 C：Can Place Flowers
-
-- **结果：** Accepted，130 / 130
-- **完成方式：** B；初版公式思路失败后，根据反例改为逐位置检查
-- **主要收获：**
-  - 结果取决于数组中 `0/1` 的具体排列，不能只使用总数量公式
-  - 访问 `i + 1` 时必须保证 `i < length - 1`
-  - 长度为 1 的数组需要特殊处理
-  - Java 不看缩进，`if` 控制范围由 `{}` 决定
-  - 种花后需要立即执行 `flowerbed[i] = 1` 更新状态
-- **调试过程：** Wrong Answer → Compile Error → Runtime Error → Wrong Answer → Accepted
-- **详细记录：** [Can Place Flowers 知识点、错误与最终代码](./DAY2_CAN_PLACE_FLOWERS_2026-07-14.md)
-- **计划调整：** 数组已学过，不单独重学；继续按 9 月 22 日目标加速推进 LeetCode 75
-
-## 题目记录
-
-| 日期 | 题目 | 结果 | 掌握等级 | 后续 |
-|---|---|---|---|---|
-| 2026-07-13 | Merge Strings Alternately | Accepted | B | 三天后用 10～15 分钟抽查核心循环 |
-| 2026-07-14 | Kids With the Greatest Number of Candies | Accepted | B | 三天内用简化布尔表达式重写 |
-| 2026-07-14 | Can Place Flowers | Accepted，130 / 130 | B | 三天内尝试统一边界条件的单循环版本 |
