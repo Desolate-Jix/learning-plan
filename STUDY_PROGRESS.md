@@ -14,10 +14,11 @@
 
 ## 当前学习位置
 
-- **正在学习：** 数组与字符串基础
-- **当前题目：** [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
-- **当前状态：** Day 1 已完成；Accepted，108 / 108 测试通过，并已理解参考写法的主要思路
-- **下一步重点：** 明天先用 `StringBuilder + while + substring` 独立重写一次，再根据结果决定是否进入 HashMap 入门
+- **正在学习：** 字符串巩固 + 数组基础
+- **当前任务 1：** 闭卷重写 [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) 的 `StringBuilder + while + substring` 版本
+- **当前任务 2：** 通过任务 1 后，完成 [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)
+- **当前状态：** Day 2 已安排，等待反馈
+- **下一步重点：** 理解数组是“固定长度、带下标的一排格子”，掌握 `int[]`、`nums.length`、`nums[i]`、修改数组元素和按顺序累计
 
 ## 数据结构学习路线
 
@@ -84,13 +85,35 @@
   - 不把 LeetCode 单次 runtime 百分位当作可靠算法快慢结论
 - **详细笔记：** [Day 1 知识点、语法错误、代码审查与改进写法](./DAILY_REVIEW.md#day-12026-07-13java-字符串循环与第一道-leetcode)
 - **Day 1 状态：** 已完成
-- **下一次任务：** 明天先闭卷重写优化版；成功后进入 HashMap 入门
+
+---
+
+### 2026-07-14｜Day 2：字符串巩固与数组入门
+
+- **必做任务：** 不看参考代码，使用一个下标、`StringBuilder`、`while` 和 `substring` 重写 Merge Strings Alternately
+- **进入新题的条件：** 重写版本 Accepted，并能说明 `while` 什么时候停止、`substring(i)` 为什么可以处理剩余字符
+- **新知识：**
+  - 数组是固定长度、按下标存放相同类型数据的一排格子
+  - Java 声明示例：`int[] nums = {1, 2, 3};`
+  - 数组长度：`nums.length`，没有括号
+  - 读取元素：`nums[i]`
+  - 修改元素：`nums[i] = 新值`
+- **新题：** [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/)
+- **两小时安排：**
+  - 0–35 分钟：闭卷重写 Day 1 改进版本
+  - 35–50 分钟：对照笔记检查并再次从空白修正
+  - 50–70 分钟：手动画数组下标、读取和修改过程
+  - 70–110 分钟：独立完成 Running Sum，允许查 Java 数组语法，不直接搜完整答案
+  - 110–120 分钟：用中文解释数组每个位置如何从旧值变成累计值
+- **兜底规则：** 如果前 50 分钟仍无法独立重写，不进入新题；剩余时间继续巩固字符串与循环，这仍算正常完成 Day 2
+- **完成情况：** 等待反馈
 
 ## 题目记录
 
 | 日期 | 题目 | 主题 | 结果 | 掌握等级 | 是否需要复刷 |
 |---|---|---|---|---|---|
-| 2026-07-13 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 数组与字符串 | Accepted，108 / 108；已理解参考写法 | B | 是：明天用 StringBuilder 独立重写 |
+| 2026-07-13 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 数组与字符串 | Accepted，108 / 108；已理解参考写法 | B | 是：Day 2 用 StringBuilder 独立重写 |
+| 2026-07-14 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | 数组基础 | 等待开始 | 未评估 | 待定 |
 
 ## SQL 与项目面试
 
