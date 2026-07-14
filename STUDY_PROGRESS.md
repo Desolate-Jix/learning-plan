@@ -10,28 +10,23 @@
 - **主线：** LeetCode 75
 - **完整路线图：** [2026-09-22 刷题路线图](./ROADMAP_TO_2026-09-22.md)
 - **Day 1 详细笔记：** [每日知识与错题复习笔记](./DAILY_REVIEW.md)
-- **Day 2 详细笔记：** [StringBuilder、ArrayList 与线性扫描](./DAY2_REVIEW_2026-07-14.md)
+- **Day 2 字符串与 List：** [StringBuilder、ArrayList 与线性扫描](./DAY2_REVIEW_2026-07-14.md)
+- **Day 2 数组边界：** [Can Place Flowers 调试记录](./DAY2_CAN_PLACE_FLOWERS_2026-07-14.md)
 
 ## 当前进度
 
-- **LeetCode 75：** 2 / 75
+- **LeetCode 75：** 3 / 75
 - **已完成题目：**
   1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
   2. [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)
-- **当前掌握等级：** 两题均为 B
-- **当前阶段：** 数组与字符串主线；通过题目即时补充 Java 集合语法
-- **本周目标：** 2026-07-19 前再完成 5 道 LeetCode 75 新题
+  3. [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)
+- **当前掌握等级：** 三题均为 B
+- **当前阶段：** 数组与字符串主线；通过题目即时补充 Java 语法、集合和边界处理
+- **本周目标：** 2026-07-19 前再完成 4 道 LeetCode 75 新题
 
 ## 下一道任务
 
-[Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)
-
-本题重点：
-
-- 相邻位置判断；
-- 数组边界处理；
-- 修改数组或使用条件判断记录已种数量；
-- 继续练习 `for` 循环和布尔条件。
+等待下一学习日安排。今天已经完成两道新题和一道优化复刷，可以结束。
 
 ## 学习原则
 
@@ -98,7 +93,19 @@
   - 比较表达式漏掉 `>`
   - `list<boolean>`、`Arraylist` 大小写及泛型类型错误
   - 把 List 当数组写成 `candy[b]`
-- **详细记录：** [Day 2 StringBuilder、ArrayList、代码与 Reviewer 点评](./DAY2_REVIEW_2026-07-14.md)
+
+#### 任务 C：Can Place Flowers
+
+- **结果：** Accepted，130 / 130
+- **完成方式：** B；初版公式思路失败后，根据反例改为逐位置检查
+- **主要收获：**
+  - 结果取决于数组中 `0/1` 的具体排列，不能只使用总数量公式
+  - 访问 `i + 1` 时必须保证 `i < length - 1`
+  - 长度为 1 的数组需要特殊处理
+  - Java 不看缩进，`if` 控制范围由 `{}` 决定
+  - 种花后需要立即执行 `flowerbed[i] = 1` 更新状态
+- **调试过程：** Wrong Answer → Compile Error → Runtime Error → Wrong Answer → Accepted
+- **详细记录：** [Can Place Flowers 知识点、错误与最终代码](./DAY2_CAN_PLACE_FLOWERS_2026-07-14.md)
 - **计划调整：** 数组已学过，不单独重学；继续按 9 月 22 日目标加速推进 LeetCode 75
 
 ## 题目记录
@@ -107,3 +114,4 @@
 |---|---|---|---|---|
 | 2026-07-13 | Merge Strings Alternately | Accepted | B | 三天后用 10～15 分钟抽查核心循环 |
 | 2026-07-14 | Kids With the Greatest Number of Candies | Accepted | B | 三天内用简化布尔表达式重写 |
+| 2026-07-14 | Can Place Flowers | Accepted，130 / 130 | B | 三天内尝试统一边界条件的单循环版本 |
