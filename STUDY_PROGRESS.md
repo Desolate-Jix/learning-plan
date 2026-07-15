@@ -10,6 +10,7 @@ ROADMAP_TO_2026-09-22.md          # 截止 9 月 22 日的总体路线
 daily/
   2026-07-13.md                   # Day 1 当天唯一笔记
   2026-07-14.md                   # Day 2 当天唯一笔记
+  2026-07-15.md                   # Day 3 当天唯一笔记
 ```
 
 ### 每日笔记规则
@@ -23,7 +24,7 @@ daily/
 ## 当前目标
 
 - **截止日期：** 2026-09-22
-- **每天学习时间：** 约 2 小时
+- **每天学习时间：** 通常约 2 小时；疲劳日可以缩短到 60～75 分钟
 - **刷题语言：** Java
 - **主线：** LeetCode 75
 - **完整路线图：** [2026-09-22 刷题路线图](./ROADMAP_TO_2026-09-22.md)
@@ -34,6 +35,7 @@ daily/
 |---|---|---|
 | [2026-07-13](./daily/2026-07-13.md) | Java 字符串、循环、Merge Strings Alternately | 1 道新题 Accepted |
 | [2026-07-14](./daily/2026-07-14.md) | StringBuilder 复刷、ArrayList、线性扫描、数组边界 | 2 道新题 Accepted + 1 次复刷 |
+| [2026-07-15](./daily/2026-07-15.md) | 轻量日：双指针入门、Is Subsequence | 任务已安排，等待反馈 |
 
 ## 当前进度
 
@@ -43,8 +45,22 @@ daily/
   2. [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)
   3. [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)
 - **掌握等级：** 当前三题均为 B
-- **当前阶段：** 数组与字符串主线；通过做题即时补充 Java 语法与数据结构
+- **当前阶段：** 从数组与字符串过渡到双指针；继续通过做题即时补充 Java 语法与数据结构
 - **本周目标：** 2026-07-19 前再完成 4 道 LeetCode 75 新题
+
+## 今日任务｜2026-07-15
+
+[Is Subsequence](https://leetcode.com/problems/is-subsequence/)
+
+今天是疲劳轻量日：
+
+- 只做这一道 Easy；
+- 总时间控制在 60～75 分钟；
+- 不安排第二题；
+- 不安排旧题闭卷重写；
+- 核心目标是理解两个下标如何分别推进。
+
+详细安排见：[Day 3 当天笔记](./daily/2026-07-15.md)
 
 ## 当前已掌握 / 初步接触
 
@@ -67,18 +83,7 @@ daily/
 - [ ] 三天内：用直接布尔表达式重写 Kids With Candies
 - [ ] 三天内：尝试 Can Place Flowers 单循环边界版本
 
-## 下一道候选任务
-
-[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)
-
-重点将是：
-
-- 双指针；
-- 字符串转字符数组；
-- 判断元音；
-- 两端交换。
-
-实际当天任务仍以用户询问“今天的任务是什么”时的安排为准。
+疲劳日不强制执行上述复刷，之后恢复精力时再安排。
 
 ## 学习原则
 
@@ -87,7 +92,8 @@ daily/
 - 允许查 Java 语法和 API，不应一开始搜索完整答案；
 - 一道题 Accepted 后只做一次必要 Code Review，不长时间打磨基础 Easy；
 - A 题每周抽查，B 题 3 天内复刷，C / D 题 48 小时内重做；
-- 每次反馈记录：知识点、提问、语法错误、自己的代码、调试过程、复杂度和改进写法。
+- 每次反馈记录：知识点、提问、语法错误、自己的代码、调试过程、复杂度和改进写法；
+- 疲劳日优先保持学习连续性，不通过强行补量透支第二天状态。
 
 ## 数据结构路线
 
