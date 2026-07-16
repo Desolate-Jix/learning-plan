@@ -11,6 +11,7 @@ daily/
   2026-07-13.md                   # Day 1 当天唯一笔记
   2026-07-14.md                   # Day 2 当天唯一笔记
   2026-07-15.md                   # Day 3 当天唯一笔记
+  2026-07-16.md                   # Day 4 当天唯一笔记
 ```
 
 ### 每日笔记规则
@@ -36,6 +37,7 @@ daily/
 | [2026-07-13](./daily/2026-07-13.md) | Java 字符串、循环、Merge Strings Alternately | 1 道新题 Accepted |
 | [2026-07-14](./daily/2026-07-14.md) | StringBuilder 复刷、ArrayList、线性扫描、数组边界 | 2 道新题 Accepted + 1 次复刷 |
 | [2026-07-15](./daily/2026-07-15.md) | 轻量日：双指针、字符串下标、隐藏测试与边界调试 | Is Subsequence Accepted；最终修复独立完成 |
+| [2026-07-16](./daily/2026-07-16.md) | 左右双指针、字符数组、交换元素 | Day 4 已安排，等待反馈 |
 
 ## 当前进度
 
@@ -46,24 +48,30 @@ daily/
   3. [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)
   4. [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
 - **掌握等级：** 前三题 B；Is Subsequence 的最终独立调试表现记为 A
-- **当前阶段：** 从数组与字符串过渡到双指针；继续通过做题即时补充 Java 语法与边界处理
+- **当前阶段：** 已进入双指针；Day 4 从同方向双指针扩展到左右双指针
 - **本周目标：** 2026-07-19 前再完成 3 道 LeetCode 75 新题
 
-## Day 3 完成情况｜2026-07-15
+## 今日任务｜2026-07-16
 
-- **题目：** Is Subsequence
-- **结果：** Accepted，22 / 22
-- **今日状态：** 疲劳轻量日，只完成这一道，按计划结束
-- **核心思路：** `j` 扫描 `t`，匹配时才移动 `i`
-- **独立成果：** 用户自己发现循环还必须检查 `i < s.length()`，修复匹配完成后继续访问导致的越界
-- **主要收获：**
-  - 双指针各自代表不同序列的读取进度；
-  - `charAt(i)` 前必须保护对应字符串的下标；
-  - 空字符串是合法输入；
-  - Testcase 样例通过不等于 Submit 全部隐藏测试通过；
-  - `&&` 短路条件可以在进入循环前阻止越界；
-  - 指针 `i` 本身可以代替匹配计数器。
-- **详细记录：** [Day 3 当天笔记](./daily/2026-07-15.md)
+### 必做
+
+[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)
+
+今天重点：
+
+- `left`、`right` 从两端向中间移动；
+- `String.toCharArray()`；
+- 使用临时变量交换两个字符；
+- `new String(chars)`；
+- 循环和 `charAt` / 数组下标边界。
+
+### 可选
+
+只有必做题在 70 分钟内完成并完成 Code Review，才做：
+
+[Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+
+详细安排见：[Day 4 当天笔记](./daily/2026-07-16.md)
 
 ## 当前已掌握 / 初步接触
 
@@ -79,7 +87,7 @@ daily/
 - `=` 与 `==`；
 - Java 大括号决定代码块范围；
 - 修改数组状态解决相邻约束问题；
-- 双指针基本模型；
+- 同方向双指针；
 - 字符串下标独立边界保护；
 - Testcase 与 Submit 隐藏测试的区别。
 
@@ -90,22 +98,7 @@ daily/
 - [ ] 三天内：尝试 Can Place Flowers 单循环边界版本
 - [ ] 三天内：用只保留一个匹配指针的简化版本重写 Is Subsequence
 
-疲劳日不强制执行上述复刷，之后恢复精力时再安排。
-
-## 下一道候选任务
-
-恢复正常学习状态后，优先考虑：
-
-[Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)
-
-重点将是：
-
-- 左右双指针；
-- 字符串转字符数组；
-- 判断元音；
-- 两端交换。
-
-实际当天任务仍以用户询问“今天的任务是什么”时的安排为准。
+当天新题优先；复刷由后续状态和时间安排，不在同一天强制全部完成。
 
 ## 学习原则
 
