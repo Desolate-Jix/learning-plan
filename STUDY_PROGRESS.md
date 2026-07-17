@@ -12,6 +12,7 @@ daily/
   2026-07-14.md                   # Day 2 当天唯一笔记
   2026-07-15.md                   # Day 3 当天唯一笔记
   2026-07-16.md                   # Day 4 当天唯一笔记
+  2026-07-17.md                   # Day 5 当天唯一笔记
 ```
 
 ## 每日笔记规则
@@ -37,6 +38,7 @@ daily/
 | [2026-07-14](./daily/2026-07-14.md) | StringBuilder 复刷、ArrayList、线性扫描、数组边界 | 2 道新题 Accepted + 1 次复刷 |
 | [2026-07-15](./daily/2026-07-15.md) | 同方向双指针、字符串边界、隐藏测试调试 | Is Subsequence Accepted；最终修复独立完成 |
 | [2026-07-16](./daily/2026-07-16.md) | 左右双指针、字符数组、`indexOf()`、交换元素 | Reverse Vowels Accepted，480 / 480 |
+| [2026-07-17](./daily/2026-07-17.md) | 快慢双指针、原地修改数组、保持相对顺序 | Day 5 已安排，等待反馈 |
 
 ## 当前进度
 
@@ -48,25 +50,29 @@ daily/
   4. [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
   5. [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)
 - **掌握等级：** 前三题 B；Is Subsequence 为 A；Reverse Vowels 的算法独立性为 A-、代码简洁度为 B
-- **当前阶段：** 双指针；已经接触同方向双指针和左右双指针
+- **当前阶段：** 双指针；已经接触同方向匹配指针和左右双指针，Day 5 进入快慢双指针
 - **本周目标：** 2026-07-19 前再完成 2 道 LeetCode 75 新题
 
-## Day 4 完成情况｜2026-07-16
+## 今日任务｜2026-07-17
 
-- **题目：** Reverse Vowels of a String
-- **结果：** Accepted，480 / 480
-- **核心算法：** 字符串转字符数组；左右下标寻找元音；交换后向中间移动
-- **独立成果：** 自己完成整体算法，并指出内部使用 `if` 也能正确工作，只是每次外层循环最多移动一步
-- **主要收获：**
-  - 左右“指针”本质上是两个整数下标；
-  - `String.toCharArray()` 与 `new String(char[])`；
-  - `char` 和 `String` 的区别；
-  - `indexOf()` 找不到时返回 `-1`；
-  - 辅助方法不能直接读取另一个方法中的局部变量；
-  - 右指针应使用 `right--`；
-  - 左右双指针停止条件应为 `left < right`，不能只判断 `left != right`；
-  - 内部使用 `if` 和内部使用 `while` 都可以保持 `O(n)`。
-- **详细记录：** [Day 4 当天笔记](./daily/2026-07-16.md)
+### 必做
+
+[Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+
+今天重点：
+
+- `scan` 从左到右检查所有元素；
+- `write` 记录下一个非零元素应该放置的位置；
+- 原地修改数组；
+- 保持非零元素相对顺序；
+- 理解 `void` 方法不返回数组；
+- 时间复杂度 `O(n)`、额外空间 `O(1)`。
+
+### 可选复习
+
+主任务完成后仍有精力，再用 10 分钟写出不使用 `counter` 的简化版 `Is Subsequence`。
+
+详细安排见：[Day 5 当天笔记](./daily/2026-07-17.md)
 
 ## 当前已掌握 / 初步接触
 
@@ -97,19 +103,6 @@ daily/
 - [ ] 三天内用 `left/right`、`!isVowel()` 重写 Reverse Vowels 简化版
 
 当天新题优先；复刷根据精力和实际进度安排。
-
-## 下一道候选任务
-
-[283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)
-
-重点将是：
-
-- 同方向快慢双指针；
-- 原地修改数组；
-- 保持非零元素相对顺序；
-- 区分“扫描位置”和“写入位置”。
-
-实际任务仍以当天询问“今天的任务是什么”时的安排为准。
 
 ## 学习原则
 
