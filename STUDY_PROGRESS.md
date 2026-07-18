@@ -40,11 +40,11 @@ daily/
 | [2026-07-15](./daily/2026-07-15.md) | 同方向双指针、字符串边界、隐藏测试调试 | Is Subsequence Accepted；最终修复独立完成 |
 | [2026-07-16](./daily/2026-07-16.md) | 左右双指针、字符数组、`indexOf()`、交换元素 | Reverse Vowels Accepted，480 / 480 |
 | [2026-07-17](./daily/2026-07-17.md) | 快慢双指针、原地修改、稳定压缩数组 | Move Zeroes Accepted，75 / 75 |
-| [2026-07-18](./daily/2026-07-18.md) | 第一道 Medium、面积公式、左右双指针与贪心 | Day 6 已安排，等待反馈 |
+| [2026-07-18](./daily/2026-07-18.md) | 第一道 Medium、暴力优化、左右双指针与贪心 | Container With Most Water Accepted，65 / 65 |
 
 ## 当前进度
 
-- **LeetCode 75：** 6 / 75
+- **LeetCode 75：** 7 / 75
 - **已完成题目：**
   1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
   2. [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)
@@ -52,25 +52,30 @@ daily/
   4. [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
   5. [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)
   6. [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
-- **掌握等级：** 前三题 B；Is Subsequence 为 A；Reverse Vowels 算法独立性 A-；Move Zeroes 为 B
-- **当前阶段：** 双指针；已经接触同方向匹配、左右扫描和快慢写入，今天进入第一道双指针 Medium
-- **本周目标：** 完成今天的 Medium 后达到本周 7 / 75 目标
+  7. [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+- **掌握等级：** 前三题 B；Is Subsequence 为 A；Reverse Vowels 算法独立性 A-；Move Zeroes 为 B；Container With Most Water 为 B+
+- **当前阶段：** 双指针；已经接触同方向匹配、左右扫描、快慢写入，以及第一道左右双指针 Medium
+- **本周目标：** 已达到 7 / 75
 
-## 今日任务｜2026-07-18
+## Day 6 完成情况｜2026-07-18
 
-[Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
-
-今天重点：
-
-- 面积公式：`(right - left) * min(height[left], height[right])`；
-- 为什么水位由较短的一边决定；
-- 为什么每轮移动较短的一边；
-- 暴力枚举所有组合是 `O(n²)`；
-- 双指针版本是 `O(n)`、额外空间 `O(1)`。
-
-详细安排见：[Day 6 当天笔记](./daily/2026-07-18.md)
-
-今天只做这一道 Medium，不追加第二道新题。
+- **题目：** Container With Most Water
+- **结果：** Accepted，65 / 65
+- **核心公式：** `(right - left) * Math.min(height[left], height[right])`
+- **学习路径：** 先写出正确的 `O(n²)` 暴力版；Submit 出现 TLE；再优化为 `O(n)` 左右双指针
+- **独立成果：** 面积公式和暴力枚举由自己完成；最终双指针代码成功通过
+- **主要收获：**
+  - 水位由较短的一边决定；
+  - 宽度缩小时，只有替换较短边才有机会得到更大面积；
+  - 正确算法仍可能因为复杂度过高而超时；
+  - 双重循环检查所有组合是 `O(n²)`；
+  - 左右指针只单向移动，总复杂度为 `O(n)`；
+  - 两边高度相等时，移动任意一边都正确。
+- **出现的问题：**
+  - `for (int i, j = 0; ...)` 中 `i` 未初始化；
+  - 外层循环错误地依赖内层变量 `j`；
+  - 暴力版只通过 59 / 65，因 `O(n²)` 超时。
+- **详细记录：** [Day 6 当天笔记](./daily/2026-07-18.md)
 
 ## 当前已掌握 / 初步接触
 
@@ -89,10 +94,14 @@ daily/
 - 快慢 / 扫描与写入双指针；
 - 原地修改数组；
 - 稳定压缩并保持元素相对顺序；
+- `Math.min()`、`Math.max()`；
+- 从 `O(n²)` 暴力枚举优化到 `O(n)` 双指针；
+- 基础贪心选择：移动较短边；
 - `toCharArray()`、字符交换、`new String(char[])`；
 - `indexOf()`；
 - `char` 与 `String`；
-- Testcase 与 Submit 隐藏测试的区别。
+- Testcase 与 Submit 隐藏测试的区别；
+- Time Limit Exceeded 与复杂度分析。
 
 ## 近期需要复习
 
@@ -101,9 +110,18 @@ daily/
 - [ ] 尝试 Can Place Flowers 单循环边界版本
 - [ ] 用只保留一个匹配指针的简化版本重写 Is Subsequence
 - [ ] 用 `left/right`、`!isVowel()` 重写 Reverse Vowels 简化版
-- [ ] 三天内用显式 `write / scan` 版本重写 Move Zeroes
+- [ ] 用显式 `write / scan` 版本重写 Move Zeroes
+- [ ] 三天内用 `left/right/maxArea` 重写 Container With Most Water，并口述移动较短边的理由
 
 当天新题优先；复刷根据精力和实际进度安排。
+
+## 下一阶段候选
+
+接下来继续完成双指针剩余题目，再进入滑动窗口。下一题会根据当天状态在以下方向中选择：
+
+- 双指针巩固；
+- 数组 / 字符串 Easy；
+- 滑动窗口入门。
 
 ## 学习原则
 
