@@ -42,11 +42,11 @@ daily/
 | [2026-07-16](./daily/2026-07-16.md) | 左右双指针、字符数组、`indexOf()`、交换元素 | Reverse Vowels Accepted，480 / 480 |
 | [2026-07-17](./daily/2026-07-17.md) | 快慢双指针、原地修改、稳定压缩数组 | Move Zeroes Accepted，75 / 75 |
 | [2026-07-18](./daily/2026-07-18.md) | 第一道 Medium、暴力优化、左右双指针与贪心 | Container With Most Water Accepted，65 / 65 |
-| [2026-07-20](./daily/2026-07-20.md) | 前缀和入门、最高海拔、中心下标 | Highest Altitude Accepted；Pivot Index 待完成 |
+| [2026-07-20](./daily/2026-07-20.md) | 前缀和入门、最高海拔、中心下标 | 两道 Easy 均 Accepted |
 
 ## 当前进度
 
-- **LeetCode 75：** 8 / 75
+- **LeetCode 75：** 9 / 75
 - **已完成题目：**
   1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
   2. [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)
@@ -56,41 +56,32 @@ daily/
   6. [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
   7. [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
   8. [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
-- **掌握等级：** 前三题 B；Is Subsequence 为 A；Reverse Vowels 算法独立性 A-；Move Zeroes 为 B；Container With Most Water 为 B+；Highest Altitude 为 B+
-- **当前阶段：** 从双指针进入前缀和 / 累计和
-- **今天第二题完成后：** 9 / 75
+  9. [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)
+- **掌握等级：** 前三题 B；Is Subsequence 为 A；Reverse Vowels 算法独立性 A-；Move Zeroes 为 B；Container With Most Water 为 B+；Highest Altitude 为 B+；Pivot Index 当前暴力版为 B
+- **当前阶段：** 前缀和 / 累计和入门
 
-## Day 7 当前情况｜2026-07-20
+## Day 7 完成情况｜2026-07-20
 
-2026-07-19 没有学习。今天使用同一主题的两道 Easy 补进度。
-
-### 任务 1｜已完成
-
-[Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
+### Find the Highest Altitude
 
 - **结果：** Accepted，80 / 80
-- **核心算法：** 从海拔 `0` 开始维护累计海拔 `current`，每轮更新历史最高值
-- **代码表现：** 无编译错误、运行错误或隐藏测试问题
-- **主要收获：**
-  - 累计和是“上一状态 + 当前变化”；
-  - 起点 `0` 也属于需要比较的海拔；
-  - 如果所有变化都为负数，答案仍可能是起点 `0`；
-  - 单次扫描时间复杂度 `O(n)`，额外空间 `O(1)`。
+- **核心算法：** 维护当前累计海拔和历史最高海拔
+- **复杂度：** `O(n)` 时间，`O(1)` 空间
+
+### Find Pivot Index
+
+- **结果：** Accepted，747 / 747
+- **当前算法：** 对每个中心下标重新计算左右和
+- **当前复杂度：** `O(n²)` 时间，`O(1)` 空间
+- **下一步优化：** 先求 `totalSum`，再维护 `leftSum`，通过 `rightSum = totalSum - leftSum - nums[i]` 降为 `O(n)`
+- **出现并修复的问题：**
+  - Java 不支持 `0 < pointer < n - 1`，应写成 `pointer > 0 && pointer < n - 1`；
+  - 方法返回 `int` 时必须保证所有路径返回值；
+  - `pointer` 最初没有递增，只检查了下标 `0`；
+  - `sumleft`、`sumright` 每轮必须清零；
+  - 左边循环不能包含中心元素。
+
 - **详细记录：** [Day 7 当天笔记](./daily/2026-07-20.md)
-
-### 任务 2｜当前主任务
-
-[Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)
-
-重点：
-
-- 先计算整个数组总和 `totalSum`；
-- 扫描时维护 `leftSum`；
-- `rightSum = totalSum - leftSum - nums[i]`；
-- 必须先判断当前下标，再把 `nums[i]` 加到 `leftSum`；
-- 时间复杂度 `O(n)`、额外空间 `O(1)`。
-
-今晚完成 Pivot Index 后今天结束，不追加第三题。
 
 ## 当前已掌握 / 初步接触
 
@@ -98,24 +89,19 @@ daily/
 - `StringBuilder`、`append()`、`toString()`；
 - 变量初始化、作用域、`return`、`void`；
 - `if`、`for`、`while` 的基本职责；
+- `break` 与 `return` 的区别；
+- 多条件判断使用 `&&`；
 - 数组与 List 的区别；
-- `List<Boolean>`、`ArrayList<>()`、`add/get/set/size`；
 - 基本类型和包装类型；
 - 数组边界与首尾特殊情况；
-- Java 大括号决定代码块范围；
-- 修改数组状态解决相邻约束问题；
 - 同方向匹配双指针；
 - 左右双指针；
 - 快慢 / 扫描与写入双指针；
 - 原地修改数组；
-- 稳定压缩并保持元素相对顺序；
 - `Math.min()`、`Math.max()`；
 - 从 `O(n²)` 暴力枚举优化到 `O(n)` 双指针；
-- 基础贪心选择：移动较短边；
-- 累计和 / Running Sum 基本模型；
-- `toCharArray()`、字符交换、`new String(char[])`；
-- `indexOf()`；
-- `char` 与 `String`；
+- 累计和 / Running Sum；
+- 总和与左侧累计和推导右侧和；
 - Testcase 与 Submit 隐藏测试的区别；
 - Time Limit Exceeded 与复杂度分析。
 
@@ -127,8 +113,9 @@ daily/
 - [ ] 用只保留一个匹配指针的简化版本重写 Is Subsequence
 - [ ] 用 `left/right`、`!isVowel()` 重写 Reverse Vowels 简化版
 - [ ] 用显式 `write / scan` 版本重写 Move Zeroes
-- [ ] 用 `left/right/maxArea` 重写 Container With Most Water，并口述移动较短边的理由
-- [ ] 三天内闭卷重写 Highest Altitude，并说明为什么最高值初始为 0
+- [ ] 用 `left/right/maxArea` 重写 Container With Most Water
+- [ ] 三天内闭卷重写 Highest Altitude
+- [ ] 48 小时内用 `totalSum + leftSum` 重写 Pivot Index 为 `O(n)`
 
 当天新题优先；复刷根据精力和实际进度安排。
 
