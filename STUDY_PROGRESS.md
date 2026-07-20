@@ -14,6 +14,7 @@ daily/
   2026-07-16.md                   # Day 4 当天唯一笔记
   2026-07-17.md                   # Day 5 当天唯一笔记
   2026-07-18.md                   # Day 6 当天唯一笔记
+  2026-07-20.md                   # Day 7 当天唯一笔记
 ```
 
 ## 每日笔记规则
@@ -41,6 +42,7 @@ daily/
 | [2026-07-16](./daily/2026-07-16.md) | 左右双指针、字符数组、`indexOf()`、交换元素 | Reverse Vowels Accepted，480 / 480 |
 | [2026-07-17](./daily/2026-07-17.md) | 快慢双指针、原地修改、稳定压缩数组 | Move Zeroes Accepted，75 / 75 |
 | [2026-07-18](./daily/2026-07-18.md) | 第一道 Medium、暴力优化、左右双指针与贪心 | Container With Most Water Accepted，65 / 65 |
+| [2026-07-20](./daily/2026-07-20.md) | 前缀和入门、最高海拔、中心下标 | Day 7 已安排，计划两道 Easy |
 
 ## 当前进度
 
@@ -54,28 +56,39 @@ daily/
   6. [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
   7. [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 - **掌握等级：** 前三题 B；Is Subsequence 为 A；Reverse Vowels 算法独立性 A-；Move Zeroes 为 B；Container With Most Water 为 B+
-- **当前阶段：** 双指针；已经接触同方向匹配、左右扫描、快慢写入，以及第一道左右双指针 Medium
-- **本周目标：** 已达到 7 / 75
+- **当前阶段：** 从双指针进入前缀和 / 累计和
+- **今日全部完成后：** 9 / 75
 
-## Day 6 完成情况｜2026-07-18
+## 今日任务｜2026-07-20
 
-- **题目：** Container With Most Water
-- **结果：** Accepted，65 / 65
-- **核心公式：** `(right - left) * Math.min(height[left], height[right])`
-- **学习路径：** 先写出正确的 `O(n²)` 暴力版；Submit 出现 TLE；再优化为 `O(n)` 左右双指针
-- **独立成果：** 面积公式和暴力枚举由自己完成；最终双指针代码成功通过
-- **主要收获：**
-  - 水位由较短的一边决定；
-  - 宽度缩小时，只有替换较短边才有机会得到更大面积；
-  - 正确算法仍可能因为复杂度过高而超时；
-  - 双重循环检查所有组合是 `O(n²)`；
-  - 左右指针只单向移动，总复杂度为 `O(n)`；
-  - 两边高度相等时，移动任意一边都正确。
-- **出现的问题：**
-  - `for (int i, j = 0; ...)` 中 `i` 未初始化；
-  - 外层循环错误地依赖内层变量 `j`；
-  - 暴力版只通过 59 / 65，因 `O(n²)` 超时。
-- **详细记录：** [Day 6 当天笔记](./daily/2026-07-18.md)
+2026-07-19 没有学习。今天采用“同一知识点两道 Easy”的方式补进度，不安排两个完全不同的新主题。
+
+### 任务 1｜必做热身
+
+[Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
+
+重点：
+
+- 当前累计海拔；
+- 历史最大值；
+- 起点海拔 `0` 也要参与比较；
+- 时间复杂度 `O(n)`、额外空间 `O(1)`。
+
+### 任务 2｜补进度主任务
+
+[Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)
+
+重点：
+
+- 先计算整个数组总和 `totalSum`；
+- 扫描时维护 `leftSum`；
+- `rightSum = totalSum - leftSum - nums[i]`；
+- 必须先判断当前下标，再把 `nums[i]` 加到 `leftSum`；
+- 时间复杂度 `O(n)`、额外空间 `O(1)`。
+
+详细安排见：[Day 7 当天笔记](./daily/2026-07-20.md)
+
+今晚时间不足时，至少完成任务 1；任务 2 可以顺延，不熬夜。
 
 ## 当前已掌握 / 初步接触
 
@@ -111,17 +124,9 @@ daily/
 - [ ] 用只保留一个匹配指针的简化版本重写 Is Subsequence
 - [ ] 用 `left/right`、`!isVowel()` 重写 Reverse Vowels 简化版
 - [ ] 用显式 `write / scan` 版本重写 Move Zeroes
-- [ ] 三天内用 `left/right/maxArea` 重写 Container With Most Water，并口述移动较短边的理由
+- [ ] 用 `left/right/maxArea` 重写 Container With Most Water，并口述移动较短边的理由
 
 当天新题优先；复刷根据精力和实际进度安排。
-
-## 下一阶段候选
-
-接下来继续完成双指针剩余题目，再进入滑动窗口。下一题会根据当天状态在以下方向中选择：
-
-- 双指针巩固；
-- 数组 / 字符串 Easy；
-- 滑动窗口入门。
 
 ## 学习原则
 
