@@ -26,11 +26,10 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 ## 2026-07-22 计划审计
 
 - **当前正式进度：9 / 75**
-- **审计结果：当前计入的 9 道题全部属于 LeetCode 75**
+- 当前计入的 9 道题全部属于 LeetCode 75；
 - 没有题单外题目被错误计入进度；
 - `Running Sum of 1d Array`、`Two Sum II - Input Array Is Sorted` 不属于当前 LeetCode 75，不再进入主计划；
-- 下一道候选 `Product of Array Except Self` 属于白名单第 7 题，可以安排；
-- 后续允许调整白名单内题目的先后顺序，但不能用题单外题目替换。
+- 今天两道任务均已在白名单中核对，当前状态均为未完成。
 
 ## 当前目标
 
@@ -41,6 +40,7 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 - **刷题语言：** Java
 - **当前进度：** 9 / 75
 - **剩余：** 66 题
+- **今日两题完成后：** 11 / 75
 - **建议节奏：** 每周约 8～9 道白名单新题
 
 ## 每日笔记索引
@@ -54,6 +54,7 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 | [2026-07-17](./daily/2026-07-17.md) | 快慢双指针、原地修改、稳定压缩数组 | Move Zeroes Accepted，75 / 75 |
 | [2026-07-18](./daily/2026-07-18.md) | 第一道 Medium、暴力优化、左右双指针与贪心 | Container With Most Water Accepted，65 / 65 |
 | [2026-07-20](./daily/2026-07-20.md) | 前缀和、最高海拔、中心下标 | 两道 Easy 均 Accepted |
+| [2026-07-22](./daily/2026-07-22.md) | 字符串公因子、前缀与后缀乘积 | 两道官方题已安排，等待反馈 |
 
 ## 已完成的 9 道官方题
 
@@ -69,6 +70,28 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
+## 今日任务｜2026-07-22
+
+### 任务 1｜Easy
+
+[1071. Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
+
+- 白名单：Array / String 第 2 题；
+- 重点：重复字符串单位、`String.equals()`、候选长度同时整除两个字符串长度；
+- 预计 25～35 分钟。
+
+### 任务 2｜Medium
+
+[238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+
+- 白名单：Array / String 第 7 题；
+- 重点：左侧乘积、右侧乘积、不能使用除法、从 `O(n²)` 优化到 `O(n)`；
+- 预计 60～80 分钟。
+
+详细安排见：[2026-07-22 当天笔记](./daily/2026-07-22.md)
+
+两题完成后今天结束，不追加第三题。时间不足时至少完成第一题，并保存第二题的当前思路。
+
 ## 当前掌握情况
 
 - 前三题：B；
@@ -78,21 +101,6 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 - Container With Most Water：B+；
 - Find the Highest Altitude：B+；
 - Find Pivot Index：当前暴力版 B，待用前缀和降为 `O(n)`。
-
-## 当前已掌握 / 初步接触
-
-- 字符串下标、`length()`、`charAt()`、`substring()`；
-- `StringBuilder`、`append()`、`toString()`；
-- 变量初始化、作用域、`return`、`void`；
-- `if`、`for`、`while`、`break`、多条件 `&&`；
-- 数组与 List、基本类型与包装类型；
-- 数组边界、原地修改、稳定压缩；
-- 同方向双指针、左右双指针、扫描 / 写入双指针；
-- `Math.min()`、`Math.max()`；
-- `O(n²)` 暴力枚举与 `O(n)` 优化；
-- 累计和 / Prefix Sum；
-- `总和 = 左边 + 当前 + 右边`，因此 `右边 = 总和 - 左边 - 当前`；
-- Testcase、Submit 隐藏测试、Runtime Error 与 TLE。
 
 ## 近期复习
 
@@ -104,17 +112,6 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 
 复刷不重复计入 75 题进度。
 
-## 下一道官方候选
-
-[238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
-
-- 白名单编号：7
-- 难度：Medium
-- 主题：前缀乘积 + 后缀乘积
-- 完成后进度：10 / 75
-
-是否在当天安排，仍需先检查新西兰当前日期、当日精力和白名单状态。
-
 ## 每次生成今日任务的检查流程
 
 1. 检查新西兰当前日期；
@@ -122,6 +119,6 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 3. 读取 `LEETCODE_75_CHECKLIST.md`；
 4. 确认候选题未完成且属于白名单；
 5. 核对题号、标题和链接；
-6. 安排 1 道 Medium，或 1～2 道 Easy；
+6. 安排 1 道 Medium，或 1～2 道 Easy；特殊补进度日可安排 1 Easy + 1 Medium，但必须都在白名单；
 7. 创建或更新当天唯一的 `daily/YYYY-MM-DD.md`；
 8. 明确说明开始进度和完成后的进度。
