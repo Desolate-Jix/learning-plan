@@ -15,9 +15,9 @@
 
 ## 当前审计结果
 
-- **已完成：9 / 75**
-- **剩余：66 / 75**
-- 当前已计入的 9 道题均属于 LeetCode 75；
+- **已完成：10 / 75**
+- **剩余：65 / 75**
+- 当前已计入的 10 道题均属于 LeetCode 75；
 - 之前讨论过但不属于本题单的题目，例如 `Running Sum of 1d Array`、`Two Sum II - Input Array Is Sorted`，不得进入主计划或计入进度。
 
 ---
@@ -25,7 +25,7 @@
 ## Array / String（9）
 
 - [x] 1. [1768. Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) — Easy
-- [ ] 2. [1071. Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) — Easy
+- [x] 2. [1071. Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) — Easy
 - [x] 3. [1431. Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) — Easy
 - [x] 4. [605. Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) — Easy
 - [x] 5. [345. Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) — Easy
