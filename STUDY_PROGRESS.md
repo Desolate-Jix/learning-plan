@@ -54,7 +54,7 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 | [2026-07-17](./daily/2026-07-17.md) | 快慢双指针、原地修改、稳定压缩数组 | Move Zeroes Accepted，75 / 75 |
 | [2026-07-18](./daily/2026-07-18.md) | 第一道 Medium、暴力优化、左右双指针与贪心 | Container With Most Water Accepted，65 / 65 |
 | [2026-07-20](./daily/2026-07-20.md) | 前缀和、最高海拔、中心下标 | 两道 Easy 均 Accepted |
-| [2026-07-22](./daily/2026-07-22.md) | 字符串公因子、字符串 API 与候选验证 | GCD of Strings Accepted；Product 顺延 |
+| [2026-07-22](./daily/2026-07-22.md) | 字符串公因子、字符串 API、候选验证与数学 GCD 优化 | GCD of Strings Accepted；Product 顺延 |
 
 ## 已完成的 10 道官方题
 
@@ -80,14 +80,20 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 - **结果：** Accepted，129 / 129
 - **实际用时：** 提交页面记录约 2 小时 24 分钟
 - **掌握等级：** B
-- **核心算法：** 找最长公共前缀；从长到短缩短候选；每轮回到两个原字符串检查能否被候选重复铺满
+- **自己完成的算法：** 找最长公共前缀；从长到短缩短候选；每轮回到两个原字符串检查能否被候选重复铺满
+- **已学习的标准数学优化：**
+  - 先用 `(str1 + str2).equals(str2 + str1)` 判断两个字符串是否来自同一种重复结构；
+  - 再用欧几里得算法求 `gcd(str1.length(), str2.length())`；
+  - 返回 `str1.substring(0, gcdLength)`。
 - **主要收获：**
   - `charAt()` 返回 `char`，字符使用 `==`；
   - 字符串内容使用 `.equals()`；
   - `substring(0, length - 1)` 可以删除末尾字符；
   - 同时访问两个字符串时必须受较短字符串边界保护；
   - 空候选不能参与 `%` 运算；
-  - 最大公因子要求从长到短找，不能先返回最小重复单位。
+  - 最大公因子要求从长到短找，不能先返回最小重复单位；
+  - 拼接顺序一致可以判断两个字符串是否共享同一重复单位；
+  - 最长公共字符串因子的长度等于两个字符串长度的最大公约数。
 - **出现并修复的问题：**
   - `char cannot be dereferenced`；
   - `StringIndexOutOfBoundsException`；
@@ -95,7 +101,9 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
   - 缺少方法右大括号；
   - String 使用 `== ""`；
   - 从短到长检查导致返回非最长答案。
-- **复杂度：** 当前实现最坏约 `O(n²)`，额外空间约 `O(n)`。
+- **复杂度：**
+  - 自己的验证法：最坏约 `O(n²)`，额外空间约 `O(n)`；
+  - 数学快捷法：`O(n + m)` 时间，Java 字符串拼接带来约 `O(n + m)` 额外空间。
 - **详细记录：** [2026-07-22 当天笔记](./daily/2026-07-22.md)
 
 ### 任务 2｜顺延
@@ -109,7 +117,7 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 ## 当前掌握情况
 
 - Merge Strings Alternately：B；
-- Greatest Common Divisor of Strings：B；
+- Greatest Common Divisor of Strings：B；已理解验证法与数学 GCD 优化；
 - Kids With Candies：B；
 - Can Place Flowers：B；
 - Is Subsequence：独立调试表现 A；
@@ -121,8 +129,8 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 
 ## 近期复习
 
-- [ ] 三天内用 `while (!candidate.isEmpty())` 重写 GCD of Strings；
-- [ ] 后续学习 GCD of Strings 的拼接一致性 + 长度最大公约数解法；
+- [ ] 三天内用 `while (!candidate.isEmpty())` 重写 GCD of Strings 的验证法；
+- [ ] 三天内闭卷写出 GCD of Strings 的拼接一致性 + 长度最大公约数版本；
 - [ ] 用 `totalSum + leftSum` 把 Pivot Index 重写为 `O(n)`；
 - [ ] 用显式 `write / scan` 重写 Move Zeroes；
 - [ ] 用 `left/right/maxArea` 重写 Container With Most Water；
