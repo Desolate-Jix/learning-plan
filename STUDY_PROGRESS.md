@@ -23,13 +23,14 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 5. 每次安排任务前核对：题号、英文标题、链接、完成状态；
 6. 每次 Accepted 后同步更新：白名单、总体进度、当天笔记。
 
-## 2026-07-22 计划审计
+## 2026-07-22 当前审计
 
-- **当前正式进度：9 / 75**
-- 当前计入的 9 道题全部属于 LeetCode 75；
+- **当前正式进度：10 / 75**
+- **剩余：65 题**
+- 当前计入的 10 道题全部属于 LeetCode 75；
 - 没有题单外题目被错误计入进度；
 - `Running Sum of 1d Array`、`Two Sum II - Input Array Is Sorted` 不属于当前 LeetCode 75，不再进入主计划；
-- 今天两道任务均已在白名单中核对，当前状态均为未完成。
+- `Product of Array Except Self` 仍属于白名单未完成题，顺延到下一个学习日。
 
 ## 当前目标
 
@@ -38,9 +39,8 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 - **第一遍完成目标：** 2026-09-13
 - **每天学习时间：** 通常约 2 小时；疲劳日可缩短到 60～75 分钟
 - **刷题语言：** Java
-- **当前进度：** 9 / 75
-- **剩余：** 66 题
-- **今日两题完成后：** 11 / 75
+- **当前进度：** 10 / 75
+- **剩余：** 65 题
 - **建议节奏：** 每周约 8～9 道白名单新题
 
 ## 每日笔记索引
@@ -54,47 +54,64 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 | [2026-07-17](./daily/2026-07-17.md) | 快慢双指针、原地修改、稳定压缩数组 | Move Zeroes Accepted，75 / 75 |
 | [2026-07-18](./daily/2026-07-18.md) | 第一道 Medium、暴力优化、左右双指针与贪心 | Container With Most Water Accepted，65 / 65 |
 | [2026-07-20](./daily/2026-07-20.md) | 前缀和、最高海拔、中心下标 | 两道 Easy 均 Accepted |
-| [2026-07-22](./daily/2026-07-22.md) | 字符串公因子、前缀与后缀乘积 | 两道官方题已安排，等待反馈 |
+| [2026-07-22](./daily/2026-07-22.md) | 字符串公因子、字符串 API 与候选验证 | GCD of Strings Accepted；Product 顺延 |
 
-## 已完成的 9 道官方题
+## 已完成的 10 道官方题
 
 1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
-2. [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)
-3. [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)
-4. [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
-5. [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)
-6. [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
-7. [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
-8. [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
-9. [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)
+2. [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
+3. [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)
+4. [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)
+5. [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
+6. [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)
+7. [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+8. [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+9. [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
+10. [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
-## 今日任务｜2026-07-22
+## Day 8 当前情况｜2026-07-22
 
-### 任务 1｜Easy
+### 任务 1｜已完成
 
 [1071. Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
 
-- 白名单：Array / String 第 2 题；
-- 重点：重复字符串单位、`String.equals()`、候选长度同时整除两个字符串长度；
-- 预计 25～35 分钟。
+- **结果：** Accepted，129 / 129
+- **实际用时：** 提交页面记录约 2 小时 24 分钟
+- **掌握等级：** B
+- **核心算法：** 找最长公共前缀；从长到短缩短候选；每轮回到两个原字符串检查能否被候选重复铺满
+- **主要收获：**
+  - `charAt()` 返回 `char`，字符使用 `==`；
+  - 字符串内容使用 `.equals()`；
+  - `substring(0, length - 1)` 可以删除末尾字符；
+  - 同时访问两个字符串时必须受较短字符串边界保护；
+  - 空候选不能参与 `%` 运算；
+  - 最大公因子要求从长到短找，不能先返回最小重复单位。
+- **出现并修复的问题：**
+  - `char cannot be dereferenced`；
+  - `StringIndexOutOfBoundsException`；
+  - `ArithmeticException: / by zero`；
+  - 缺少方法右大括号；
+  - String 使用 `== ""`；
+  - 从短到长检查导致返回非最长答案。
+- **复杂度：** 当前实现最坏约 `O(n²)`，额外空间约 `O(n)`。
+- **详细记录：** [2026-07-22 当天笔记](./daily/2026-07-22.md)
 
-### 任务 2｜Medium
+### 任务 2｜顺延
 
 [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
 
-- 白名单：Array / String 第 7 题；
-- 重点：左侧乘积、右侧乘积、不能使用除法、从 `O(n²)` 优化到 `O(n)`；
-- 预计 60～80 分钟。
-
-详细安排见：[2026-07-22 当天笔记](./daily/2026-07-22.md)
-
-两题完成后今天结束，不追加第三题。时间不足时至少完成第一题，并保存第二题的当前思路。
+- **状态：** 未开始；不计入进度；
+- **顺延原因：** 第一题已超过当天两小时预算；
+- **下次重点：** 左侧乘积、右侧乘积、不能使用除法、从 `O(n²)` 优化到 `O(n)`。
 
 ## 当前掌握情况
 
-- 前三题：B；
+- Merge Strings Alternately：B；
+- Greatest Common Divisor of Strings：B；
+- Kids With Candies：B；
+- Can Place Flowers：B；
 - Is Subsequence：独立调试表现 A；
 - Reverse Vowels：算法独立性 A-，代码简洁度 B；
 - Move Zeroes：B；
@@ -104,11 +121,12 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 
 ## 近期复习
 
+- [ ] 三天内用 `while (!candidate.isEmpty())` 重写 GCD of Strings；
+- [ ] 后续学习 GCD of Strings 的拼接一致性 + 长度最大公约数解法；
 - [ ] 用 `totalSum + leftSum` 把 Pivot Index 重写为 `O(n)`；
 - [ ] 用显式 `write / scan` 重写 Move Zeroes；
 - [ ] 用 `left/right/maxArea` 重写 Container With Most Water；
-- [ ] 用 `left/right` 与 `!isVowel()` 重写 Reverse Vowels；
-- [ ] 按掌握等级逐步安排其他白名单题复刷。
+- [ ] 用 `left/right` 与 `!isVowel()` 重写 Reverse Vowels。
 
 复刷不重复计入 75 题进度。
 
