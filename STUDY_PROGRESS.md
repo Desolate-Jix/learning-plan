@@ -1,36 +1,47 @@
 # 面试学习进度
 
-> 本页只保存总体进度、当前目标和每日笔记索引。每天的知识点、代码、错误与 Reviewer 点评只保存在当天唯一的日期文件中。
+> 本页保存总体进度、当前目标和每日笔记索引。每天的知识点、代码、错误与 Reviewer 点评只保存在当天唯一的日期文件中。
 
-## 仓库结构
+## 仓库核心文件
 
 ```text
-STUDY_PROGRESS.md                 # 当前进度与索引
-ROADMAP_TO_2026-09-22.md          # 截止 9 月 22 日的总体路线
-daily/
-  2026-07-13.md                   # Day 1 当天唯一笔记
-  2026-07-14.md                   # Day 2 当天唯一笔记
-  2026-07-15.md                   # Day 3 当天唯一笔记
-  2026-07-16.md                   # Day 4 当天唯一笔记
-  2026-07-17.md                   # Day 5 当天唯一笔记
-  2026-07-18.md                   # Day 6 当天唯一笔记
-  2026-07-20.md                   # Day 7 当天唯一笔记
+STUDY_PROGRESS.md                 # 当前进度与每日索引
+LEETCODE_75_CHECKLIST.md          # 官方 75 题白名单与完成状态
+ROADMAP_TO_2026-09-22.md          # 截止 9 月 22 日的路线图
+daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 ```
 
-## 每日笔记规则
+- [LeetCode 75 白名单与检查表](./LEETCODE_75_CHECKLIST.md)
+- [完整路线图](./ROADMAP_TO_2026-09-22.md)
 
-- 每个自然日只允许一个笔记文件：`daily/YYYY-MM-DD.md`；
-- 当天做多道题时，全部追加到同一个日期文件；
-- 每次反馈后同时更新当天日期文件和本页进度；
-- 总体路线只有在截止日期或学习节奏明显变化时才更新。
+## 防止超出 LeetCode 75 的强制规则
+
+1. 新题只从 `LEETCODE_75_CHECKLIST.md` 中尚未完成的题目选择；
+2. 不在白名单中的题目不得计入 `x / 75`；
+3. 完成 75 / 75 前，默认不安排额外 LeetCode 热身题；
+4. 需要热身或补基础时，只复刷已经完成的白名单题；
+5. 每次安排任务前核对：题号、英文标题、链接、完成状态；
+6. 每次 Accepted 后同步更新：白名单、总体进度、当天笔记。
+
+## 2026-07-22 计划审计
+
+- **当前正式进度：9 / 75**
+- **审计结果：当前计入的 9 道题全部属于 LeetCode 75**
+- 没有题单外题目被错误计入进度；
+- `Running Sum of 1d Array`、`Two Sum II - Input Array Is Sorted` 不属于当前 LeetCode 75，不再进入主计划；
+- 下一道候选 `Product of Array Except Self` 属于白名单第 7 题，可以安排；
+- 后续允许调整白名单内题目的先后顺序，但不能用题单外题目替换。
 
 ## 当前目标
 
+- **当前日期：** 2026-07-22
 - **截止日期：** 2026-09-22
-- **每天学习时间：** 通常约 2 小时；疲劳日可以缩短到 60～75 分钟
+- **第一遍完成目标：** 2026-09-13
+- **每天学习时间：** 通常约 2 小时；疲劳日可缩短到 60～75 分钟
 - **刷题语言：** Java
-- **主线：** LeetCode 75
-- **完整路线图：** [2026-09-22 刷题路线图](./ROADMAP_TO_2026-09-22.md)
+- **当前进度：** 9 / 75
+- **剩余：** 66 题
+- **建议节奏：** 每周约 8～9 道白名单新题
 
 ## 每日笔记索引
 
@@ -42,104 +53,75 @@ daily/
 | [2026-07-16](./daily/2026-07-16.md) | 左右双指针、字符数组、`indexOf()`、交换元素 | Reverse Vowels Accepted，480 / 480 |
 | [2026-07-17](./daily/2026-07-17.md) | 快慢双指针、原地修改、稳定压缩数组 | Move Zeroes Accepted，75 / 75 |
 | [2026-07-18](./daily/2026-07-18.md) | 第一道 Medium、暴力优化、左右双指针与贪心 | Container With Most Water Accepted，65 / 65 |
-| [2026-07-20](./daily/2026-07-20.md) | 前缀和入门、最高海拔、中心下标 | 两道 Easy 均 Accepted |
+| [2026-07-20](./daily/2026-07-20.md) | 前缀和、最高海拔、中心下标 | 两道 Easy 均 Accepted |
 
-## 当前进度
+## 已完成的 9 道官方题
 
-- **LeetCode 75：** 9 / 75
-- **已完成题目：**
-  1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
-  2. [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)
-  3. [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)
-  4. [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
-  5. [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)
-  6. [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
-  7. [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
-  8. [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
-  9. [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)
-- **掌握等级：** 前三题 B；Is Subsequence 为 A；Reverse Vowels 算法独立性 A-；Move Zeroes 为 B；Container With Most Water 为 B+；Highest Altitude 为 B+；Pivot Index 当前暴力版为 B
-- **当前阶段：** 前缀和 / 累计和入门
+1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
+2. [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)
+3. [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/)
+4. [Is Subsequence](https://leetcode.com/problems/is-subsequence/)
+5. [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)
+6. [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+7. [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+8. [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
+9. [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)
 
-## Day 7 完成情况｜2026-07-20
+完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
-### Find the Highest Altitude
+## 当前掌握情况
 
-- **结果：** Accepted，80 / 80
-- **核心算法：** 维护当前累计海拔和历史最高海拔
-- **复杂度：** `O(n)` 时间，`O(1)` 空间
-
-### Find Pivot Index
-
-- **结果：** Accepted，747 / 747
-- **当前算法：** 对每个中心下标重新计算左右和
-- **当前复杂度：** `O(n²)` 时间，`O(1)` 空间
-- **下一步优化：** 先求 `totalSum`，再维护 `leftSum`，通过 `rightSum = totalSum - leftSum - nums[i]` 降为 `O(n)`
-- **出现并修复的问题：**
-  - Java 不支持 `0 < pointer < n - 1`，应写成 `pointer > 0 && pointer < n - 1`；
-  - 方法返回 `int` 时必须保证所有路径返回值；
-  - `pointer` 最初没有递增，只检查了下标 `0`；
-  - `sumleft`、`sumright` 每轮必须清零；
-  - 左边循环不能包含中心元素。
-
-- **详细记录：** [Day 7 当天笔记](./daily/2026-07-20.md)
+- 前三题：B；
+- Is Subsequence：独立调试表现 A；
+- Reverse Vowels：算法独立性 A-，代码简洁度 B；
+- Move Zeroes：B；
+- Container With Most Water：B+；
+- Find the Highest Altitude：B+；
+- Find Pivot Index：当前暴力版 B，待用前缀和降为 `O(n)`。
 
 ## 当前已掌握 / 初步接触
 
 - 字符串下标、`length()`、`charAt()`、`substring()`；
 - `StringBuilder`、`append()`、`toString()`；
 - 变量初始化、作用域、`return`、`void`；
-- `if`、`for`、`while` 的基本职责；
-- `break` 与 `return` 的区别；
-- 多条件判断使用 `&&`；
-- 数组与 List 的区别；
-- 基本类型和包装类型；
-- 数组边界与首尾特殊情况；
-- 同方向匹配双指针；
-- 左右双指针；
-- 快慢 / 扫描与写入双指针；
-- 原地修改数组；
+- `if`、`for`、`while`、`break`、多条件 `&&`；
+- 数组与 List、基本类型与包装类型；
+- 数组边界、原地修改、稳定压缩；
+- 同方向双指针、左右双指针、扫描 / 写入双指针；
 - `Math.min()`、`Math.max()`；
-- 从 `O(n²)` 暴力枚举优化到 `O(n)` 双指针；
-- 累计和 / Running Sum；
-- 总和与左侧累计和推导右侧和；
-- Testcase 与 Submit 隐藏测试的区别；
-- Time Limit Exceeded 与复杂度分析。
+- `O(n²)` 暴力枚举与 `O(n)` 优化；
+- 累计和 / Prefix Sum；
+- `总和 = 左边 + 当前 + 右边`，因此 `右边 = 总和 - 左边 - 当前`；
+- Testcase、Submit 隐藏测试、Runtime Error 与 TLE。
 
-## 近期需要复习
+## 近期复习
 
-- [ ] 10～15 分钟重写 Merge Strings 优化版本
-- [ ] 用直接布尔表达式重写 Kids With Candies
-- [ ] 尝试 Can Place Flowers 单循环边界版本
-- [ ] 用只保留一个匹配指针的简化版本重写 Is Subsequence
-- [ ] 用 `left/right`、`!isVowel()` 重写 Reverse Vowels 简化版
-- [ ] 用显式 `write / scan` 版本重写 Move Zeroes
-- [ ] 用 `left/right/maxArea` 重写 Container With Most Water
-- [ ] 三天内闭卷重写 Highest Altitude
-- [ ] 48 小时内用 `totalSum + leftSum` 重写 Pivot Index 为 `O(n)`
+- [ ] 用 `totalSum + leftSum` 把 Pivot Index 重写为 `O(n)`；
+- [ ] 用显式 `write / scan` 重写 Move Zeroes；
+- [ ] 用 `left/right/maxArea` 重写 Container With Most Water；
+- [ ] 用 `left/right` 与 `!isVowel()` 重写 Reverse Vowels；
+- [ ] 按掌握等级逐步安排其他白名单题复刷。
 
-当天新题优先；复刷根据精力和实际进度安排。
+复刷不重复计入 75 题进度。
 
-## 学习原则
+## 下一道官方候选
 
-- 数据结构采用“题目驱动、即时补充”，不重新完整听一遍基础课；
-- Easy 独立思考 20～25 分钟，Medium 35～45 分钟；
-- 允许查 Java 语法和 API，不应一开始搜索完整答案；
-- 一道题 Accepted 后只做一次必要 Code Review，不长时间打磨基础题；
-- A 题每周抽查，B 题 3 天内复刷，C / D 题 48 小时内重做；
-- 每次反馈记录知识点、提问、语法错误、自己的代码、调试过程、复杂度和改进写法；
-- 疲劳日优先保持学习连续性，不通过强行补量透支第二天状态。
+[238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
 
-## 数据结构路线
+- 白名单编号：7
+- 难度：Medium
+- 主题：前缀乘积 + 后缀乘积
+- 完成后进度：10 / 75
 
-- [ ] 数组与字符串
-- [ ] HashMap 与 HashSet
-- [ ] 双指针与滑动窗口
-- [ ] 栈与队列
-- [ ] 二分查找
-- [ ] 链表
-- [ ] 二叉树
-- [ ] 堆与优先队列
-- [ ] 图
-- [ ] 回溯
-- [ ] 动态规划
-- [ ] 区间、贪心、位运算与 Trie
+是否在当天安排，仍需先检查新西兰当前日期、当日精力和白名单状态。
+
+## 每次生成今日任务的检查流程
+
+1. 检查新西兰当前日期；
+2. 读取本页当前进度；
+3. 读取 `LEETCODE_75_CHECKLIST.md`；
+4. 确认候选题未完成且属于白名单；
+5. 核对题号、标题和链接；
+6. 安排 1 道 Medium，或 1～2 道 Easy；
+7. 创建或更新当天唯一的 `daily/YYYY-MM-DD.md`；
+8. 明确说明开始进度和完成后的进度。
