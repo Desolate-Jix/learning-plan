@@ -25,16 +25,16 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 
 ## 2026-07-24 当前状态
 
-- **当前正式进度：** 10 / 75
-- **剩余：** 65 题
+- **当前正式进度：** 11 / 75
+- **剩余：** 64 题
 - **当前日期：** 2026-07-24（新西兰时间）
 - **截止日期：** 2026-09-22
 - **第一遍完成目标：** 2026-09-13
 - **每天学习时间：** 通常约 2 小时；疲劳日可缩短到 60～75 分钟
 - **刷题语言：** Java
 - **建议节奏：** 每周约 8～9 道白名单新题
-- 当前计入的 10 道题全部属于 LeetCode 75；
-- `Product of Array Except Self` 已核对为白名单未完成 Medium，作为今天唯一新题。
+- 当前计入的 11 道题全部属于 LeetCode 75；
+- `Product of Array Except Self` 已 Accepted 并同步勾选。
 
 ## 每日笔记索引
 
@@ -48,9 +48,9 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 | [2026-07-18](./daily/2026-07-18.md) | 暴力优化、左右双指针与贪心 | Container With Most Water Accepted |
 | [2026-07-20](./daily/2026-07-20.md) | 前缀和、最高海拔、中心下标 | 两道 Easy 均 Accepted |
 | [2026-07-22](./daily/2026-07-22.md) | 字符串公因子、字符串 API、数学 GCD 优化 | GCD of Strings Accepted |
-| [2026-07-24](./daily/2026-07-24.md) | 前缀乘积、后缀乘积、输出数组复用 | Product of Array Except Self 已安排 |
+| [2026-07-24](./daily/2026-07-24.md) | 前缀乘积、后缀乘积、状态复用 | Product of Array Except Self Accepted，24 / 24 |
 
-## 已完成的 10 道官方题
+## 已完成的 11 道官方题
 
 1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
 2. [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
@@ -62,34 +62,26 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 8. [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 9. [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
 10. [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)
+11. [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
-## 今日任务｜2026-07-24
+## Day 9 完成情况｜2026-07-24
 
 [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
 
-- **难度：** Medium
-- **白名单位置：** Array / String 第 7 题
-- **开始进度：** 10 / 75
-- **Accepted 后：** 11 / 75
-- **今日只安排这一道新题。**
-
-核心目标：
-
-```text
-answer[i] = i 左边所有数字的乘积 × i 右边所有数字的乘积
-```
-
-学习步骤：
-
-1. 手算 `[1,2,3,4]` 的左乘积 `[1,1,2,6]`；
-2. 让输出数组先保存每个位置的左乘积；
-3. 从右向左维护 `rightProduct`；
-4. 每轮先执行 `answer[i] *= rightProduct`，再执行 `rightProduct *= nums[i]`；
-5. Submit 后解释 `O(n)` 时间以及辅助空间 `O(1)`（不计题目要求的输出数组）。
-
-详细安排见：[2026-07-24 当天笔记](./daily/2026-07-24.md)
+- **结果：** Accepted，24 / 24；
+- **提交记录：** 2 ms、72.18 MB；单次排名只作参考；
+- **掌握等级：** B+；
+- **核心公式：** `answer[i] = 左边所有数的乘积 × 右边所有数的乘积`；
+- **自己的实现：**
+  - 第一遍从左到右，把左乘积写进 `answer`；
+  - 第二遍从 `k - 2` 向左，把 `nums[i + 1]` 加入右乘积；
+  - 输出数组同时承担左乘积存储，不创建额外前缀、后缀数组；
+- **自己推导出的关键理解：** 保存上一轮累计乘积，每一步只乘新增元素，避免反复计算之前的乘积；
+- **复杂度：** `O(n)` 时间；返回数组 `O(n)`；不计输出数组时辅助空间 `O(1)`；
+- **代码表现：** 无编译错误、运行错误或隐藏测试问题；
+- **详细记录：** [2026-07-24 当天笔记](./daily/2026-07-24.md)。
 
 ## 当前掌握情况
 
@@ -102,10 +94,13 @@ answer[i] = i 左边所有数字的乘积 × i 右边所有数字的乘积
 - Move Zeroes：B；
 - Container With Most Water：B+；
 - Find the Highest Altitude：B+；
-- Find Pivot Index：当前暴力版 B，待用前缀和降为 `O(n)`。
+- Find Pivot Index：当前暴力版 B，待用前缀和降为 `O(n)`；
+- Product of Array Except Self：B+；已理解前缀乘积、后缀乘积与状态复用。
 
 ## 近期复习
 
+- [ ] 三天内用更清楚的 `leftProduct / rightProduct` 命名重写 Product of Array Except Self；
+- [ ] 尝试 Product of Array Except Self 的常见右侧循环：先写答案，再执行 `rightProduct *= nums[i]`；
 - [ ] 三天内闭卷写出 GCD of Strings 的拼接一致性 + 长度最大公约数版本；
 - [ ] 用 `totalSum + leftSum` 把 Pivot Index 重写为 `O(n)`；
 - [ ] 用显式 `write / scan` 重写 Move Zeroes；
