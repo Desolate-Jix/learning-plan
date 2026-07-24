@@ -1,6 +1,6 @@
 # 面试学习进度
 
-> 本页保存总体进度、当前目标和每日笔记索引。每天的知识点、代码、错误与 Reviewer 点评只保存在当天唯一的日期文件中。
+> 本页只保存总体进度、当前任务和每日笔记索引。每天的知识点、代码、错误与 Reviewer 点评只写入当天唯一的 `daily/YYYY-MM-DD.md`。
 
 ## 仓库核心文件
 
@@ -19,29 +19,22 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 1. 新题只从 `LEETCODE_75_CHECKLIST.md` 中尚未完成的题目选择；
 2. 不在白名单中的题目不得计入 `x / 75`；
 3. 完成 75 / 75 前，默认不安排额外 LeetCode 热身题；
-4. 需要热身或补基础时，只复刷已经完成的白名单题；
-5. 每次安排任务前核对：题号、英文标题、链接、完成状态；
-6. 每次 Accepted 后同步更新：白名单、总体进度、当天笔记。
+4. 需要热身时，只复刷已经完成的白名单题；
+5. 每次安排任务前核对题号、英文标题、链接和完成状态；
+6. 每次 Accepted 后同步更新白名单、总体进度和当天笔记。
 
-## 2026-07-22 当前审计
+## 2026-07-24 当前状态
 
-- **当前正式进度：10 / 75**
-- **剩余：65 题**
-- 当前计入的 10 道题全部属于 LeetCode 75；
-- 没有题单外题目被错误计入进度；
-- `Running Sum of 1d Array`、`Two Sum II - Input Array Is Sorted` 不属于当前 LeetCode 75，不再进入主计划；
-- `Product of Array Except Self` 仍属于白名单未完成题，顺延到下一个学习日。
-
-## 当前目标
-
-- **当前日期：** 2026-07-22
+- **当前正式进度：** 10 / 75
+- **剩余：** 65 题
+- **当前日期：** 2026-07-24（新西兰时间）
 - **截止日期：** 2026-09-22
 - **第一遍完成目标：** 2026-09-13
 - **每天学习时间：** 通常约 2 小时；疲劳日可缩短到 60～75 分钟
 - **刷题语言：** Java
-- **当前进度：** 10 / 75
-- **剩余：** 65 题
 - **建议节奏：** 每周约 8～9 道白名单新题
+- 当前计入的 10 道题全部属于 LeetCode 75；
+- `Product of Array Except Self` 已核对为白名单未完成 Medium，作为今天唯一新题。
 
 ## 每日笔记索引
 
@@ -49,12 +42,13 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 |---|---|---|
 | [2026-07-13](./daily/2026-07-13.md) | Java 字符串、循环、Merge Strings Alternately | 1 道新题 Accepted |
 | [2026-07-14](./daily/2026-07-14.md) | StringBuilder 复刷、ArrayList、线性扫描、数组边界 | 2 道新题 Accepted + 1 次复刷 |
-| [2026-07-15](./daily/2026-07-15.md) | 同方向双指针、字符串边界、隐藏测试调试 | Is Subsequence Accepted；最终修复独立完成 |
-| [2026-07-16](./daily/2026-07-16.md) | 左右双指针、字符数组、`indexOf()`、交换元素 | Reverse Vowels Accepted，480 / 480 |
-| [2026-07-17](./daily/2026-07-17.md) | 快慢双指针、原地修改、稳定压缩数组 | Move Zeroes Accepted，75 / 75 |
-| [2026-07-18](./daily/2026-07-18.md) | 第一道 Medium、暴力优化、左右双指针与贪心 | Container With Most Water Accepted，65 / 65 |
+| [2026-07-15](./daily/2026-07-15.md) | 同方向双指针、字符串边界、隐藏测试调试 | Is Subsequence Accepted |
+| [2026-07-16](./daily/2026-07-16.md) | 左右双指针、字符数组、`indexOf()` | Reverse Vowels Accepted |
+| [2026-07-17](./daily/2026-07-17.md) | 快慢双指针、原地修改、稳定压缩数组 | Move Zeroes Accepted |
+| [2026-07-18](./daily/2026-07-18.md) | 暴力优化、左右双指针与贪心 | Container With Most Water Accepted |
 | [2026-07-20](./daily/2026-07-20.md) | 前缀和、最高海拔、中心下标 | 两道 Easy 均 Accepted |
-| [2026-07-22](./daily/2026-07-22.md) | 字符串公因子、字符串 API、候选验证与数学 GCD 优化 | GCD of Strings Accepted；Product 顺延 |
+| [2026-07-22](./daily/2026-07-22.md) | 字符串公因子、字符串 API、数学 GCD 优化 | GCD of Strings Accepted |
+| [2026-07-24](./daily/2026-07-24.md) | 前缀乘积、后缀乘积、输出数组复用 | Product of Array Except Self 已安排 |
 
 ## 已完成的 10 道官方题
 
@@ -71,48 +65,31 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
-## Day 8 当前情况｜2026-07-22
-
-### 任务 1｜已完成
-
-[1071. Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
-
-- **结果：** Accepted，129 / 129
-- **实际用时：** 提交页面记录约 2 小时 24 分钟
-- **掌握等级：** B
-- **自己完成的算法：** 找最长公共前缀；从长到短缩短候选；每轮回到两个原字符串检查能否被候选重复铺满
-- **已学习的标准数学优化：**
-  - 先用 `(str1 + str2).equals(str2 + str1)` 判断两个字符串是否来自同一种重复结构；
-  - 再用欧几里得算法求 `gcd(str1.length(), str2.length())`；
-  - 返回 `str1.substring(0, gcdLength)`。
-- **主要收获：**
-  - `charAt()` 返回 `char`，字符使用 `==`；
-  - 字符串内容使用 `.equals()`；
-  - `substring(0, length - 1)` 可以删除末尾字符；
-  - 同时访问两个字符串时必须受较短字符串边界保护；
-  - 空候选不能参与 `%` 运算；
-  - 最大公因子要求从长到短找，不能先返回最小重复单位；
-  - 拼接顺序一致可以判断两个字符串是否共享同一重复单位；
-  - 最长公共字符串因子的长度等于两个字符串长度的最大公约数。
-- **出现并修复的问题：**
-  - `char cannot be dereferenced`；
-  - `StringIndexOutOfBoundsException`；
-  - `ArithmeticException: / by zero`；
-  - 缺少方法右大括号；
-  - String 使用 `== ""`；
-  - 从短到长检查导致返回非最长答案。
-- **复杂度：**
-  - 自己的验证法：最坏约 `O(n²)`，额外空间约 `O(n)`；
-  - 数学快捷法：`O(n + m)` 时间，Java 字符串拼接带来约 `O(n + m)` 额外空间。
-- **详细记录：** [2026-07-22 当天笔记](./daily/2026-07-22.md)
-
-### 任务 2｜顺延
+## 今日任务｜2026-07-24
 
 [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
 
-- **状态：** 未开始；不计入进度；
-- **顺延原因：** 第一题已超过当天两小时预算；
-- **下次重点：** 左侧乘积、右侧乘积、不能使用除法、从 `O(n²)` 优化到 `O(n)`。
+- **难度：** Medium
+- **白名单位置：** Array / String 第 7 题
+- **开始进度：** 10 / 75
+- **Accepted 后：** 11 / 75
+- **今日只安排这一道新题。**
+
+核心目标：
+
+```text
+answer[i] = i 左边所有数字的乘积 × i 右边所有数字的乘积
+```
+
+学习步骤：
+
+1. 手算 `[1,2,3,4]` 的左乘积 `[1,1,2,6]`；
+2. 让输出数组先保存每个位置的左乘积；
+3. 从右向左维护 `rightProduct`；
+4. 每轮先执行 `answer[i] *= rightProduct`，再执行 `rightProduct *= nums[i]`；
+5. Submit 后解释 `O(n)` 时间以及辅助空间 `O(1)`（不计题目要求的输出数组）。
+
+详细安排见：[2026-07-24 当天笔记](./daily/2026-07-24.md)
 
 ## 当前掌握情况
 
@@ -129,7 +106,6 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 
 ## 近期复习
 
-- [ ] 三天内用 `while (!candidate.isEmpty())` 重写 GCD of Strings 的验证法；
 - [ ] 三天内闭卷写出 GCD of Strings 的拼接一致性 + 长度最大公约数版本；
 - [ ] 用 `totalSum + leftSum` 把 Pivot Index 重写为 `O(n)`；
 - [ ] 用显式 `write / scan` 重写 Move Zeroes；
@@ -145,6 +121,6 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 3. 读取 `LEETCODE_75_CHECKLIST.md`；
 4. 确认候选题未完成且属于白名单；
 5. 核对题号、标题和链接；
-6. 安排 1 道 Medium，或 1～2 道 Easy；特殊补进度日可安排 1 Easy + 1 Medium，但必须都在白名单；
+6. 安排 1 道 Medium，或 1～2 道 Easy；
 7. 创建或更新当天唯一的 `daily/YYYY-MM-DD.md`；
 8. 明确说明开始进度和完成后的进度。
