@@ -23,18 +23,18 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 5. 每次安排任务前核对题号、英文标题、链接和完成状态；
 6. 每次 Accepted 后同步更新白名单、总体进度和当天笔记。
 
-## 2026-07-24 当前状态
+## 2026-07-25 当前状态
 
-- **当前正式进度：** 11 / 75
-- **剩余：** 64 题
-- **当前日期：** 2026-07-24（新西兰时间）
+- **当前正式进度：** 12 / 75
+- **剩余：** 63 题
+- **当前日期：** 2026-07-25（新西兰时间）
 - **截止日期：** 2026-09-22
 - **第一遍完成目标：** 2026-09-13
 - **每天学习时间：** 通常约 2 小时；疲劳日可缩短到 60～75 分钟
 - **刷题语言：** Java
 - **建议节奏：** 每周约 8～9 道白名单新题
-- 当前计入的 11 道题全部属于 LeetCode 75；
-- `Product of Array Except Self` 已 Accepted 并同步勾选。
+- 当前计入的 12 道题全部属于 LeetCode 75；
+- `Maximum Average Subarray I` 已 Accepted 并同步勾选。
 
 ## 每日笔记索引
 
@@ -48,9 +48,10 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 | [2026-07-18](./daily/2026-07-18.md) | 暴力优化、左右双指针与贪心 | Container With Most Water Accepted |
 | [2026-07-20](./daily/2026-07-20.md) | 前缀和、最高海拔、中心下标 | 两道 Easy 均 Accepted |
 | [2026-07-22](./daily/2026-07-22.md) | 字符串公因子、字符串 API、数学 GCD 优化 | GCD of Strings Accepted |
-| [2026-07-24](./daily/2026-07-24.md) | 前缀乘积、后缀乘积、状态复用 | Product of Array Except Self Accepted，24 / 24 |
+| [2026-07-24](./daily/2026-07-24.md) | 前缀乘积、后缀乘积、状态复用 | Product of Array Except Self Accepted |
+| [2026-07-25](./daily/2026-07-25.md) | 固定长度滑动窗口、窗口状态更新、整数除法 | Maximum Average Subarray I Accepted，128 / 128 |
 
-## 已完成的 11 道官方题
+## 已完成的 12 道官方题
 
 1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
 2. [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
@@ -63,25 +64,26 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 9. [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/)
 10. [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)
 11. [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+12. [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
-## Day 9 完成情况｜2026-07-24
+## Day 10 完成情况｜2026-07-25
 
-[238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
+[643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
 
-- **结果：** Accepted，24 / 24；
-- **提交记录：** 2 ms、72.18 MB；单次排名只作参考；
+- **结果：** Accepted，128 / 128；
+- **提交记录：** 2 ms、69.59 MB；单次排名只作参考；
 - **掌握等级：** B+；
-- **核心公式：** `answer[i] = 左边所有数的乘积 × 右边所有数的乘积`；
+- **核心公式：** `新窗口和 = 旧窗口和 - 离开元素 + 进入元素`；
 - **自己的实现：**
-  - 第一遍从左到右，把左乘积写进 `answer`；
-  - 第二遍从 `k - 2` 向左，把 `nums[i + 1]` 加入右乘积；
-  - 输出数组同时承担左乘积存储，不创建额外前缀、后缀数组；
-- **自己推导出的关键理解：** 保存上一轮累计乘积，每一步只乘新增元素，避免反复计算之前的乘积；
-- **复杂度：** `O(n)` 时间；返回数组 `O(n)`；不计输出数组时辅助空间 `O(1)`；
-- **代码表现：** 无编译错误、运行错误或隐藏测试问题；
-- **详细记录：** [2026-07-24 当天笔记](./daily/2026-07-24.md)。
+  - 先计算第一个长度为 `k` 的窗口和；
+  - 用 `t - nums[i] + nums[i + k]` 计算下一个窗口；
+  - 比较新窗口后，把结果保存回 `t`，让下一轮继续复用当前状态；
+  - 最后使用 `(double) maxsum / k` 避免整数除法；
+- **自己发现的错误：** 最初忘记更新 `t`，会导致后续窗口一直错误地从第一个窗口推导；
+- **复杂度：** `O(n)` 时间，`O(1)` 额外空间；
+- **详细记录：** [2026-07-25 当天笔记](./daily/2026-07-25.md)。
 
 ## 当前掌握情况
 
@@ -95,12 +97,14 @@ daily/YYYY-MM-DD.md               # 每个学习日唯一笔记
 - Container With Most Water：B+；
 - Find the Highest Altitude：B+；
 - Find Pivot Index：当前暴力版 B，待用前缀和降为 `O(n)`；
-- Product of Array Except Self：B+；已理解前缀乘积、后缀乘积与状态复用。
+- Product of Array Except Self：B+；已理解前缀乘积、后缀乘积与状态复用；
+- Maximum Average Subarray I：B+；已理解固定长度窗口与状态更新。
 
 ## 近期复习
 
+- [ ] 三天内用 `windowSum / maxWindowSum` 命名闭卷重写 Maximum Average Subarray I；
+- [ ] 尝试 Maximum Average Subarray I 的常见下标写法：`i = k`，离开元素为 `nums[i - k]`；
 - [ ] 三天内用更清楚的 `leftProduct / rightProduct` 命名重写 Product of Array Except Self；
-- [ ] 尝试 Product of Array Except Self 的常见右侧循环：先写答案，再执行 `rightProduct *= nums[i]`；
 - [ ] 三天内闭卷写出 GCD of Strings 的拼接一致性 + 长度最大公约数版本；
 - [ ] 用 `totalSum + leftSum` 把 Pivot Index 重写为 `O(n)`；
 - [ ] 用显式 `write / scan` 重写 Move Zeroes；
