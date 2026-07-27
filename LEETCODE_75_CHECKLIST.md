@@ -15,9 +15,9 @@
 
 ## 当前审计结果
 
-- **已完成：13 / 75**
-- **剩余：62 / 75**
-- 当前已计入的 13 道题均属于 LeetCode 75；
+- **已完成：14 / 75**
+- **剩余：61 / 75**
+- 当前已计入的 14 道题均属于 LeetCode 75；
 - 之前讨论过但不属于本题单的题目，例如 `Running Sum of 1d Array`、`Two Sum II - Input Array Is Sorted`，不得进入主计划或计入进度。
 
 ---
@@ -55,7 +55,7 @@
 
 ## Hash Map / Set（4）
 
-- [ ] 20. [2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/) — Easy
+- [x] 20. [2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/) — Easy
 - [ ] 21. [1207. Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) — Easy
 - [ ] 22. [1657. Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/) — Medium
 - [ ] 23. [2352. Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/) — Medium
