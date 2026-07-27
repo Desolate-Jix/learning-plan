@@ -10,8 +10,8 @@
 
 ## 2026-07-27 当前状态
 
-- **当前正式进度：** 13 / 75
-- **剩余：** 62 题
+- **当前正式进度：** 14 / 75
+- **剩余：** 61 题
 - **当前日期：** 2026-07-27（周一，新西兰时间）
 - **目标截止：** 2026-09-22
 - **理想完成第一遍：** 2026-09-08
@@ -19,7 +19,7 @@
 - **刷题语言：** Java
 - **工作日学习时间：** 每天约 4 小时
 - **周六、周日：** 固定休息
-- 当前计入的 13 道题全部属于 LeetCode 75。
+- 当前计入的 14 道题全部属于 LeetCode 75。
 
 ## 今日任务进度｜2026-07-27
 
@@ -43,13 +43,25 @@
 - **复杂度：** `O(n)` 时间，`O(1)` 额外空间；
 - **掌握等级：** B+。
 
-### LeetCode B｜待完成
+### LeetCode B｜已完成
 
 [2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/)
 
-- **状态：** 尚未 Accepted，不计入进度；
-- **主题：** HashSet、自动去重、`add()`、`contains()`、嵌套 `List`；
-- 完成后今日进度将达到 **14 / 75**。
+- **结果：** Accepted，202 / 202；
+- **实际用时：** 约 24 分 51 秒；
+- **难度：** Easy；
+- **主题：** `HashSet`、自动去重、`add()`、`contains()`、增强 `for`、嵌套 `List`；
+- **自己的实现：**
+  - 两个原数组分别放入 `HashSet`；
+  - 遍历 `nums1`，把 `nums2` 的 Set 不包含的值加入结果 Set；
+  - 遍历 `nums2`，把 `nums1` 的 Set 不包含的值加入结果 Set；
+  - 用 `new ArrayList<>(set)` 将两个结果 Set 转成 List；
+  - 使用 `answer.add(list1)`、`answer.add(list2)` 构造 `List<List<Integer>>`；
+- **调试过程：**
+  - 文件结尾缺少关闭 `class Solution` 的右大括号；
+  - 最外层是 `List`，不能使用 `answer[0] = ...`，应使用 `answer.add(...)`；
+- **平均复杂度：** `O(n + m)` 时间，`O(n + m)` 额外空间；
+- **掌握等级：** B+。
 
 ### 计算机基础｜45 分钟
 
@@ -59,6 +71,8 @@
 
 使用 `Student / Course / Enrollment` 三张表画出多对多关系，并口述主键与外键的区别、规范化为什么能减少重复。
 
+**当前状态：尚未反馈。**
+
 ### Python｜60 分钟
 
 ```text
@@ -67,7 +81,9 @@
 
 使用 Java 作参照，完成 `python_basics_day1.py`，测试三个条件分支。
 
-详细步骤见：[2026-07-27 当天笔记](./daily/2026-07-27.md)。
+**当前状态：尚未反馈。**
+
+详细记录见：[2026-07-27 当天笔记](./daily/2026-07-27.md)。
 
 ## 新的固定周计划
 
@@ -173,9 +189,9 @@ Python / C# / 项目表达：60 分钟
 | [2026-07-22](./daily/2026-07-22.md) | 字符串公因子、字符串 API、数学 GCD | GCD of Strings Accepted |
 | [2026-07-24](./daily/2026-07-24.md) | 前缀乘积、后缀乘积、状态复用 | Product of Array Except Self Accepted |
 | [2026-07-25](./daily/2026-07-25.md) | 固定长度滑动窗口、整数除法 | Maximum Average Subarray I Accepted |
-| [2026-07-27](./daily/2026-07-27.md) | 滑动窗口、HashSet、数据库基础、Python 入门 | 题目 A Accepted；题目 B 待完成 |
+| [2026-07-27](./daily/2026-07-27.md) | 滑动窗口、HashSet、数据库基础、Python 入门 | 两道 LeetCode 均 Accepted；基础与 Python 待反馈 |
 
-## 已完成的 13 道官方题
+## 已完成的 14 道官方题
 
 1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
 2. [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
@@ -190,6 +206,7 @@ Python / C# / 项目表达：60 分钟
 11. [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
 12. [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
 13. [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
+14. [Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/)
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
@@ -202,11 +219,14 @@ Python / C# / 项目表达：60 分钟
 - Product of Array Except Self：B+；
 - Maximum Average Subarray I：B+；
 - Maximum Number of Vowels in a Substring of Given Length：B+；
+- Find the Difference of Two Arrays：B+；已掌握 HashSet 入门与嵌套 List；
 - 其余已完成题当前主要为 B；
 - Find Pivot Index 已 Accepted，但仍需从 `O(n²)` 优化为 `O(n)`。
 
 ## 近期复习
 
+- [ ] 用更简洁的方式重写 Find the Difference of Two Arrays：直接遍历 `n1 / n2` 并加入两个 List；
+- [ ] 复述数组、ArrayList、HashSet 的差异；
 - [ ] 用“进入下标 `i`、离开下标 `i-k`”的常见写法闭卷重写 Maximum Number of Vowels；
 - [ ] 用 `windowSum / maxWindowSum` 闭卷重写 Maximum Average Subarray I；
 - [ ] 用更清楚的 `leftProduct / rightProduct` 命名重写 Product of Array Except Self；
