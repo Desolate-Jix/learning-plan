@@ -1,6 +1,6 @@
 # LeetCode 75 官方题单白名单
 
-> **审计日期：2026-07-25**  
+> **审计日期：2026-07-27**  
 > 本文件是后续每日新题安排的唯一白名单。官方入口：[LeetCode 75 Study Plan](https://leetcode.com/studyplan/leetcode-75/)。
 
 ## 强制规则
@@ -15,9 +15,9 @@
 
 ## 当前审计结果
 
-- **已完成：12 / 75**
-- **剩余：63 / 75**
-- 当前已计入的 12 道题均属于 LeetCode 75；
+- **已完成：13 / 75**
+- **剩余：62 / 75**
+- 当前已计入的 13 道题均属于 LeetCode 75；
 - 之前讨论过但不属于本题单的题目，例如 `Running Sum of 1d Array`、`Two Sum II - Input Array Is Sorted`，不得进入主计划或计入进度。
 
 ---
@@ -44,7 +44,7 @@
 ## Sliding Window（4）
 
 - [x] 14. [643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) — Easy
-- [ ] 15. [1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) — Medium
+- [x] 15. [1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) — Medium
 - [ ] 16. [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) — Medium
 - [ ] 17. [1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) — Medium
 
