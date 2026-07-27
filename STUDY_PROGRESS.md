@@ -10,8 +10,8 @@
 
 ## 2026-07-27 当前状态
 
-- **当前正式进度：** 12 / 75
-- **剩余：** 63 题
+- **当前正式进度：** 13 / 75
+- **剩余：** 62 题
 - **当前日期：** 2026-07-27（周一，新西兰时间）
 - **目标截止：** 2026-09-22
 - **理想完成第一遍：** 2026-09-08
@@ -19,26 +19,37 @@
 - **刷题语言：** Java
 - **工作日学习时间：** 每天约 4 小时
 - **周六、周日：** 固定休息
-- 当前计入的 12 道题全部属于 LeetCode 75。
+- 当前计入的 13 道题全部属于 LeetCode 75。
 
-## 今日任务｜2026-07-27
+## 今日任务进度｜2026-07-27
 
-### LeetCode A｜Medium
+### LeetCode A｜已完成
 
 [1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
 
-- 固定长度滑动窗口；
-- 维护当前窗口元音数；
-- 新窗口：减去离开字符的贡献，加上进入字符的贡献；
-- 目标复杂度：`O(n)` 时间、`O(1)` 空间。
+- **结果：** Accepted，107 / 107；
+- **难度：** Medium；
+- **主题：** 固定长度滑动窗口；
+- **自己的实现：**
+  - 先统计第一个长度为 `k` 的窗口；
+  - 后续把 `i` 作为新窗口起点；
+  - 离开字符为 `s.charAt(i - 1)`；
+  - 进入字符为 `s.charAt(i + k - 1)`；
+  - 循环条件为 `i + k <= n`，允许最后一个窗口的右边界正好到达字符串长度；
+- **调试过程：**
+  - `contains()` 不能直接接收 `char`，改用 `indexOf(char) != -1`；
+  - 暴力版本最初使用 `<`，漏掉最后一个合法窗口，应使用 `<=`；
+  - 滑动窗口版本最初把进入下标写成 `i + k + 1`，造成越界；正确下标为 `i + k - 1`；
+- **复杂度：** `O(n)` 时间，`O(1)` 额外空间；
+- **掌握等级：** B+。
 
-### LeetCode B｜Easy
+### LeetCode B｜待完成
 
 [2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/)
 
-- `HashSet` 入门；
-- 使用 `add()`、`contains()` 和自动去重；
-- 目标复杂度：平均 `O(n + m)` 时间、`O(n + m)` 空间。
+- **状态：** 尚未 Accepted，不计入进度；
+- **主题：** HashSet、自动去重、`add()`、`contains()`、嵌套 `List`；
+- 完成后今日进度将达到 **14 / 75**。
 
 ### 计算机基础｜45 分钟
 
@@ -57,8 +68,6 @@
 使用 Java 作参照，完成 `python_basics_day1.py`，测试三个条件分支。
 
 详细步骤见：[2026-07-27 当天笔记](./daily/2026-07-27.md)。
-
-两道题都 Accepted 后进度为 **14 / 75**。若主任务接近两小时，第二题今天只完成题意、手算、骨架和卡点，下一工作日优先继续。
 
 ## 新的固定周计划
 
@@ -164,9 +173,9 @@ Python / C# / 项目表达：60 分钟
 | [2026-07-22](./daily/2026-07-22.md) | 字符串公因子、字符串 API、数学 GCD | GCD of Strings Accepted |
 | [2026-07-24](./daily/2026-07-24.md) | 前缀乘积、后缀乘积、状态复用 | Product of Array Except Self Accepted |
 | [2026-07-25](./daily/2026-07-25.md) | 固定长度滑动窗口、整数除法 | Maximum Average Subarray I Accepted |
-| [2026-07-27](./daily/2026-07-27.md) | 滑动窗口、HashSet、数据库基础、Python 入门 | 今日任务已安排 |
+| [2026-07-27](./daily/2026-07-27.md) | 滑动窗口、HashSet、数据库基础、Python 入门 | 题目 A Accepted；题目 B 待完成 |
 
-## 已完成的 12 道官方题
+## 已完成的 13 道官方题
 
 1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
 2. [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
@@ -180,6 +189,7 @@ Python / C# / 项目表达：60 分钟
 10. [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/)
 11. [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
 12. [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
+13. [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
@@ -191,11 +201,13 @@ Python / C# / 项目表达：60 分钟
 - Find the Highest Altitude：B+；
 - Product of Array Except Self：B+；
 - Maximum Average Subarray I：B+；
+- Maximum Number of Vowels in a Substring of Given Length：B+；
 - 其余已完成题当前主要为 B；
 - Find Pivot Index 已 Accepted，但仍需从 `O(n²)` 优化为 `O(n)`。
 
 ## 近期复习
 
+- [ ] 用“进入下标 `i`、离开下标 `i-k`”的常见写法闭卷重写 Maximum Number of Vowels；
 - [ ] 用 `windowSum / maxWindowSum` 闭卷重写 Maximum Average Subarray I；
 - [ ] 用更清楚的 `leftProduct / rightProduct` 命名重写 Product of Array Except Self；
 - [ ] 闭卷写出 GCD of Strings 的拼接一致性 + 长度最大公约数版本；
