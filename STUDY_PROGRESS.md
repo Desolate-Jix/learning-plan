@@ -21,6 +21,45 @@
 - **周六、周日：** 固定休息
 - 当前计入的 12 道题全部属于 LeetCode 75。
 
+## 今日任务｜2026-07-27
+
+### LeetCode A｜Medium
+
+[1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
+
+- 固定长度滑动窗口；
+- 维护当前窗口元音数；
+- 新窗口：减去离开字符的贡献，加上进入字符的贡献；
+- 目标复杂度：`O(n)` 时间、`O(1)` 空间。
+
+### LeetCode B｜Easy
+
+[2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/)
+
+- `HashSet` 入门；
+- 使用 `add()`、`contains()` 和自动去重；
+- 目标复杂度：平均 `O(n + m)` 时间、`O(n + m)` 空间。
+
+### 计算机基础｜45 分钟
+
+```text
+关系模型、主键、外键、ER、1NF / 2NF / 3NF
+```
+
+使用 `Student / Course / Enrollment` 三张表画出多对多关系，并口述主键与外键的区别、规范化为什么能减少重复。
+
+### Python｜60 分钟
+
+```text
+变量、int / float / str / bool、True / False、if / elif / else
+```
+
+使用 Java 作参照，完成 `python_basics_day1.py`，测试三个条件分支。
+
+详细步骤见：[2026-07-27 当天笔记](./daily/2026-07-27.md)。
+
+两道题都 Accepted 后进度为 **14 / 75**。若主任务接近两小时，第二题今天只完成题意、手算、骨架和卡点，下一工作日优先继续。
+
 ## 新的固定周计划
 
 ```text
@@ -125,6 +164,7 @@ Python / C# / 项目表达：60 分钟
 | [2026-07-22](./daily/2026-07-22.md) | 字符串公因子、字符串 API、数学 GCD | GCD of Strings Accepted |
 | [2026-07-24](./daily/2026-07-24.md) | 前缀乘积、后缀乘积、状态复用 | Product of Array Except Self Accepted |
 | [2026-07-25](./daily/2026-07-25.md) | 固定长度滑动窗口、整数除法 | Maximum Average Subarray I Accepted |
+| [2026-07-27](./daily/2026-07-27.md) | 滑动窗口、HashSet、数据库基础、Python 入门 | 今日任务已安排 |
 
 ## 已完成的 12 道官方题
 
