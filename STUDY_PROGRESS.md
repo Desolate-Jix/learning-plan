@@ -8,11 +8,11 @@
 - [工作日算法 + 周六基础学习计划](./WEEKDAY_4H_STUDY_PLAN.md)
 - [截至 2026-09-22 的路线图](./ROADMAP_TO_2026-09-22.md)
 
-## 2026-07-27 当前状态
+## 2026-07-28 当前状态
 
 - **当前正式进度：** 14 / 75
 - **剩余：** 61 题
-- **当前日期：** 2026-07-27（周一，新西兰时间）
+- **当前日期：** 2026-07-28（周二，新西兰时间）
 - **目标截止：** 2026-09-22
 - **理想完成第一遍：** 2026-09-08
 - **缓冲完成线：** 2026-09-11
@@ -68,41 +68,33 @@ C# 对照 Java：45 分钟
 语言：变量与类型 → 条件 → 循环与函数 → 集合 → 类与对象 → 异常与文件 → async / await → FastAPI
 ```
 
-## 今日完成情况｜2026-07-27
+## 今日任务｜2026-07-28
 
-### LeetCode A｜已完成
+### LeetCode A｜Medium
 
-[1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
+[1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)
 
-- **结果：** Accepted，107 / 107；
-- **主题：** 固定长度滑动窗口；
-- **复杂度：** `O(n)` 时间，`O(1)` 额外空间；
-- **掌握等级：** B+；
-- **关键修复：** `contains(char)` 类型问题、最后窗口的 `<=` 边界、进入下标 `i + k - 1`。
+- **主题：** 可变长度滑动窗口；
+- **核心状态：** `left`、`right`、`zeroCount`；
+- **合法条件：** 窗口中 `0` 的数量不超过 `k`；
+- **收缩规则：** `zeroCount > k` 时移动左边界；
+- **目标复杂度：** `O(n)` 时间、`O(1)` 额外空间；
+- **当前状态：** 等待开始与反馈。
 
-### LeetCode B｜已完成
+### LeetCode B｜Easy
 
-[2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/)
+[1207. Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)
 
-- **结果：** Accepted，202 / 202；
-- **实际用时：** 约 24 分 51 秒；
-- **主题：** `HashSet`、自动去重、`contains()`、增强 `for`、嵌套 `List`；
-- **平均复杂度：** `O(n + m)` 时间，`O(n + m)` 额外空间；
-- **掌握等级：** B+；
-- **关键修复：** 补齐 class 的右大括号；`List` 使用 `add()`，不能使用数组下标赋值。
+- **主题：** `HashMap` 统计出现次数 + `HashSet` 检查次数重复；
+- **Java：** `put()`、`getOrDefault()`、`values()`、`Set.add()` 的布尔返回值；
+- **目标平均复杂度：** `O(n)` 时间、`O(n)` 空间；
+- **当前状态：** 等待开始与反馈。
 
-### 原定数据库与 Python
+### 可选项目表达｜20～30 分钟
 
-今天原定的：
+完成一个 30 秒 GUI Agent 项目概述：项目是什么、解决什么问题、Agent / Operation / Gate / Trace 的核心边界。状态差时可以跳过，不形成欠账。
 
-```text
-数据库：关系模型、主外键、ER、1NF / 2NF / 3NF
-Python：变量、类型、字符串、bool、if / elif / else
-```
-
-因精力安排调整而取消，**不算欠课，也不在明天补**。这些内容移到第一个周六学习块。
-
-详细记录见：[2026-07-27 当天笔记](./daily/2026-07-27.md)。
+两道题都 Accepted 后，正式进度将达到 **16 / 75**。详细步骤见：[2026-07-28 当天笔记](./daily/2026-07-28.md)。
 
 ## LeetCode 进度线
 
@@ -117,26 +109,6 @@ Python：变量、类型、字符串、bool、if / elif / else
 | 8月24日－8月28日 | 62 / 75 | 57 / 75 |
 | 8月31日－9月4日 | 72 / 75 | 66 / 75 |
 | 9月7日－9月11日 | 75 / 75 | 75 / 75 |
-
-## 下一工作日候选｜2026-07-28
-
-### 主任务
-
-[1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)
-
-- 可变长度滑动窗口；
-- 窗口中允许最多 `k` 个 0；
-- 目标复杂度 `O(n)`。
-
-### 较轻任务
-
-[1207. Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)
-
-- `HashMap` 统计出现次数；
-- `HashSet` 检查次数是否重复；
-- 目标平均复杂度 `O(n)`。
-
-实际任务仍以明天开始时的白名单和顺延状态为准。
 
 ## 已完成的 14 道官方题
 
@@ -198,6 +170,7 @@ Python：变量、类型、字符串、bool、if / elif / else
 | [2026-07-24](./daily/2026-07-24.md) | 前后缀乘积、状态复用 | Product of Array Except Self Accepted |
 | [2026-07-25](./daily/2026-07-25.md) | 固定长度滑动窗口、整数除法 | Maximum Average Subarray I Accepted |
 | [2026-07-27](./daily/2026-07-27.md) | 滑动窗口、HashSet、周计划调整 | 两道 LeetCode 均 Accepted；基础学习移到周六 |
+| [2026-07-28](./daily/2026-07-28.md) | 可变滑动窗口、HashMap 计数 | 今日任务已安排 |
 
 ## 每次生成“今日任务”的检查流程
 
