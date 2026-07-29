@@ -10,14 +10,14 @@
 
 ## 2026-07-29 当前状态
 
-- **当前正式进度：** 14 / 75
-- **剩余：** 61 题
+- **当前正式进度：** 15 / 75
+- **剩余：** 60 题
 - **当前日期：** 2026-07-29（周三，新西兰时间）
 - **目标截止：** 2026-09-22
 - **理想完成第一遍：** 2026-09-08
 - **缓冲完成线：** 2026-09-11
 - **刷题语言：** Java
-- 当前计入的 14 道题全部属于 LeetCode 75。
+- 当前计入的 15 道题全部属于 LeetCode 75。
 
 ## 固定周计划
 
@@ -46,43 +46,47 @@
 6. 超时后依次使用：小提示 → 思路提示 → 完整题解；
 7. 周末不补题，不增加到三题。
 
-## 今日任务｜2026-07-29
+## 今日完成情况｜2026-07-29
 
-### 任务 A｜1004. Max Consecutive Ones III
+### 1004. Max Consecutive Ones III｜已完成
 
 [打开题目](https://leetcode.com/problems/max-consecutive-ones-iii/)
 
-- **状态：** 昨日未完成，今日第一优先级；
-- **目标：** 从空白编辑器重写两个 `O(n)` 版本；
-- **版本 1：** 标准合法窗口，`zero > k` 时持续移动 `left`；
-- **版本 2：** 自己的“最大长度只增不减”版本，超限时让 `left` 同步前进一格；
-- 两个版本都 Submit Accepted 后，1004 才计入进度；
-- 完成后正式进度为 **15 / 75**。
+- **结果：** Accepted，63 / 63；
+- **难度：** Medium；
+- **实际学习时长：** 今天约 2 小时；
+- **提交版本：** 自己推导的“最大窗口长度只增不减”写法；
+- **核心思想：**
+  - 右边界每轮向右移动；
+  - 新元素是 `0` 时更新 `zero`；
+  - 超过 `k` 后左边界同步右移；
+  - 超限平移时窗口长度不增长，因此不会错过更大答案；
+- **复杂度：** `O(n)` 时间、`O(1)` 额外空间；
+- **掌握等级：** B+。
 
-### 任务 B｜1207. Unique Number of Occurrences
+今天还理解了标准可变滑动窗口：
+
+```text
+右边元素进入
+→ zero > k 时持续移出左边元素
+→ 窗口恢复合法
+→ 用 right - left + 1 更新最大长度
+```
+
+标准版今天不再强制提交，改为下一次闭卷复刷，不重复计入进度。
+
+### 1207. Unique Number of Occurrences｜顺延
 
 [打开题目](https://leetcode.com/problems/unique-number-of-occurrences/)
 
-- **状态：** 昨日未开始，继续顺延为第二任务；
-- **主题：** `HashMap` 计数 + `HashSet` 检查次数重复；
-- **Java：** `put()`、`getOrDefault()`、`values()`、`Set.add()` 的返回值；
-- **目标平均复杂度：** `O(n)` 时间、`O(n)` 空间；
-- 两题都 Accepted 后，正式进度为 **16 / 75**。
+- **状态：** 今日未开始；
+- **原因：** 1004 的推导、调试和标准写法理解已学习约两小时；
+- **处理：** 顺延到下一工作日优先安排；
+- 不算今日失败，也不追加第三题。
 
-详细任务见：[2026-07-29 当天笔记](./daily/2026-07-29.md)。
+详细记录见：[2026-07-29 当天笔记](./daily/2026-07-29.md)。
 
-## 今日执行顺序
-
-```text
-1. 1004 标准版闭卷重写并提交
-2. 1004 自己的固定长度平移版闭卷重写并提交
-3. 对比两个版本的不变量
-4. 精力允许时完成 1207
-```
-
-如果 1004 两个版本已经接近两小时，1207 今天只做题意、手算和骨架，不为追题量牺牲理解。
-
-## 已完成的 14 道官方题
+## 已完成的 15 道官方题
 
 1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
 2. [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
@@ -98,13 +102,14 @@
 12. [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)
 13. [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
 14. [Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/)
+15. [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
 ## 近期复习
 
 - [ ] 1004 标准合法窗口版闭卷重写；
-- [ ] 1004 固定长度平移版闭卷重写并解释不变量；
+- [ ] 1004 自己的版本用更少分支重写，并解释“长度只增不减”的不变量；
 - [ ] 用“进入下标 `i`、离开下标 `i-k`”闭卷重写 Maximum Number of Vowels；
 - [ ] 简化 Find the Difference of Two Arrays，直接遍历两个去重后的 Set；
 - [ ] 用 `windowSum / maxWindowSum` 闭卷重写 Maximum Average Subarray I；
@@ -128,7 +133,7 @@
 | [2026-07-25](./daily/2026-07-25.md) | 固定长度滑动窗口、整数除法 | Maximum Average Subarray I Accepted |
 | [2026-07-27](./daily/2026-07-27.md) | 滑动窗口、HashSet、周计划调整 | 两道 LeetCode 均 Accepted；基础学习移到周六 |
 | [2026-07-28](./daily/2026-07-28.md) | 可变滑动窗口尝试与实现复盘 | 1004 进行中；1207 顺延 |
-| [2026-07-29](./daily/2026-07-29.md) | 1004 两版重写、1207 | 今日任务已安排 |
+| [2026-07-29](./daily/2026-07-29.md) | 1004 Accepted、标准窗口理解 | 1004 Accepted；1207 顺延 |
 
 ## 每次生成“今日任务”的检查流程
 
