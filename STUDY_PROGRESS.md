@@ -8,11 +8,11 @@
 - [工作日算法 + 周六基础学习计划](./WEEKDAY_4H_STUDY_PLAN.md)
 - [截至 2026-09-22 的路线图](./ROADMAP_TO_2026-09-22.md)
 
-## 2026-07-28 当前状态
+## 2026-07-29 当前状态
 
 - **当前正式进度：** 14 / 75
 - **剩余：** 61 题
-- **当前日期：** 2026-07-28（周二，新西兰时间）
+- **当前日期：** 2026-07-29（周三，新西兰时间）
 - **目标截止：** 2026-09-22
 - **理想完成第一遍：** 2026-09-08
 - **缓冲完成线：** 2026-09-11
@@ -31,84 +31,56 @@
 周日：完整休息
 ```
 
-调整说明：
-
-- 工作日不再强制学习数据库、Python 或 C#；
+- 工作日不强制学习数据库、Python 或 C#；
 - 两道算法题完成后，精力不足可以直接结束；
-- 数据库与其他语言统一放到周六；
-- 周二、周四的项目表达可跳过，不形成欠账；
-- 周日不补题、不补课；
-- 求职扫描、简历和投递由本人另行安排。
+- 周二、周四的表达任务可跳过，不形成欠账；
+- 周末不补工作日 LeetCode 欠题。
 
 ## 工作日两道题规则
 
-1. 默认安排“一道较难 + 一道较轻”；
-2. 如果第一题接近两小时，第二题只做题意、手算、模式、骨架和卡点；
-3. 第二题下一工作日优先继续，未 Accepted 不计入进度；
-4. Easy 独立思考 20～25 分钟，Medium 35～45 分钟；
-5. 超时后依次使用：小提示 → 思路提示 → 完整题解；
-6. 每周计划容量 10 道，最低有效目标 9 道 Accepted；
+1. 优先处理上一工作日未完成题；
+2. 默认安排“一道较难 + 一道较轻”；
+3. 第一题接近两小时，第二题只做题意、手算、模式、骨架和卡点；
+4. 未 Accepted 不计入进度；
+5. Easy 独立思考 20～25 分钟，Medium 35～45 分钟；
+6. 超时后依次使用：小提示 → 思路提示 → 完整题解；
 7. 周末不补题，不增加到三题。
 
-## 周六基础学习块
+## 今日任务｜2026-07-29
 
-```text
-数据库 / 计算机基础：60 分钟
-Python 对照 Java：60 分钟
-C# 对照 Java：45 分钟
-整理笔记与口述：15 分钟
-```
+### 任务 A｜1004. Max Consecutive Ones III
 
-精力不足时优先保留数据库和 Python，C# 可以隔周学习；周日保持休息。
+[打开题目](https://leetcode.com/problems/max-consecutive-ones-iii/)
 
-学习路线：
+- **状态：** 昨日未完成，今日第一优先级；
+- **目标：** 从空白编辑器重写两个 `O(n)` 版本；
+- **版本 1：** 标准合法窗口，`zero > k` 时持续移动 `left`；
+- **版本 2：** 自己的“最大长度只增不减”版本，超限时让 `left` 同步前进一格；
+- 两个版本都 Submit Accepted 后，1004 才计入进度；
+- 完成后正式进度为 **15 / 75**。
 
-```text
-计算机基础：数据库 → 并发 → 计算机网络 → 操作系统
-语言：变量与类型 → 条件 → 循环与函数 → 集合 → 类与对象 → 异常与文件 → async / await → FastAPI
-```
+### 任务 B｜1207. Unique Number of Occurrences
 
-## 今日任务｜2026-07-28
+[打开题目](https://leetcode.com/problems/unique-number-of-occurrences/)
 
-### LeetCode A｜Medium
-
-[1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)
-
-- **主题：** 可变长度滑动窗口；
-- **核心状态：** `left`、`right`、`zeroCount`；
-- **合法条件：** 窗口中 `0` 的数量不超过 `k`；
-- **收缩规则：** `zeroCount > k` 时移动左边界；
-- **目标复杂度：** `O(n)` 时间、`O(1)` 额外空间；
-- **当前状态：** 等待开始与反馈。
-
-### LeetCode B｜Easy
-
-[1207. Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)
-
-- **主题：** `HashMap` 统计出现次数 + `HashSet` 检查次数重复；
-- **Java：** `put()`、`getOrDefault()`、`values()`、`Set.add()` 的布尔返回值；
+- **状态：** 昨日未开始，继续顺延为第二任务；
+- **主题：** `HashMap` 计数 + `HashSet` 检查次数重复；
+- **Java：** `put()`、`getOrDefault()`、`values()`、`Set.add()` 的返回值；
 - **目标平均复杂度：** `O(n)` 时间、`O(n)` 空间；
-- **当前状态：** 等待开始与反馈。
+- 两题都 Accepted 后，正式进度为 **16 / 75**。
 
-### 可选项目表达｜20～30 分钟
+详细任务见：[2026-07-29 当天笔记](./daily/2026-07-29.md)。
 
-完成一个 30 秒 GUI Agent 项目概述：项目是什么、解决什么问题、Agent / Operation / Gate / Trace 的核心边界。状态差时可以跳过，不形成欠账。
+## 今日执行顺序
 
-两道题都 Accepted 后，正式进度将达到 **16 / 75**。详细步骤见：[2026-07-28 当天笔记](./daily/2026-07-28.md)。
+```text
+1. 1004 标准版闭卷重写并提交
+2. 1004 自己的固定长度平移版闭卷重写并提交
+3. 对比两个版本的不变量
+4. 精力允许时完成 1207
+```
 
-## LeetCode 进度线
-
-当前还剩 61 题。从 2026-07-28 到 2026-09-11 还有 34 个工作日，共 68 个题位，保留 7 个题位缓冲。
-
-| 工作周 | 理想累计 | 最低累计 |
-|---|---:|---:|
-| 7月27日－7月31日 | 22 / 75 | 21 / 75 |
-| 8月3日－8月7日 | 32 / 75 | 30 / 75 |
-| 8月10日－8月14日 | 42 / 75 | 39 / 75 |
-| 8月17日－8月21日 | 52 / 75 | 48 / 75 |
-| 8月24日－8月28日 | 62 / 75 | 57 / 75 |
-| 8月31日－9月4日 | 72 / 75 | 66 / 75 |
-| 9月7日－9月11日 | 75 / 75 | 75 / 75 |
+如果 1004 两个版本已经接近两小时，1207 今天只做题意、手算和骨架，不为追题量牺牲理解。
 
 ## 已完成的 14 道官方题
 
@@ -129,29 +101,14 @@ C# 对照 Java：45 分钟
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
-## 当前掌握情况
-
-- Is Subsequence：A；
-- Reverse Vowels：算法独立性 A-，代码简洁度 B；
-- Container With Most Water：B+；
-- Find the Highest Altitude：B+；
-- Product of Array Except Self：B+；
-- Maximum Average Subarray I：B+；
-- Maximum Number of Vowels：B+；
-- Find the Difference of Two Arrays：B+；
-- 其余已完成题当前主要为 B；
-- Find Pivot Index 已 Accepted，但仍需从 `O(n²)` 优化为 `O(n)`。
-
 ## 近期复习
 
+- [ ] 1004 标准合法窗口版闭卷重写；
+- [ ] 1004 固定长度平移版闭卷重写并解释不变量；
 - [ ] 用“进入下标 `i`、离开下标 `i-k`”闭卷重写 Maximum Number of Vowels；
 - [ ] 简化 Find the Difference of Two Arrays，直接遍历两个去重后的 Set；
 - [ ] 用 `windowSum / maxWindowSum` 闭卷重写 Maximum Average Subarray I；
-- [ ] 用 `leftProduct / rightProduct` 重写 Product of Array Except Self；
-- [ ] 闭卷写出 GCD of Strings 的拼接一致性 + 长度 GCD 版本；
-- [ ] 用 `totalSum + leftSum` 把 Pivot Index 重写为 `O(n)`；
-- [ ] 用显式 `write / scan` 重写 Move Zeroes；
-- [ ] 用 `left/right/maxArea` 重写 Container With Most Water。
+- [ ] 用 `totalSum + leftSum` 把 Pivot Index 重写为 `O(n)`。
 
 复刷不重复计入 75 题进度。
 
@@ -170,7 +127,8 @@ C# 对照 Java：45 分钟
 | [2026-07-24](./daily/2026-07-24.md) | 前后缀乘积、状态复用 | Product of Array Except Self Accepted |
 | [2026-07-25](./daily/2026-07-25.md) | 固定长度滑动窗口、整数除法 | Maximum Average Subarray I Accepted |
 | [2026-07-27](./daily/2026-07-27.md) | 滑动窗口、HashSet、周计划调整 | 两道 LeetCode 均 Accepted；基础学习移到周六 |
-| [2026-07-28](./daily/2026-07-28.md) | 可变滑动窗口、HashMap 计数 | 今日任务已安排 |
+| [2026-07-28](./daily/2026-07-28.md) | 可变滑动窗口尝试与实现复盘 | 1004 进行中；1207 顺延 |
+| [2026-07-29](./daily/2026-07-29.md) | 1004 两版重写、1207 | 今日任务已安排 |
 
 ## 每次生成“今日任务”的检查流程
 
@@ -180,9 +138,8 @@ C# 对照 Java：45 分钟
 2. 读取本页和 `LEETCODE_75_CHECKLIST.md`；
 3. 先处理上一工作日顺延题；
 4. 选择一难一轻两道白名单未完成题；
-5. 周二、周四可附轻量项目表达任务；
-6. 创建或更新当天唯一笔记；
-7. Accepted 后同步白名单、总体进度和当天笔记。
+5. 创建或更新当天唯一笔记；
+6. Accepted 后同步白名单、总体进度和当天笔记。
 
 ### 周六
 
