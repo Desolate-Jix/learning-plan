@@ -15,9 +15,9 @@
 
 ## 当前审计结果
 
-- **已完成：16 / 75**
-- **剩余：59 / 75**
-- 当前已计入的 16 道题均属于 LeetCode 75；
+- **已完成：17 / 75**
+- **剩余：58 / 75**
+- 当前已计入的 17 道题均属于 LeetCode 75；
 - 之前讨论过但不属于本题单的题目，例如 `Running Sum of 1d Array`、`Two Sum II - Input Array Is Sorted`，不得进入主计划或计入进度。
 
 ---
@@ -46,7 +46,7 @@
 - [x] 14. [643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) — Easy
 - [x] 15. [1456. Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) — Medium
 - [x] 16. [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) — Medium
-- [ ] 17. [1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) — Medium
+- [x] 17. [1493. Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) — Medium
 
 ## Prefix Sum（2）
 
