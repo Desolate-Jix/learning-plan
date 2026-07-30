@@ -10,14 +10,14 @@
 
 ## 2026-07-30 当前状态
 
-- **当前正式进度：** 16 / 75
-- **剩余：** 59 题
+- **当前正式进度：** 17 / 75
+- **剩余：** 58 题
 - **当前日期：** 2026-07-30（周四，新西兰时间）
 - **目标截止：** 2026-09-22
 - **理想完成第一遍：** 2026-09-08
 - **缓冲完成线：** 2026-09-11
 - **刷题语言：** Java
-- 当前计入的 16 道题全部属于 LeetCode 75。
+- 当前计入的 17 道题全部属于 LeetCode 75。
 
 ## 固定周计划
 
@@ -60,21 +60,24 @@
 - **评分原因：** 第一次使用 `HashMap`，实现过程中查看了 `put()`、`getOrDefault()`、`values()` 和 `Set.add()` 返回值的提示；
 - **关键语法修复：** `Integer` 拼写、`getOrDefault(key, 0)` 的默认值参数、`values()` 复数方法名。
 
-后续需要闭卷重写一次，能够自行选择 `HashMap + HashSet` 并写出 API 后，再提升掌握等级。
+后续闭卷重写一次，能够自行选择 `HashMap + HashSet` 并写出 API 后，再提升掌握等级。
 
-### 1493. Longest Subarray of 1's After Deleting One Element｜待完成
+### 1493. Longest Subarray of 1's After Deleting One Element｜已完成
 
 [打开题目](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)
 
+- **结果：** Accepted，86 / 86；
 - **难度：** Medium；
+- **提交记录：** 2 ms、65.40 MB；单次排名仅作参考；
 - **主题：** 可变长度滑动窗口；
-- **与 1004 的联系：** 窗口最多允许一个 `0`；
-- **关键差异：** 必须删除一个元素，所以候选长度为 `right - left`；
-- **目标复杂度：** `O(n)` 时间、`O(1)` 额外空间。
+- **核心：** 窗口最多允许一个 `0`，且必须删除一个元素，因此候选长度为 `j - i`；
+- **调试：** 最初误写为 `i - j`，修正相减方向后通过；
+- **复杂度：** `O(n)` 时间、`O(1)` 额外空间；
+- **掌握等级：** B+。
 
 详细记录见：[2026-07-30 当天笔记](./daily/2026-07-30.md)。
 
-## 已完成的 16 道官方题
+## 已完成的 17 道官方题
 
 1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
 2. [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
@@ -92,12 +95,14 @@
 14. [Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/)
 15. [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)
 16. [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)
+17. [Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
 ## 近期复习
 
 - [ ] 隔一天闭卷重写 1207，不看 `HashMap` API 提示；
+- [ ] 闭卷重写 1493，避免把 `j - i` 写反；
 - [ ] 1004 标准合法窗口版闭卷重写；
 - [ ] 1004 自己的版本用更少分支重写；
 - [ ] 用“进入下标 `i`、离开下标 `i-k`”重写 Maximum Number of Vowels；
@@ -123,7 +128,7 @@
 | [2026-07-27](./daily/2026-07-27.md) | 滑动窗口、HashSet、周计划调整 | 两道 LeetCode 均 Accepted；基础学习移到周六 |
 | [2026-07-28](./daily/2026-07-28.md) | 可变滑动窗口尝试与实现复盘 | 1004 进行中；1207 顺延 |
 | [2026-07-29](./daily/2026-07-29.md) | 1004 Accepted、标准窗口理解 | 1004 Accepted；1207 顺延 |
-| [2026-07-30](./daily/2026-07-30.md) | HashMap 计数、删除一个元素的滑动窗口 | 1207 Accepted；1493 待完成 |
+| [2026-07-30](./daily/2026-07-30.md) | HashMap 计数、删除一个元素的滑动窗口 | 两道题均 Accepted，进度 17 / 75 |
 
 ## 每次生成“今日任务”的检查流程
 
