@@ -1,6 +1,6 @@
 # LeetCode 75 官方题单白名单
 
-> **审计日期：2026-07-30**  
+> **审计日期：2026-07-31**  
 > 本文件是后续每日新题安排的唯一白名单。官方入口：[LeetCode 75 Study Plan](https://leetcode.com/studyplan/leetcode-75/)。
 
 ## 强制规则
@@ -15,9 +15,9 @@
 
 ## 当前审计结果
 
-- **已完成：17 / 75**
-- **剩余：58 / 75**
-- 当前已计入的 17 道题均属于 LeetCode 75；
+- **已完成：18 / 75**
+- **剩余：57 / 75**
+- 当前已计入的 18 道题均属于 LeetCode 75；
 - 之前讨论过但不属于本题单的题目，例如 `Running Sum of 1d Array`、`Two Sum II - Input Array Is Sorted`，不得进入主计划或计入进度。
 
 ---
@@ -31,7 +31,7 @@
 - [x] 5. [345. Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) — Easy
 - [ ] 6. [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) — Medium
 - [x] 7. [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) — Medium
-- [ ] 8. [334. Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/) — Medium
+- [x] 8. [334. Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/) — Medium
 - [ ] 9. [443. String Compression](https://leetcode.com/problems/string-compression/) — Medium
 
 ## Two Pointers（4）
@@ -139,7 +139,7 @@
 
 - [ ] 63. [62. Unique Paths](https://leetcode.com/problems/unique-paths/) — Medium
 - [ ] 64. [1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) — Medium
-- [ ] 65. [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) — Medium
+- [ ] 65. [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-sell-stock-with-transaction-fee/) — Medium
 - [ ] 66. [72. Edit Distance](https://leetcode.com/problems/edit-distance/) — Medium
 
 ## Bit Manipulation（3）
