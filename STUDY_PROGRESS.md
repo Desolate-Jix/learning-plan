@@ -8,16 +8,16 @@
 - [工作日算法 + 周六基础学习计划](./WEEKDAY_4H_STUDY_PLAN.md)
 - [截至 2026-09-22 的路线图](./ROADMAP_TO_2026-09-22.md)
 
-## 2026-07-30 当前状态
+## 2026-07-31 当前状态
 
-- **当前正式进度：** 17 / 75
-- **剩余：** 58 题
-- **当前日期：** 2026-07-30（周四，新西兰时间）
+- **当前正式进度：** 18 / 75
+- **剩余：** 57 题
+- **当前日期：** 2026-07-31（周五，新西兰时间）
 - **目标截止：** 2026-09-22
 - **理想完成第一遍：** 2026-09-08
 - **缓冲完成线：** 2026-09-11
 - **刷题语言：** Java
-- 当前计入的 17 道题全部属于 LeetCode 75。
+- 当前计入的 18 道题全部属于 LeetCode 75。
 
 ## 固定周计划
 
@@ -46,38 +46,32 @@
 6. 超时后依次使用：小提示 → 思路提示 → 完整题解；
 7. 周末不补题，不增加到三题。
 
-## 今日完成情况｜2026-07-30
+## 今日完成情况｜2026-07-31
 
-### 1207. Unique Number of Occurrences｜已完成
+### 334. Increasing Triplet Subsequence｜已完成
 
-[打开题目](https://leetcode.com/problems/unique-number-of-occurrences/)
-
-- **结果：** Accepted，73 / 73；
-- **难度：** Easy；
-- **主题：** `HashMap` 统计次数 + `HashSet` 检查次数重复；
-- **平均复杂度：** `O(n)` 时间、`O(n)` 空间；
-- **掌握等级：** B；
-- **评分原因：** 第一次使用 `HashMap`，实现过程中查看了 `put()`、`getOrDefault()`、`values()` 和 `Set.add()` 返回值的提示；
-- **关键语法修复：** `Integer` 拼写、`getOrDefault(key, 0)` 的默认值参数、`values()` 复数方法名。
-
-后续闭卷重写一次，能够自行选择 `HashMap + HashSet` 并写出 API 后，再提升掌握等级。
-
-### 1493. Longest Subarray of 1's After Deleting One Element｜已完成
-
-[打开题目](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)
+[打开题目](https://leetcode.com/problems/increasing-triplet-subsequence/)
 
 - **结果：** Accepted，86 / 86；
 - **难度：** Medium；
-- **提交记录：** 2 ms、65.40 MB；单次排名仅作参考；
-- **主题：** 可变长度滑动窗口；
-- **核心：** 窗口最多允许一个 `0`，且必须删除一个元素，因此候选长度为 `j - i`；
-- **调试：** 最初误写为 `i - j`，修正相减方向后通过；
+- **提交记录：** 2 ms、122.78 MB；单次排名仅作参考；
+- **主题：** 贪心、状态压缩；
 - **复杂度：** `O(n)` 时间、`O(1)` 额外空间；
-- **掌握等级：** B+。
+- **掌握等级：** B；
+- **核心：** `first` 为未来保存最小起点，`second` 代表历史上已经形成过合法递增二元组；当前值大于 `second` 时返回 true；
+- **复盘：** `[1,2,0,3]` 中的 `0` 会更新 `first`，但不会使此前的 `1 < 2` 失效。
 
-详细记录见：[2026-07-30 当天笔记](./daily/2026-07-30.md)。
+### 1137. N-th Tribonacci Number｜待完成
 
-## 已完成的 17 道官方题
+[打开题目](https://leetcode.com/problems/n-th-tribonacci-number/)
+
+- **难度：** Easy；
+- **主题：** 一维动态规划 / 三变量滚动状态；
+- **目标复杂度：** `O(n)` 时间、`O(1)` 额外空间。
+
+详细记录见：[2026-07-31 当天笔记](./daily/2026-07-31.md)。
+
+## 已完成的 18 道官方题
 
 1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
 2. [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
@@ -96,11 +90,13 @@
 15. [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)
 16. [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)
 17. [Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)
+18. [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
 ## 近期复习
 
+- [ ] 闭卷重写 334，并解释 `second` 不一定和当前 `first` 配对；
 - [ ] 隔一天闭卷重写 1207，不看 `HashMap` API 提示；
 - [ ] 闭卷重写 1493，避免把 `j - i` 写反；
 - [ ] 1004 标准合法窗口版闭卷重写；
@@ -129,6 +125,7 @@
 | [2026-07-28](./daily/2026-07-28.md) | 可变滑动窗口尝试与实现复盘 | 1004 进行中；1207 顺延 |
 | [2026-07-29](./daily/2026-07-29.md) | 1004 Accepted、标准窗口理解 | 1004 Accepted；1207 顺延 |
 | [2026-07-30](./daily/2026-07-30.md) | HashMap 计数、删除一个元素的滑动窗口 | 两道题均 Accepted，进度 17 / 75 |
+| [2026-07-31](./daily/2026-07-31.md) | 贪心递增三元组、Tribonacci | 334 Accepted；1137 待完成 |
 
 ## 每次生成“今日任务”的检查流程
 
