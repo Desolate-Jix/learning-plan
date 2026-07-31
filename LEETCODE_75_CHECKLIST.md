@@ -15,9 +15,9 @@
 
 ## 当前审计结果
 
-- **已完成：18 / 75**
-- **剩余：57 / 75**
-- 当前已计入的 18 道题均属于 LeetCode 75；
+- **已完成：19 / 75**
+- **剩余：56 / 75**
+- 当前已计入的 19 道题均属于 LeetCode 75；
 - 之前讨论过但不属于本题单的题目，例如 `Running Sum of 1d Array`、`Two Sum II - Input Array Is Sorted`，不得进入主计划或计入进度。
 
 ---
@@ -130,7 +130,7 @@
 
 ## DP - 1D（4）
 
-- [ ] 59. [1137. N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) — Easy
+- [x] 59. [1137. N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/) — Easy
 - [ ] 60. [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/) — Easy
 - [ ] 61. [198. House Robber](https://leetcode.com/problems/house-robber/) — Medium
 - [ ] 62. [790. Domino and Tromino Tiling](https://leetcode.com/problems/domino-and-tromino-tiling/) — Medium
