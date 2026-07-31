@@ -10,14 +10,14 @@
 
 ## 2026-07-31 当前状态
 
-- **当前正式进度：** 18 / 75
-- **剩余：** 57 题
+- **当前正式进度：** 19 / 75
+- **剩余：** 56 题
 - **当前日期：** 2026-07-31（周五，新西兰时间）
 - **目标截止：** 2026-09-22
 - **理想完成第一遍：** 2026-09-08
 - **缓冲完成线：** 2026-09-11
 - **刷题语言：** Java
-- 当前计入的 18 道题全部属于 LeetCode 75。
+- 当前计入的 19 道题全部属于 LeetCode 75。
 
 ## 固定周计划
 
@@ -61,17 +61,22 @@
 - **核心：** `first` 为未来保存最小起点，`second` 代表历史上已经形成过合法递增二元组；当前值大于 `second` 时返回 true；
 - **复盘：** `[1,2,0,3]` 中的 `0` 会更新 `first`，但不会使此前的 `1 < 2` 失效。
 
-### 1137. N-th Tribonacci Number｜待完成
+### 1137. N-th Tribonacci Number｜已完成
 
 [打开题目](https://leetcode.com/problems/n-th-tribonacci-number/)
 
+- **结果：** Accepted，38 / 38；
 - **难度：** Easy；
-- **主题：** 一维动态规划 / 三变量滚动状态；
-- **目标复杂度：** `O(n)` 时间、`O(1)` 额外空间。
+- **提交记录：** 0 ms、42.30 MB；单次排名仅作参考；
+- **主题：** 一维动态规划、递推；
+- **当前实现：** 使用 `ArrayList<Integer>` 保存从 `T0` 到 `Tn` 的全部结果；
+- **复杂度：** `O(n)` 时间、`O(n)` 额外空间；
+- **掌握等级：** B+；
+- **可优化点：** 每次只依赖前三项，可以改成三个滚动变量，将额外空间降为 `O(1)`。
 
 详细记录见：[2026-07-31 当天笔记](./daily/2026-07-31.md)。
 
-## 已完成的 18 道官方题
+## 已完成的 19 道官方题
 
 1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
 2. [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
@@ -91,11 +96,13 @@
 16. [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/)
 17. [Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)
 18. [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)
+19. [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
 ## 近期复习
 
+- [ ] 用三个滚动变量把 1137 重写为 `O(1)` 额外空间；
 - [ ] 闭卷重写 334，并解释 `second` 不一定和当前 `first` 配对；
 - [ ] 隔一天闭卷重写 1207，不看 `HashMap` API 提示；
 - [ ] 闭卷重写 1493，避免把 `j - i` 写反；
@@ -125,7 +132,7 @@
 | [2026-07-28](./daily/2026-07-28.md) | 可变滑动窗口尝试与实现复盘 | 1004 进行中；1207 顺延 |
 | [2026-07-29](./daily/2026-07-29.md) | 1004 Accepted、标准窗口理解 | 1004 Accepted；1207 顺延 |
 | [2026-07-30](./daily/2026-07-30.md) | HashMap 计数、删除一个元素的滑动窗口 | 两道题均 Accepted，进度 17 / 75 |
-| [2026-07-31](./daily/2026-07-31.md) | 贪心递增三元组、Tribonacci | 334 Accepted；1137 待完成 |
+| [2026-07-31](./daily/2026-07-31.md) | 贪心递增三元组、Tribonacci | 两道题均 Accepted，进度 19 / 75 |
 
 ## 每次生成“今日任务”的检查流程
 
