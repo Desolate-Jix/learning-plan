@@ -6,13 +6,14 @@
 
 - [LeetCode 75 白名单与完成状态](./LEETCODE_75_CHECKLIST.md)
 - [工作日算法 + 周六基础学习计划](./WEEKDAY_4H_STUDY_PLAN.md)
+- [Java / Python / C# 基础语法对照](./JAVA_PYTHON_CSHARP_COMPARISON.md)
 - [截至 2026-09-22 的路线图](./ROADMAP_TO_2026-09-22.md)
 
-## 2026-07-31 当前状态
+## 2026-08-01 当前状态
 
 - **当前正式进度：** 19 / 75
 - **剩余：** 56 题
-- **当前日期：** 2026-07-31（周五，新西兰时间）
+- **当前日期：** 2026-08-01（周六，新西兰时间）
 - **目标截止：** 2026-09-22
 - **理想完成第一遍：** 2026-09-08
 - **缓冲完成线：** 2026-09-11
@@ -46,7 +47,40 @@
 6. 超时后依次使用：小提示 → 思路提示 → 完整题解；
 7. 周末不补题，不增加到三题。
 
-## 今日完成情况｜2026-07-31
+## 今日完成情况｜2026-08-01
+
+今天是周六，不刷新 LeetCode，正式进度保持 `19 / 75`。
+
+### 数据库基础与范式
+
+- 复习关系模型、主键、外键、一对多和多对多；
+- 用学生选课模型理解 1NF、2NF、3NF；
+- **1NF：** 一个格子一个值；
+- **2NF：** 有复合主键时，普通字段必须依赖完整主键；
+- **3NF：** 普通字段不能依赖另一个普通字段；
+- 核心目标是把不同事实放入各自负责的表中，减少重复与更新异常。
+
+### Python 基础
+
+- 变量与动态类型；
+- `int`、`float`、`str`、`bool`、`True`、`False`、`None`；
+- `input()` 返回字符串及 `int()` / `float()` 转换；
+- `strip()`、`lower()`、`upper()` 等字符串方法；
+- `if / elif / else`、缩进、`and / or / not`；
+- f-string：`f"...{value}..."`。
+
+### C# 基础
+
+- `int`、`double`、`string`、`bool` 和 `var`；
+- `Console.WriteLine()`、`Console.ReadLine()`；
+- `$"...{value}..."` 字符串插值；
+- `int.Parse()` 与 `int.TryParse()`；
+- `if / else if / else` 和 Java 的语法对照。
+
+详细记录见：[2026-08-01 当天笔记](./daily/2026-08-01.md)。  
+长期快速参照见：[Java / Python / C# 基础语法对照](./JAVA_PYTHON_CSHARP_COMPARISON.md)。
+
+## 上一工作日完成情况｜2026-07-31
 
 ### 334. Increasing Triplet Subsequence｜已完成
 
@@ -110,7 +144,8 @@
 - [ ] 1004 自己的版本用更少分支重写；
 - [ ] 用“进入下标 `i`、离开下标 `i-k`”重写 Maximum Number of Vowels；
 - [ ] 简化 Find the Difference of Two Arrays；
-- [ ] 用 `totalSum + leftSum` 把 Pivot Index 重写为 `O(n)`。
+- [ ] 用 `totalSum + leftSum` 把 Pivot Index 重写为 `O(n)`；
+- [ ] 对照复习 Java / Python / C# 的输入、类型转换和条件语法。
 
 复刷不重复计入 75 题进度。
 
@@ -133,6 +168,7 @@
 | [2026-07-29](./daily/2026-07-29.md) | 1004 Accepted、标准窗口理解 | 1004 Accepted；1207 顺延 |
 | [2026-07-30](./daily/2026-07-30.md) | HashMap 计数、删除一个元素的滑动窗口 | 两道题均 Accepted，进度 17 / 75 |
 | [2026-07-31](./daily/2026-07-31.md) | 贪心递增三元组、Tribonacci | 两道题均 Accepted，进度 19 / 75 |
+| [2026-08-01](./daily/2026-08-01.md) | 数据库范式、Python 与 C# 基础、三语言对照 | 周六基础学习完成，LeetCode 保持 19 / 75 |
 
 ## 每次生成“今日任务”的检查流程
 
