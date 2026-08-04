@@ -1,6 +1,6 @@
 # LeetCode 75 官方题单白名单
 
-> **审计日期：2026-07-31**  
+> **审计日期：2026-08-04**  
 > 本文件是后续每日新题安排的唯一白名单。官方入口：[LeetCode 75 Study Plan](https://leetcode.com/studyplan/leetcode-75/)。
 
 ## 强制规则
@@ -15,9 +15,9 @@
 
 ## 当前审计结果
 
-- **已完成：19 / 75**
-- **剩余：56 / 75**
-- 当前已计入的 19 道题均属于 LeetCode 75；
+- **已完成：20 / 75**
+- **剩余：55 / 75**
+- 当前已计入的 20 道题均属于 LeetCode 75；
 - 之前讨论过但不属于本题单的题目，例如 `Running Sum of 1d Array`、`Two Sum II - Input Array Is Sorted`，不得进入主计划或计入进度。
 
 ---
@@ -39,7 +39,7 @@
 - [x] 10. [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/) — Easy
 - [x] 11. [392. Is Subsequence](https://leetcode.com/problems/is-subsequence/) — Easy
 - [x] 12. [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) — Medium
-- [ ] 13. [1679. Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/) — Medium
+- [x] 13. [1679. Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/) — Medium
 
 ## Sliding Window（4）
 
