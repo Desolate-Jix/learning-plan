@@ -9,16 +9,16 @@
 - [Java / Python / C# 基础语法对照](./JAVA_PYTHON_CSHARP_COMPARISON.md)
 - [截至 2026-09-22 的路线图](./ROADMAP_TO_2026-09-22.md)
 
-## 2026-08-01 当前状态
+## 2026-08-04 当前状态
 
-- **当前正式进度：** 19 / 75
-- **剩余：** 56 题
-- **当前日期：** 2026-08-01（周六，新西兰时间）
+- **当前正式进度：** 20 / 75
+- **剩余：** 55 题
+- **当前日期：** 2026-08-04（周二，新西兰时间）
 - **目标截止：** 2026-09-22
 - **理想完成第一遍：** 2026-09-08
 - **缓冲完成线：** 2026-09-11
 - **刷题语言：** Java
-- 当前计入的 19 道题全部属于 LeetCode 75。
+- 当前计入的 20 道题全部属于 LeetCode 75。
 
 ## 固定周计划
 
@@ -47,70 +47,33 @@
 6. 超时后依次使用：小提示 → 思路提示 → 完整题解；
 7. 周末不补题，不增加到三题。
 
-## 今日完成情况｜2026-08-01
+## 今日完成情况｜2026-08-04
 
-今天是周六，不刷新 LeetCode，正式进度保持 `19 / 75`。
+### 1679. Max Number of K-Sum Pairs｜已完成
 
-### 数据库基础与范式
+[打开题目](https://leetcode.com/problems/max-number-of-k-sum-pairs/)
 
-- 复习关系模型、主键、外键、一对多和多对多；
-- 用学生选课模型理解 1NF、2NF、3NF；
-- **1NF：** 一个格子一个值；
-- **2NF：** 有复合主键时，普通字段必须依赖完整主键；
-- **3NF：** 普通字段不能依赖另一个普通字段；
-- 核心目标是把不同事实放入各自负责的表中，减少重复与更新异常。
-
-### Python 基础
-
-- 变量与动态类型；
-- `int`、`float`、`str`、`bool`、`True`、`False`、`None`；
-- `input()` 返回字符串及 `int()` / `float()` 转换；
-- `strip()`、`lower()`、`upper()` 等字符串方法；
-- `if / elif / else`、缩进、`and / or / not`；
-- f-string：`f"...{value}..."`。
-
-### C# 基础
-
-- `int`、`double`、`string`、`bool` 和 `var`；
-- `Console.WriteLine()`、`Console.ReadLine()`；
-- `$"...{value}..."` 字符串插值；
-- `int.Parse()` 与 `int.TryParse()`；
-- `if / else if / else` 和 Java 的语法对照。
-
-详细记录见：[2026-08-01 当天笔记](./daily/2026-08-01.md)。  
-长期快速参照见：[Java / Python / C# 基础语法对照](./JAVA_PYTHON_CSHARP_COMPARISON.md)。
-
-## 上一工作日完成情况｜2026-07-31
-
-### 334. Increasing Triplet Subsequence｜已完成
-
-[打开题目](https://leetcode.com/problems/increasing-triplet-subsequence/)
-
-- **结果：** Accepted，86 / 86；
+- **结果：** Accepted，51 / 51；
 - **难度：** Medium；
-- **提交记录：** 2 ms、122.78 MB；单次排名仅作参考；
-- **主题：** 贪心、状态压缩；
-- **复杂度：** `O(n)` 时间、`O(1)` 额外空间；
+- **提交记录：** 39 ms、70.47 MB；单次排名仅作参考；
+- **主题：** 两数配对、HashMap 频率计数；
+- **平均复杂度：** `O(n)` 时间、`O(n)` 空间；
 - **掌握等级：** B；
-- **核心：** `first` 为未来保存最小起点，`second` 代表历史上已经形成过合法递增二元组；当前值大于 `second` 时返回 true；
-- **复盘：** `[1,2,0,3]` 中的 `0` 会更新 `first`，但不会使此前的 `1 < 2` 失效。
+- **第一次实现：** 使用 `ArrayList` 查找并删除补数，逻辑正确但为 `O(n²)`，在 42 / 51 测试处 TLE；
+- **最终优化：** 使用 Map 保存尚未配对数字的剩余数量，遇到补数时数量减一；
+- **本题 API：** `getOrDefault()`、`get()`、`put()`，以及 `ArrayList.remove(index)` 与 `remove(Object)` 的区别。
 
-### 1137. N-th Tribonacci Number｜已完成
+详细代码、TLE 分析和重复数字示例见：[2026-08-04 当天笔记](./daily/2026-08-04.md)。
 
-[打开题目](https://leetcode.com/problems/n-th-tribonacci-number/)
+### 374. Guess Number Higher or Lower｜未开始
 
-- **结果：** Accepted，38 / 38；
-- **难度：** Easy；
-- **提交记录：** 0 ms、42.30 MB；单次排名仅作参考；
-- **主题：** 一维动态规划、递推；
-- **当前实现：** 使用 `ArrayList<Integer>` 保存从 `T0` 到 `Tn` 的全部结果；
-- **复杂度：** `O(n)` 时间、`O(n)` 额外空间；
-- **掌握等级：** B+；
-- **可优化点：** 每次只依赖前三项，可以改成三个滚动变量，将额外空间降为 `O(1)`。
+[打开题目](https://leetcode.com/problems/guess-number-higher-or-lower/)
 
-详细记录见：[2026-07-31 当天笔记](./daily/2026-07-31.md)。
+- **原因：** 完成 1679 后需要准备晚上外出开会；
+- **安排：** 下一学习日优先处理；
+- **今晚不补题，不追加第三题。**
 
-## 已完成的 19 道官方题
+## 已完成的 20 道官方题
 
 1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
 2. [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
@@ -131,19 +94,20 @@
 17. [Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)
 18. [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)
 19. [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)
+20. [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/)
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
 ## 近期复习
 
+- [ ] 闭卷重写 1679 的 HashMap 版本，并解释重复数字如何通过 value 计数；
+- [ ] 解释 `ArrayList.remove(0)` 为什么使原方案达到 `O(n²)`；
 - [ ] 用三个滚动变量把 1137 重写为 `O(1)` 额外空间；
 - [ ] 闭卷重写 334，并解释 `second` 不一定和当前 `first` 配对；
 - [ ] 隔一天闭卷重写 1207，不看 `HashMap` API 提示；
 - [ ] 闭卷重写 1493，避免把 `j - i` 写反；
 - [ ] 1004 标准合法窗口版闭卷重写；
-- [ ] 1004 自己的版本用更少分支重写；
 - [ ] 用“进入下标 `i`、离开下标 `i-k`”重写 Maximum Number of Vowels；
-- [ ] 简化 Find the Difference of Two Arrays；
 - [ ] 用 `totalSum + leftSum` 把 Pivot Index 重写为 `O(n)`；
 - [ ] 对照复习 Java / Python / C# 的输入、类型转换和条件语法。
 
@@ -169,6 +133,8 @@
 | [2026-07-30](./daily/2026-07-30.md) | HashMap 计数、删除一个元素的滑动窗口 | 两道题均 Accepted，进度 17 / 75 |
 | [2026-07-31](./daily/2026-07-31.md) | 贪心递增三元组、Tribonacci | 两道题均 Accepted，进度 19 / 75 |
 | [2026-08-01](./daily/2026-08-01.md) | 数据库范式、Python 与 C# 基础、三语言对照 | 周六基础学习完成，LeetCode 保持 19 / 75 |
+| [2026-08-03](./daily/2026-08-03.md) | 锻炼、社交与主动休息 | Skip，不形成欠账 |
+| [2026-08-04](./daily/2026-08-04.md) | ArrayList 暴力解、TLE、HashMap 配对计数 | 1679 Accepted，进度 20 / 75；374 未开始 |
 
 ## 每次生成“今日任务”的检查流程
 
