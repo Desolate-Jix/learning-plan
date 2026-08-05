@@ -9,16 +9,16 @@
 - [Java / Python / C# 基础语法对照](./JAVA_PYTHON_CSHARP_COMPARISON.md)
 - [截至 2026-09-22 的路线图](./ROADMAP_TO_2026-09-22.md)
 
-## 2026-08-04 当前状态
+## 2026-08-05 当前状态
 
-- **当前正式进度：** 20 / 75
-- **剩余：** 55 题
-- **当前日期：** 2026-08-04（周二，新西兰时间）
+- **当前正式进度：** 21 / 75
+- **剩余：** 54 题
+- **当前日期：** 2026-08-05（周三，新西兰时间）
 - **目标截止：** 2026-09-22
 - **理想完成第一遍：** 2026-09-08
 - **缓冲完成线：** 2026-09-11
 - **刷题语言：** Java
-- 当前计入的 20 道题全部属于 LeetCode 75。
+- 当前计入的 21 道题全部属于 LeetCode 75。
 
 ## 固定周计划
 
@@ -47,7 +47,35 @@
 6. 超时后依次使用：小提示 → 思路提示 → 完整题解；
 7. 周末不补题，不增加到三题。
 
-## 今日完成情况｜2026-08-04
+## 今日完成情况｜2026-08-05
+
+### 374. Guess Number Higher or Lower｜已完成
+
+[打开题目](https://leetcode.com/problems/guess-number-higher-or-lower/)
+
+- **结果：** Accepted，25 / 25；
+- **难度：** Easy；
+- **提交记录：** 0 ms、41.90 MB；单次排名仅作参考；
+- **主题：** 二分查找、题目提供的 API、整数溢出；
+- **复杂度：** `O(log n)` 时间、`O(1)` 额外空间；
+- **掌握等级：** B；
+- **语法问题：** `guess()` 返回 `int`，不能对它使用布尔取反 `!`；
+- **边界问题：** 猜小移动 `left = mid + 1`，猜大移动 `right = mid - 1`；
+- **编译问题：** 循环后补充兜底 `return -1`，保证所有执行路径返回整数；
+- **性能问题：** `(left + right) / 2` 在大整数输入上溢出，导致 14 / 25 测试处 TLE；
+- **最终修复：** 使用 `left + (right - left) / 2` 计算中点后通过。
+
+详细代码和调试过程见：[2026-08-05 当天笔记](./daily/2026-08-05.md)。
+
+### 1657. Determine if Two Strings Are Close｜待完成
+
+[打开题目](https://leetcode.com/problems/determine-if-two-strings-are-close/)
+
+- **难度：** Medium；
+- **主题：** 字符频率、集合条件、排序或计数；
+- **目标复杂度：** `O(n)` 或 `O(n log n)` 时间、`O(1)` 额外空间（字符集固定）。
+
+## 上一学习日完成情况｜2026-08-04
 
 ### 1679. Max Number of K-Sum Pairs｜已完成
 
@@ -60,20 +88,11 @@
 - **平均复杂度：** `O(n)` 时间、`O(n)` 空间；
 - **掌握等级：** B；
 - **第一次实现：** 使用 `ArrayList` 查找并删除补数，逻辑正确但为 `O(n²)`，在 42 / 51 测试处 TLE；
-- **最终优化：** 使用 Map 保存尚未配对数字的剩余数量，遇到补数时数量减一；
-- **本题 API：** `getOrDefault()`、`get()`、`put()`，以及 `ArrayList.remove(index)` 与 `remove(Object)` 的区别。
+- **最终优化：** 使用 Map 保存尚未配对数字的剩余数量，遇到补数时数量减一。
 
-详细代码、TLE 分析和重复数字示例见：[2026-08-04 当天笔记](./daily/2026-08-04.md)。
+详细记录见：[2026-08-04 当天笔记](./daily/2026-08-04.md)。
 
-### 374. Guess Number Higher or Lower｜未开始
-
-[打开题目](https://leetcode.com/problems/guess-number-higher-or-lower/)
-
-- **原因：** 完成 1679 后需要准备晚上外出开会；
-- **安排：** 下一学习日优先处理；
-- **今晚不补题，不追加第三题。**
-
-## 已完成的 20 道官方题
+## 已完成的 21 道官方题
 
 1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
 2. [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
@@ -95,11 +114,15 @@
 18. [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/)
 19. [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)
 20. [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/)
+21. [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
 ## 近期复习
 
+- [ ] 闭卷重写 374，并主动使用防溢出中点公式；
+- [ ] 解释为什么二分边界要使用 `mid ± 1`；
+- [ ] 解释 `(left + right) / 2` 为什么可能发生 `int` 溢出；
 - [ ] 闭卷重写 1679 的 HashMap 版本，并解释重复数字如何通过 value 计数；
 - [ ] 解释 `ArrayList.remove(0)` 为什么使原方案达到 `O(n²)`；
 - [ ] 用三个滚动变量把 1137 重写为 `O(1)` 额外空间；
@@ -135,6 +158,7 @@
 | [2026-08-01](./daily/2026-08-01.md) | 数据库范式、Python 与 C# 基础、三语言对照 | 周六基础学习完成，LeetCode 保持 19 / 75 |
 | [2026-08-03](./daily/2026-08-03.md) | 锻炼、社交与主动休息 | Skip，不形成欠账 |
 | [2026-08-04](./daily/2026-08-04.md) | ArrayList 暴力解、TLE、HashMap 配对计数 | 1679 Accepted，进度 20 / 75；374 未开始 |
+| [2026-08-05](./daily/2026-08-05.md) | 二分查找、API 返回值、边界收缩与整数溢出 | 374 Accepted，进度 21 / 75；1657 待完成 |
 
 ## 每次生成“今日任务”的检查流程
 
