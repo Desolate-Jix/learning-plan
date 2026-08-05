@@ -1,6 +1,6 @@
 # LeetCode 75 官方题单白名单
 
-> **审计日期：2026-08-04**  
+> **审计日期：2026-08-05**  
 > 本文件是后续每日新题安排的唯一白名单。官方入口：[LeetCode 75 Study Plan](https://leetcode.com/studyplan/leetcode-75/)。
 
 ## 强制规则
@@ -15,9 +15,9 @@
 
 ## 当前审计结果
 
-- **已完成：20 / 75**
-- **剩余：55 / 75**
-- 当前已计入的 20 道题均属于 LeetCode 75；
+- **已完成：21 / 75**
+- **剩余：54 / 75**
+- 当前已计入的 21 道题均属于 LeetCode 75；
 - 之前讨论过但不属于本题单的题目，例如 `Running Sum of 1d Array`、`Two Sum II - Input Array Is Sorted`，不得进入主计划或计入进度。
 
 ---
@@ -118,7 +118,7 @@
 
 ## Binary Search（4）
 
-- [ ] 53. [374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/) — Easy
+- [x] 53. [374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/) — Easy
 - [ ] 54. [2300. Successful Pairs of Spells and Potions](https://leetcode.com/problems/successful-pairs-of-spells-and-potions/) — Medium
 - [ ] 55. [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/) — Medium
 - [ ] 56. [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) — Medium
