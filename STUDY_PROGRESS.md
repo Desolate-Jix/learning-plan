@@ -11,14 +11,14 @@
 
 ## 2026-08-05 当前状态
 
-- **当前正式进度：** 21 / 75
-- **剩余：** 54 题
+- **当前正式进度：** 22 / 75
+- **剩余：** 53 题
 - **当前日期：** 2026-08-05（周三，新西兰时间）
 - **目标截止：** 2026-09-22
 - **理想完成第一遍：** 2026-09-08
 - **缓冲完成线：** 2026-09-11
 - **刷题语言：** Java
-- 当前计入的 21 道题全部属于 LeetCode 75。
+- 当前计入的 22 道题全部属于 LeetCode 75。
 
 ## 固定周计划
 
@@ -65,15 +65,22 @@
 - **性能问题：** `(left + right) / 2` 在大整数输入上溢出，导致 14 / 25 测试处 TLE；
 - **最终修复：** 使用 `left + (right - left) / 2` 计算中点后通过。
 
-详细代码和调试过程见：[2026-08-05 当天笔记](./daily/2026-08-05.md)。
-
-### 1657. Determine if Two Strings Are Close｜待完成
+### 1657. Determine if Two Strings Are Close｜已完成
 
 [打开题目](https://leetcode.com/problems/determine-if-two-strings-are-close/)
 
+- **结果：** Accepted，169 / 169；
 - **难度：** Medium；
-- **主题：** 字符频率、集合条件、排序或计数；
-- **目标复杂度：** `O(n)` 或 `O(n log n)` 时间、`O(1)` 额外空间（字符集固定）。
+- **提交记录：** 68 ms、48.01 MB；单次排名仅作参考；
+- **主题：** HashMap 字符频率、字符集合、频率多重集合、排序；
+- **复杂度：** `O(n)` 时间、`O(1)` 额外空间（固定 26 个小写字母）；
+- **掌握等级：** B；
+- **独立部分：** 自己提出“出现字符集合相同 + 频率排序后相同”这两个核心条件；
+- **提示部分：** 直接使用了 `keySet()`、`containsKey()`、`values()` 转 List、`Collections.sort()` 和 `List.equals()` 的部分示例代码；
+- **调试问题：** 计数时把 `getOrDefault()` 的 key 写成了下标 `i`，而不是字符 `word.charAt(i)`；
+- **改进点：** 辅助方法返回值应写成 `Map<Character, Integer>`，避免 raw type。
+
+详细代码、错误和 Reviewer 点评见：[2026-08-05 当天笔记](./daily/2026-08-05.md)。
 
 ## 上一学习日完成情况｜2026-08-04
 
@@ -92,7 +99,7 @@
 
 详细记录见：[2026-08-04 当天笔记](./daily/2026-08-04.md)。
 
-## 已完成的 21 道官方题
+## 已完成的 22 道官方题
 
 1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
 2. [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
@@ -115,11 +122,15 @@
 19. [N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number/)
 20. [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/)
 21. [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
+22. [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
 ## 近期复习
 
+- [ ] 闭卷重写 1657，不看 Map 与 List API 提示；
+- [ ] 解释为什么 1657 需要“字符集合相同 + 频率多重集合相同”；
+- [ ] 将 1657 的辅助方法改为 `Map<Character, Integer>` 泛型返回值；
 - [ ] 闭卷重写 374，并主动使用防溢出中点公式；
 - [ ] 解释为什么二分边界要使用 `mid ± 1`；
 - [ ] 解释 `(left + right) / 2` 为什么可能发生 `int` 溢出；
@@ -158,7 +169,7 @@
 | [2026-08-01](./daily/2026-08-01.md) | 数据库范式、Python 与 C# 基础、三语言对照 | 周六基础学习完成，LeetCode 保持 19 / 75 |
 | [2026-08-03](./daily/2026-08-03.md) | 锻炼、社交与主动休息 | Skip，不形成欠账 |
 | [2026-08-04](./daily/2026-08-04.md) | ArrayList 暴力解、TLE、HashMap 配对计数 | 1679 Accepted，进度 20 / 75；374 未开始 |
-| [2026-08-05](./daily/2026-08-05.md) | 二分查找、API 返回值、边界收缩与整数溢出 | 374 Accepted，进度 21 / 75；1657 待完成 |
+| [2026-08-05](./daily/2026-08-05.md) | 二分查找溢出、字符集合与频率排序 | 两道题均 Accepted，进度 22 / 75 |
 
 ## 每次生成“今日任务”的检查流程
 
