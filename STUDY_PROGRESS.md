@@ -9,16 +9,16 @@
 - [Java / Python / C# 基础语法对照](./JAVA_PYTHON_CSHARP_COMPARISON.md)
 - [截至 2026-09-22 的路线图](./ROADMAP_TO_2026-09-22.md)
 
-## 2026-08-05 当前状态
+## 2026-08-06 当前状态
 
-- **当前正式进度：** 22 / 75
-- **剩余：** 53 题
-- **当前日期：** 2026-08-05（周三，新西兰时间）
+- **当前正式进度：** 23 / 75
+- **剩余：** 52 题
+- **当前日期：** 2026-08-06（周四，新西兰时间）
 - **目标截止：** 2026-09-22
 - **理想完成第一遍：** 2026-09-08
 - **缓冲完成线：** 2026-09-11
 - **刷题语言：** Java
-- 当前计入的 22 道题全部属于 LeetCode 75。
+- 当前计入的 23 道题全部属于 LeetCode 75。
 
 ## 固定周计划
 
@@ -47,7 +47,36 @@
 6. 超时后依次使用：小提示 → 思路提示 → 完整题解；
 7. 周末不补题，不增加到三题。
 
-## 今日完成情况｜2026-08-05
+## 今日完成情况｜2026-08-06
+
+### 2352. Equal Row and Column Pairs｜已完成
+
+[打开题目](https://leetcode.com/problems/equal-row-and-column-pairs/)
+
+- **结果：** Accepted，80 / 80；
+- **难度：** Medium；
+- **提交记录：** 20 ms、54.28 MB；单次排名仅作参考；
+- **主题：** 二维数组、HashMap、List 复合 key、行列索引；
+- **复杂度：** `O(n²)` 时间、`O(n²)` 额外空间；
+- **掌握等级：** B；
+- **独立部分：** 从构造转置矩阵的直接比较方案，继续推导出只保存行频率、逐列查询的 HashMap 方案；
+- **核心理解：** 列不需要建立第二个 Map，构造完一列后直接查询 `rowCount`；重复行通过 Map value 分别计数；
+- **提示部分：** 使用了 `List`/`ArrayList`、接口与具体类、数组转 List、Map API 和列下标写法的提示；
+- **编译问题：** `Hashmap` 应写成 `HashMap`；
+- **下标问题：** 构造第 `i` 列时应访问 `grid[j][i]`，即列固定、行变化；
+- **可读性改进：** 后续使用 `row`、`value`、`rowList`、`columnList`、`rowCount` 等明确变量名。
+
+详细代码、调试过程和 Reviewer 点评见：[2026-08-06 当天笔记](./daily/2026-08-06.md)。
+
+### 求职 Storytelling｜进行中
+
+今日问题：
+
+> Tell me about a time you solved a difficult technical problem.
+
+计划使用 Windows GUI Agent Runtime 项目，按 STAR 结构完成一版中文口述和一版自然英文稿。
+
+## 上一学习日完成情况｜2026-08-05
 
 ### 374. Guess Number Higher or Lower｜已完成
 
@@ -82,24 +111,7 @@
 
 详细代码、错误和 Reviewer 点评见：[2026-08-05 当天笔记](./daily/2026-08-05.md)。
 
-## 上一学习日完成情况｜2026-08-04
-
-### 1679. Max Number of K-Sum Pairs｜已完成
-
-[打开题目](https://leetcode.com/problems/max-number-of-k-sum-pairs/)
-
-- **结果：** Accepted，51 / 51；
-- **难度：** Medium；
-- **提交记录：** 39 ms、70.47 MB；单次排名仅作参考；
-- **主题：** 两数配对、HashMap 频率计数；
-- **平均复杂度：** `O(n)` 时间、`O(n)` 空间；
-- **掌握等级：** B；
-- **第一次实现：** 使用 `ArrayList` 查找并删除补数，逻辑正确但为 `O(n²)`，在 42 / 51 测试处 TLE；
-- **最终优化：** 使用 Map 保存尚未配对数字的剩余数量，遇到补数时数量减一。
-
-详细记录见：[2026-08-04 当天笔记](./daily/2026-08-04.md)。
-
-## 已完成的 22 道官方题
+## 已完成的 23 道官方题
 
 1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
 2. [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
@@ -123,11 +135,16 @@
 20. [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/)
 21. [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
 22. [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)
+23. [Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/)
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
 ## 近期复习
 
+- [ ] 闭卷重写 2352，不看 Map 与 List API 提示；
+- [ ] 解释构造列时为什么使用 `grid[row][col]`，以及哪一个下标固定；
+- [ ] 解释为什么 `List<Integer>` 可以作为 HashMap key，而直接使用 `int[]` 不合适；
+- [ ] 使用 `getOrDefault(columnList, 0)` 简化 2352 的列查询；
 - [ ] 闭卷重写 1657，不看 Map 与 List API 提示；
 - [ ] 解释为什么 1657 需要“字符集合相同 + 频率多重集合相同”；
 - [ ] 将 1657 的辅助方法改为 `Map<Character, Integer>` 泛型返回值；
@@ -170,6 +187,7 @@
 | [2026-08-03](./daily/2026-08-03.md) | 锻炼、社交与主动休息 | Skip，不形成欠账 |
 | [2026-08-04](./daily/2026-08-04.md) | ArrayList 暴力解、TLE、HashMap 配对计数 | 1679 Accepted，进度 20 / 75；374 未开始 |
 | [2026-08-05](./daily/2026-08-05.md) | 二分查找溢出、字符集合与频率排序 | 两道题均 Accepted，进度 22 / 75 |
+| [2026-08-06](./daily/2026-08-06.md) | 矩阵行列匹配、List 复合 key、求职 Storytelling | 2352 Accepted，进度 23 / 75；Storytelling 进行中 |
 
 ## 每次生成“今日任务”的检查流程
 
