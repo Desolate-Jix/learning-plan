@@ -1,6 +1,6 @@
 # LeetCode 75 官方题单白名单
 
-> **审计日期：2026-08-05**  
+> **审计日期：2026-08-06**  
 > 本文件是后续每日新题安排的唯一白名单。官方入口：[LeetCode 75 Study Plan](https://leetcode.com/studyplan/leetcode-75/)。
 
 ## 强制规则
@@ -15,9 +15,9 @@
 
 ## 当前审计结果
 
-- **已完成：22 / 75**
-- **剩余：53 / 75**
-- 当前已计入的 22 道题均属于 LeetCode 75；
+- **已完成：23 / 75**
+- **剩余：52 / 75**
+- 当前已计入的 23 道题均属于 LeetCode 75；
 - 之前讨论过但不属于本题单的题目，例如 `Running Sum of 1d Array`、`Two Sum II - Input Array Is Sorted`，不得进入主计划或计入进度。
 
 ---
@@ -58,7 +58,7 @@
 - [x] 20. [2215. Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/) — Easy
 - [x] 21. [1207. Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) — Easy
 - [x] 22. [1657. Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/) — Medium
-- [ ] 23. [2352. Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/) — Medium
+- [x] 23. [2352. Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/) — Medium
 
 ## Stack（3）
 
