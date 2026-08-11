@@ -9,16 +9,16 @@
 - [Java / Python / C# 基础语法对照](./JAVA_PYTHON_CSHARP_COMPARISON.md)
 - [截至 2026-09-22 的路线图](./ROADMAP_TO_2026-09-22.md)
 
-## 2026-08-06 当前状态
+## 2026-08-11 当前状态
 
-- **当前正式进度：** 23 / 75
-- **剩余：** 52 题
-- **当前日期：** 2026-08-06（周四，新西兰时间）
+- **当前正式进度：** 24 / 75
+- **剩余：** 51 题
+- **当前日期：** 2026-08-11（周二，新西兰时间）
 - **目标截止：** 2026-09-22
 - **理想完成第一遍：** 2026-09-08
 - **缓冲完成线：** 2026-09-11
 - **刷题语言：** Java
-- 当前计入的 23 道题全部属于 LeetCode 75。
+- 当前计入的 24 道题全部属于 LeetCode 75。
 
 ## 固定周计划
 
@@ -35,7 +35,8 @@
 - 工作日不强制学习数据库、Python 或 C#；
 - 两道算法题完成后，精力不足可以直接结束；
 - 周二、周四的表达任务可跳过，不形成欠账；
-- 周末不补工作日 LeetCode 欠题。
+- 周末不补工作日 LeetCode 欠题；
+- 忙项目、运动或社交导致的跳过日不追补题量，恢复时直接从正式进度继续。
 
 ## 工作日两道题规则
 
@@ -47,71 +48,51 @@
 6. 超时后依次使用：小提示 → 思路提示 → 完整题解；
 7. 周末不补题，不增加到三题。
 
-## 今日完成情况｜2026-08-06
+## 今日完成情况｜2026-08-11
+
+### 2390. Removing Stars From a String｜已完成
+
+[打开题目](https://leetcode.com/problems/removing-stars-from-a-string/)
+
+- **结果：** Accepted，65 / 65；
+- **难度：** Medium；
+- **提交记录：** 40 ms、48.79 MB；单次排名仅作参考；
+- **主题：** Stack、Deque、ArrayDeque、StringBuilder；
+- **复杂度：** `O(n)` 时间、`O(n)` 额外空间；
+- **掌握等级：** B；
+- **核心理解：** 普通字符 `push`，遇到 `*` 时 `pop`，符合“最近加入、最先处理”的 LIFO 模式；
+- **Java 实现：** 使用 `Deque<Character>` 接口 + `ArrayDeque<>` 具体实现；
+- **语法调试：** `'*'` 需要单引号，`else` 使用花括号；
+- **返回值调试：** 方法要求 `String`，不能直接返回 `Deque<Character>`；逐个 `pop()` 到 `StringBuilder` 后 `reverse().toString()`；
+- **额外学习：** 区分数据结构 Stack/Heap 与 JVM 内存 Stack/Heap，并理解 JVM Stack Frame 的基础概念。
+
+详细代码、调试过程和 Stack 学习记录见：[2026-08-11 当天笔记](./daily/2026-08-11.md)。
+
+### 933. Number of Recent Calls｜可选
+
+[打开题目](https://leetcode.com/problems/number-of-recent-calls/)
+
+- **难度：** Easy；
+- **主题：** Queue；
+- **状态：** 尚未开始，今天视精力决定是否继续。
+
+## 上一学习日｜2026-08-06
 
 ### 2352. Equal Row and Column Pairs｜已完成
 
-[打开题目](https://leetcode.com/problems/equal-row-and-column-pairs/)
-
 - **结果：** Accepted，80 / 80；
-- **难度：** Medium；
-- **提交记录：** 20 ms、54.28 MB；单次排名仅作参考；
+- **提交记录：** 20 ms、54.28 MB；
 - **主题：** 二维数组、HashMap、List 复合 key、行列索引；
 - **复杂度：** `O(n²)` 时间、`O(n²)` 额外空间；
-- **掌握等级：** B；
-- **独立部分：** 从构造转置矩阵的直接比较方案，继续推导出只保存行频率、逐列查询的 HashMap 方案；
-- **核心理解：** 列不需要建立第二个 Map，构造完一列后直接查询 `rowCount`；重复行通过 Map value 分别计数；
-- **提示部分：** 使用了 `List`/`ArrayList`、接口与具体类、数组转 List、Map API 和列下标写法的提示；
-- **编译问题：** `Hashmap` 应写成 `HashMap`；
-- **下标问题：** 构造第 `i` 列时应访问 `grid[j][i]`，即列固定、行变化；
-- **可读性改进：** 后续使用 `row`、`value`、`rowList`、`columnList`、`rowCount` 等明确变量名。
+- **掌握等级：** B。
 
-详细代码、调试过程和 Reviewer 点评见：[2026-08-06 当天笔记](./daily/2026-08-06.md)。
+### 求职 Storytelling｜未完成
 
-### 求职 Storytelling｜进行中
+问题：`Tell me about a time you solved a difficult technical problem.`
 
-今日问题：
+原计划使用 Windows GUI Agent Runtime 项目按 STAR 结构练习；未完成，不作为算法欠账。
 
-> Tell me about a time you solved a difficult technical problem.
-
-计划使用 Windows GUI Agent Runtime 项目，按 STAR 结构完成一版中文口述和一版自然英文稿。
-
-## 上一学习日完成情况｜2026-08-05
-
-### 374. Guess Number Higher or Lower｜已完成
-
-[打开题目](https://leetcode.com/problems/guess-number-higher-or-lower/)
-
-- **结果：** Accepted，25 / 25；
-- **难度：** Easy；
-- **提交记录：** 0 ms、41.90 MB；单次排名仅作参考；
-- **主题：** 二分查找、题目提供的 API、整数溢出；
-- **复杂度：** `O(log n)` 时间、`O(1)` 额外空间；
-- **掌握等级：** B；
-- **语法问题：** `guess()` 返回 `int`，不能对它使用布尔取反 `!`；
-- **边界问题：** 猜小移动 `left = mid + 1`，猜大移动 `right = mid - 1`；
-- **编译问题：** 循环后补充兜底 `return -1`，保证所有执行路径返回整数；
-- **性能问题：** `(left + right) / 2` 在大整数输入上溢出，导致 14 / 25 测试处 TLE；
-- **最终修复：** 使用 `left + (right - left) / 2` 计算中点后通过。
-
-### 1657. Determine if Two Strings Are Close｜已完成
-
-[打开题目](https://leetcode.com/problems/determine-if-two-strings-are-close/)
-
-- **结果：** Accepted，169 / 169；
-- **难度：** Medium；
-- **提交记录：** 68 ms、48.01 MB；单次排名仅作参考；
-- **主题：** HashMap 字符频率、字符集合、频率多重集合、排序；
-- **复杂度：** `O(n)` 时间、`O(1)` 额外空间（固定 26 个小写字母）；
-- **掌握等级：** B；
-- **独立部分：** 自己提出“出现字符集合相同 + 频率排序后相同”这两个核心条件；
-- **提示部分：** 直接使用了 `keySet()`、`containsKey()`、`values()` 转 List、`Collections.sort()` 和 `List.equals()` 的部分示例代码；
-- **调试问题：** 计数时把 `getOrDefault()` 的 key 写成了下标 `i`，而不是字符 `word.charAt(i)`；
-- **改进点：** 辅助方法返回值应写成 `Map<Character, Integer>`，避免 raw type。
-
-详细代码、错误和 Reviewer 点评见：[2026-08-05 当天笔记](./daily/2026-08-05.md)。
-
-## 已完成的 23 道官方题
+## 已完成的 24 道官方题
 
 1. [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/)
 2. [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/)
@@ -136,31 +117,28 @@
 21. [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/)
 22. [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/)
 23. [Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/)
+24. [Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/)
 
 完整勾选状态以 [LEETCODE_75_CHECKLIST.md](./LEETCODE_75_CHECKLIST.md) 为准。
 
 ## 近期复习
 
+- [ ] 闭卷重写 2390，不看 `Deque` / `ArrayDeque` API 提示；
+- [ ] 解释 Stack 的 LIFO、`push` / `pop` / `peek` / `isEmpty`；
+- [ ] 解释为什么 2390 的 `*` 对应删除最近未删除字符；
+- [ ] 解释本实现为什么需要 `reverse()`；
+- [ ] 区分数据结构 Stack 与 JVM Stack；
 - [ ] 闭卷重写 2352，不看 Map 与 List API 提示；
-- [ ] 解释构造列时为什么使用 `grid[row][col]`，以及哪一个下标固定；
+- [ ] 解释构造列时为什么使用 `grid[row][col]`；
 - [ ] 解释为什么 `List<Integer>` 可以作为 HashMap key，而直接使用 `int[]` 不合适；
-- [ ] 使用 `getOrDefault(columnList, 0)` 简化 2352 的列查询；
 - [ ] 闭卷重写 1657，不看 Map 与 List API 提示；
-- [ ] 解释为什么 1657 需要“字符集合相同 + 频率多重集合相同”；
-- [ ] 将 1657 的辅助方法改为 `Map<Character, Integer>` 泛型返回值；
 - [ ] 闭卷重写 374，并主动使用防溢出中点公式；
-- [ ] 解释为什么二分边界要使用 `mid ± 1`；
-- [ ] 解释 `(left + right) / 2` 为什么可能发生 `int` 溢出；
-- [ ] 闭卷重写 1679 的 HashMap 版本，并解释重复数字如何通过 value 计数；
-- [ ] 解释 `ArrayList.remove(0)` 为什么使原方案达到 `O(n²)`；
+- [ ] 闭卷重写 1679 的 HashMap 版本；
 - [ ] 用三个滚动变量把 1137 重写为 `O(1)` 额外空间；
-- [ ] 闭卷重写 334，并解释 `second` 不一定和当前 `first` 配对；
-- [ ] 隔一天闭卷重写 1207，不看 `HashMap` API 提示；
-- [ ] 闭卷重写 1493，避免把 `j - i` 写反；
-- [ ] 1004 标准合法窗口版闭卷重写；
-- [ ] 用“进入下标 `i`、离开下标 `i-k`”重写 Maximum Number of Vowels；
-- [ ] 用 `totalSum + leftSum` 把 Pivot Index 重写为 `O(n)`；
-- [ ] 对照复习 Java / Python / C# 的输入、类型转换和条件语法。
+- [ ] 闭卷重写 334；
+- [ ] 隔一天闭卷重写 1207；
+- [ ] 闭卷重写 1493；
+- [ ] 1004 标准合法窗口版闭卷重写。
 
 复刷不重复计入 75 题进度。
 
@@ -187,7 +165,8 @@
 | [2026-08-03](./daily/2026-08-03.md) | 锻炼、社交与主动休息 | Skip，不形成欠账 |
 | [2026-08-04](./daily/2026-08-04.md) | ArrayList 暴力解、TLE、HashMap 配对计数 | 1679 Accepted，进度 20 / 75；374 未开始 |
 | [2026-08-05](./daily/2026-08-05.md) | 二分查找溢出、字符集合与频率排序 | 两道题均 Accepted，进度 22 / 75 |
-| [2026-08-06](./daily/2026-08-06.md) | 矩阵行列匹配、List 复合 key、求职 Storytelling | 2352 Accepted，进度 23 / 75；Storytelling 进行中 |
+| [2026-08-06](./daily/2026-08-06.md) | 矩阵行列匹配、List 复合 key、求职 Storytelling | 2352 Accepted，进度 23 / 75；Storytelling 未完成 |
+| [2026-08-11](./daily/2026-08-11.md) | Stack 入门、Deque/ArrayDeque、JVM Stack 区分 | 2390 Accepted，进度 24 / 75；933 可选 |
 
 ## 每次生成“今日任务”的检查流程
 
