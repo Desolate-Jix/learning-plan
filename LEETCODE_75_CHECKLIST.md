@@ -1,6 +1,6 @@
 # LeetCode 75 官方题单白名单
 
-> **审计日期：2026-08-06**  
+> **审计日期：2026-08-11**  
 > 本文件是后续每日新题安排的唯一白名单。官方入口：[LeetCode 75 Study Plan](https://leetcode.com/studyplan/leetcode-75/)。
 
 ## 强制规则
@@ -15,9 +15,9 @@
 
 ## 当前审计结果
 
-- **已完成：23 / 75**
-- **剩余：52 / 75**
-- 当前已计入的 23 道题均属于 LeetCode 75；
+- **已完成：24 / 75**
+- **剩余：51 / 75**
+- 当前已计入的 24 道题均属于 LeetCode 75；
 - 之前讨论过但不属于本题单的题目，例如 `Running Sum of 1d Array`、`Two Sum II - Input Array Is Sorted`，不得进入主计划或计入进度。
 
 ---
@@ -62,7 +62,7 @@
 
 ## Stack（3）
 
-- [ ] 24. [2390. Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/) — Medium
+- [x] 24. [2390. Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/) — Medium
 - [ ] 25. [735. Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) — Medium
 - [ ] 26. [394. Decode String](https://leetcode.com/problems/decode-string/) — Medium
 
