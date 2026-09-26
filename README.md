@@ -4,7 +4,7 @@
 
 2026-09-26按“像教科书一样系统培养能力”重构。正式第一阶段从9/29开始，10/28复盘，可按掌握情况顺延。目标是能解释、独立实现、处理变式和验证结果。
 
-**课程已融入面试八股：** [32道核心问答＋32道追问](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/interview/README.md)，每节配中文回答、英文提纲、反例与项目联系，使用原口述时段。
+**面试八股按知识点覆盖，不限题量：** [覆盖地图](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/interview/COVERAGE.md) · [当前290道主问题及追问](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/interview/README.md) · [分阶段学习接入](INTERVIEW_COVERAGE.md)。原学习时段分批学习，未覆盖点保留并顺延。
 
 ## 第一阶段怎么学
 
