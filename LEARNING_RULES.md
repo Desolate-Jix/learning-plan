@@ -1,0 +1,36 @@
+# 本轮学习规则｜2026-09-26起
+
+用户已确认将每日主题表重构为有先修、讲解、练习、验收的课程。本页与README、STUDY_PROGRESS构成现行执行规则；旧路线图与旧工作日两题规则仅供历史参考。
+
+## 学习方式
+
+- 课程讲义：[目录](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/README.md)。先讲机制与完整例题，再做独立练习，不以连续问答替代教学。
+- 先修与掌握：[评分](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/ASSESSMENT.md)。当前能力用证据判断，旧24题Accepted记录保留。
+- 算法继续Java，Python独立用于语言/数据处理；新LeetCode题继续按75白名单，不强制每天两题。
+- 原创变式、SQL、Python练习不计入LeetCode 75。复刷不重复加题数。
+- 先中文解释准确，再练英语术语和简短表达；项目表达每周约一次，纳入学习预算。
+- 一次主要学习任务，标准120分钟含复盘，可选延长30分钟；休息与环境配置不形成追加学习要求。
+
+## 顺延与休息
+
+四个自由日10/04、10/12、10/18、10/26无必做。前日未学完，继续最早未完成S编号；日期不决定掌握状态。临时面试替换一个学习日，原单元保留，不叠加任务。
+
+没有必须在月底清空的欠账；不熬夜补课、不取消自由日。若同一单元连续两次卡住，缩小练习并回查先修，不加码新内容。
+
+## 复习和记录
+
+达到B后的实际日期安排+1/+3/+7/+14天短复习；当天最多15分钟，撞自由日向后挪。复习失败记录具体点并补学。A需要延迟独立证据，不能在第一次上课当天判A。
+
+进度单一入口为[STUDY_PROGRESS](STUDY_PROGRESS.md)；复习放[REVIEW_QUEUE](REVIEW_QUEUE.md)；错因放[MISTAKES](MISTAKES.md)。详细代码、实际时长与输出写到唯一的daily/YYYY-MM-DD.md或链接到自己的笔记，不复制多套完成状态。
+
+## 后续助手回答“今天学什么”
+
+1. 读取当前新西兰日期、STUDY_PROGRESS、REVIEW_QUEUE和SCHEDULE。
+2. 确认今天是不是自由日、有无临时面试，以及最早未完成单元。
+3. 阅读对应课程讲义与用户现有证据；只有缺失时才追问进度，不能凭日期猜已学完。
+4. 给出一项主任务、一个短复习、明确停止点；需要讲解时按[教学方式](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/TEACHING_GUIDE.md)开展。
+5. 用户提供完成结果后，同步实际记录、等级、复习日期；只有真实新题Accepted才更新75题计数。
+
+## 岗位专题
+
+第一阶段先稳定SQL、语言和基础算法。临时Data/ML面试可使用[应急分支](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/NEXT_STAGE.md)替换一个正常日；后端/前端/Data/AI长期主线在阶段复盘时选择，不同时展开所有方向。

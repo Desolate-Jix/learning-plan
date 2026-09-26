@@ -1,0 +1,298 @@
+{
+  "version": 2,
+  "updated": "2026-09-26",
+  "timezone": "Pacific/Auckland",
+  "start_date": "2026-09-29",
+  "review_date": "2026-10-28",
+  "standard_minutes": 120,
+  "optional_minutes": 30,
+  "flex_days": [
+    "2026-10-04",
+    "2026-10-12",
+    "2026-10-18",
+    "2026-10-26"
+  ],
+  "sessions": [
+    {
+      "id": "S01",
+      "planned_date": "2026-09-29",
+      "unit": "DB01",
+      "title": "关系建模与起点诊断",
+      "prerequisites": "无",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB01.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S02",
+      "planned_date": "2026-09-30",
+      "unit": "DB02",
+      "title": "筛选、排序与NULL",
+      "prerequisites": "DB01",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB02.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S03",
+      "planned_date": "2026-10-01",
+      "unit": "PY01",
+      "title": "Python函数与容器",
+      "prerequisites": "DB01",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY01.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S04",
+      "planned_date": "2026-10-02",
+      "unit": "DB03",
+      "title": "分组与聚合",
+      "prerequisites": "DB02",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB03.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S05",
+      "planned_date": "2026-10-03",
+      "unit": "ALG01",
+      "title": "Java数组诊断与复杂度",
+      "prerequisites": "无",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG01.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S06",
+      "planned_date": "2026-10-05",
+      "unit": "R1",
+      "title": "第一阶段检查：关系与基础",
+      "prerequisites": "DB01,DB02,DB03,PY01,ALG01",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/assessments/R1.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S07",
+      "planned_date": "2026-10-06",
+      "unit": "DB04",
+      "title": "JOIN机制与匹配行数",
+      "prerequisites": "DB03",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB04.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S08",
+      "planned_date": "2026-10-07",
+      "unit": "DB04",
+      "title": "JOIN统计与独立变式",
+      "prerequisites": "DB04引导练习已做",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB04.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S09",
+      "planned_date": "2026-10-08",
+      "unit": "PY02",
+      "title": "复制、可变对象与调试",
+      "prerequisites": "PY01",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY02.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S10",
+      "planned_date": "2026-10-09",
+      "unit": "ALG02",
+      "title": "Java哈希计数与配对",
+      "prerequisites": "ALG01",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG02.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S11",
+      "planned_date": "2026-10-10",
+      "unit": "DB05",
+      "title": "EXISTS、子查询与CTE",
+      "prerequisites": "DB04",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB05.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S12",
+      "planned_date": "2026-10-11",
+      "unit": "DB06",
+      "title": "约束、模型与质量规则",
+      "prerequisites": "DB05",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB06.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S13",
+      "planned_date": "2026-10-13",
+      "unit": "R2",
+      "title": "第二次检查：查询与数据质量",
+      "prerequisites": "DB04,DB05,DB06,PY02,ALG02",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/assessments/R2.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S14",
+      "planned_date": "2026-10-14",
+      "unit": "ALG03",
+      "title": "窗口状态与边界",
+      "prerequisites": "ALG02",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG03.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S15",
+      "planned_date": "2026-10-15",
+      "unit": "DB07",
+      "title": "索引与计划阅读",
+      "prerequisites": "DB06",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB07.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S16",
+      "planned_date": "2026-10-16",
+      "unit": "DB07",
+      "title": "优化假设与性能验证",
+      "prerequisites": "DB07引导实验已做",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB07.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S17",
+      "planned_date": "2026-10-17",
+      "unit": "PY03",
+      "title": "CSV解析与拒绝记录",
+      "prerequisites": "PY02,DB06",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY03.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S18",
+      "planned_date": "2026-10-19",
+      "unit": "DB08",
+      "title": "事务与业务原子性",
+      "prerequisites": "DB06",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB08.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S19",
+      "planned_date": "2026-10-20",
+      "unit": "DB08",
+      "title": "隔离与恢复直觉",
+      "prerequisites": "DB08事务练习已做",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB08.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S20",
+      "planned_date": "2026-10-21",
+      "unit": "ALG04",
+      "title": "二分与循环边界",
+      "prerequisites": "ALG01",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG04.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S21",
+      "planned_date": "2026-10-22",
+      "unit": "R3",
+      "title": "第三次检查：机制与验证",
+      "prerequisites": "DB07,DB08,PY03,ALG03,ALG04",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/assessments/R3.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S22",
+      "planned_date": "2026-10-23",
+      "unit": "ALG05",
+      "title": "栈队列与摊还成本",
+      "prerequisites": "ALG01",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG05.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S23",
+      "planned_date": "2026-10-24",
+      "unit": "LAB",
+      "title": "综合实践一：SQL与Python",
+      "prerequisites": "DB01–DB06,PY01–PY03",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/labs/integration.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S24",
+      "planned_date": "2026-10-25",
+      "unit": "LAB",
+      "title": "综合实践二：变式与排错",
+      "prerequisites": "LAB第一次已做",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/labs/integration.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S25",
+      "planned_date": "2026-10-27",
+      "unit": "FINAL",
+      "title": "综合技术模拟",
+      "prerequisites": "R1,R2,R3,ALG05,LAB完成",
+      "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/assessments/FINAL.md",
+      "status": "not_started"
+    },
+    {
+      "id": "S26",
+      "planned_date": "2026-10-28",
+      "unit": "REVIEW",
+      "title": "月度复盘与下一阶段",
+      "prerequisites": "根据实际完成情况",
+      "lesson_url": "https://github.com/Desolate-Jix/learning-plan/blob/main/STUDY_PROGRESS.md",
+      "status": "not_started"
+    }
+  ],
+  "lesson_prerequisites": {
+    "DB01": [],
+    "DB02": [
+      "DB01"
+    ],
+    "DB03": [
+      "DB02"
+    ],
+    "DB04": [
+      "DB03"
+    ],
+    "DB05": [
+      "DB04"
+    ],
+    "DB06": [
+      "DB05"
+    ],
+    "DB07": [
+      "DB06"
+    ],
+    "DB08": [
+      "DB06"
+    ],
+    "PY01": [
+      "DB01"
+    ],
+    "PY02": [
+      "PY01"
+    ],
+    "PY03": [
+      "PY02",
+      "DB06"
+    ],
+    "ALG01": [],
+    "ALG02": [
+      "ALG01"
+    ],
+    "ALG03": [
+      "ALG02"
+    ],
+    "ALG04": [
+      "ALG01"
+    ],
+    "ALG05": [
+      "ALG01"
+    ]
+  }
+}

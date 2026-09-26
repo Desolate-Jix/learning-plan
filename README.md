@@ -1,52 +1,45 @@
-# Interview Preparation Plan — 2026
+# 技术面试与能力培养计划｜v2
 
-从 **2026-09-29** 开始，本仓库从单独的 LeetCode 学习计划升级为 **技术面试准备 + 每日执行计划**。
+**当前入口：[今天9/26热身](daily/2026-09-26.md) · [当前进度](STUDY_PROGRESS.md) · [每日学习队列](SCHEDULE.md) · [课程讲义与练习](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/README.md)。**
 
-## 当前第一阶段：2026-09-29 → 2026-10-28
+2026-09-26按“像教科书一样系统培养能力”重构。正式第一阶段从9/29开始，10/28复盘，可按掌握情况顺延。目标是能解释、独立实现、处理变式和验证结果。
 
-目标不是一个月“学完计算机”，而是恢复面试可调用的知识，并建立稳定节奏。
+## 第一阶段怎么学
 
-每天主要包含：
-1. **CS / Interview Fundamentals**：Database → Python → Backend → Engineering
-2. **DSA / LeetCode**：数据结构与题型合并学习，保留 A/B/C/D mastery
-3. **Project Interview Review**：只做项目面试复习；项目开发内容不在这里规定
-4. **Project Development Time**：只规定时长
-5. **Fitness / Game Time**：明确当天是否训练以及预留娱乐时间
+|主线|范围|完成时的能力|
+|---|---|---|
+|数据库|DB01–DB08：关系→筛选→聚合→连接→子查询→约束→索引→事务|独立写SQL，理解结果粒度，用真实实验解释优化与隔离|
+|Python|PY01–PY03：函数容器→复制调试→CSV清洗|写出可验证的数据处理，解释拒绝与重复|
+|Java算法|ALG01–ALG05：数组→哈希→窗口→二分→栈队列|恢复旧题能力，独立处理变式和边界|
+|综合|R1/R2/R3、两日实践、FINAL|把知识串起来，用证据回答追问|
 
-## Flex / Buffer Days
+历史已有 **24/75** 道Java题记录，保留全部旧笔记；本轮先诊断当前掌握，复刷不重复计数。第一阶段不要求遍历所有算法主题，递归/链表/树/图/回溯/DP与岗位深度内容见[后续路线](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/NEXT_STAGE.md)。
 
-本轮预留 **10/04、10/12、10/18、10/26** 四个自由缓冲日。它们不是必须学习的 Review Day，而是用于：临时面试准备、出去玩、休息、处理前面未完成内容。
+## 时间与生活
 
-**顺延规则：** 遇到面试、出行、疲劳或其他事情时，当天原计划可以整体顺延。月底日期不是硬截止；宁可把第一轮延长几天，也不为了追日历压缩学习和休息。
+- 标准学习 **120分钟**，已含15分钟记录复盘；可选延长30分钟，最高150分钟。
+- 保留原每天求职、项目开发、健身和游戏时段。项目只规定时间，内容自行决定。
+- 四个自由日 **10/04、10/12、10/18、10/26** 默认0任务，没有折叠隐藏的必修课。
+- 临时面试/外出/疲劳时整体顺延，不熬夜、不取消休息；月底不是硬截止。
 
-## 每日原则
+## 每天怎么找到任务
 
-- 没学完 **不熬夜补课**，标记后留到 Review Day。
-- LeetCode 不追题数：能解释 brute force → optimization → complexity 才算完成。
-- 项目开发计划与学习计划分离，本仓库只写当天预留多少开发时间。
-- 游戏是计划的一部分，不作为“做完一切才允许”的奖励。
-- 每 6–7 天安排一次 Review / Mock，错题进入后续复习。
+先看[当前进度](STUDY_PROGRESS.md)最早未完成的S编号，再看[学习队列](SCHEDULE.md)对应讲义。日历页是初始安排，实际进度决定今天学哪节。已提前通过的内容直接做变式，不重复抄笔记。
 
-## 一个月总览
+每课包含先修、讲解、例题、独立练习、答案和验收。不会时先补具体基础，不能只勾选看过。到期短复习按实际通过日期+1/+3/+7/+14天安排。
 
-| 周 | 核心学习 |
-|---|---|
-| 9/29–10/5 | Database / SQL + Array / HashMap / Two Pointers |
-| 10/6–10/12 | Python + Linked List / Stack / Queue / Tree |
-| 10/13–10/19 | HTTP / REST / Auth / FastAPI + Tree / Heap / Graph |
-| 10/20–10/26 | Docker / Git / Testing / CI/CD / Cloud + DSA复习 |
-| 10/27 | 综合技术 Mock Interview |
-| 10/28 | 月度复盘 + 最弱知识点整理 |
+## 记录入口
 
-## 每日计划
+- [现行学习与顺延规则](LEARNING_RULES.md)
+- [当前能力与执行状态](STUDY_PROGRESS.md)
+- [复习队列](REVIEW_QUEUE.md)
+- [错因与补学](MISTAKES.md)
+- [LeetCode 75历史题单](LEETCODE_75_CHECKLIST.md)
+- [重构前完整进度快照](archive/STUDY_PROGRESS_before_2026-09-26.md)
+- [原Java/Python/C#对照](JAVA_PYTHON_CSHARP_COMPARISON.md)
 
-每天直接打开 `daily/YYYY-MM-DD.md`，照 checklist 执行。
+## 重构记录
 
-- [09/29](daily/2026-09-29.md) · [09/30](daily/2026-09-30.md)
-- [10/01](daily/2026-10-01.md) · [10/02](daily/2026-10-02.md) · [10/03](daily/2026-10-03.md) · [10/04](daily/2026-10-04.md) · [10/05](daily/2026-10-05.md)
-- [10/06](daily/2026-10-06.md) · [10/07](daily/2026-10-07.md) · [10/08](daily/2026-10-08.md) · [10/09](daily/2026-10-09.md) · [10/10](daily/2026-10-10.md) · [10/11](daily/2026-10-11.md) · [10/12](daily/2026-10-12.md)
-- [10/13](daily/2026-10-13.md) · [10/14](daily/2026-10-14.md) · [10/15](daily/2026-10-15.md) · [10/16](daily/2026-10-16.md) · [10/17](daily/2026-10-17.md) · [10/18](daily/2026-10-18.md) · [10/19](daily/2026-10-19.md)
-- [10/20](daily/2026-10-20.md) · [10/21](daily/2026-10-21.md) · [10/22](daily/2026-10-22.md) · [10/23](daily/2026-10-23.md) · [10/24](daily/2026-10-24.md) · [10/25](daily/2026-10-25.md) · [10/26](daily/2026-10-26.md)
-- [10/27](daily/2026-10-27.md) · [10/28](daily/2026-10-28.md)
+原主题表缺少明确先修、可运行练习与验收，部分必修内容落在自由日。现在课程放course-review，日历/进度放本仓库；旧生活预算保留，旧两题/天规则标为历史。
 
-原有 `LEETCODE_75_CHECKLIST.md` 保留作为题库，不再作为独立日程。
+旧日程完整版本可在[重构前提交](https://github.com/Desolate-Jix/learning-plan/tree/4500c954f4d091ae04dff85f4ed141abef19ad75)回溯。原大学课件、旧每日学习代码与记录保留。
