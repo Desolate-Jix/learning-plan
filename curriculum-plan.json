@@ -20,7 +20,13 @@
       "title": "关系建模与起点诊断",
       "prerequisites": "无",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB01.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S02",
@@ -29,7 +35,13 @@
       "title": "筛选、排序与NULL",
       "prerequisites": "DB01",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB02.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S03",
@@ -38,7 +50,13 @@
       "title": "Python函数与容器",
       "prerequisites": "DB01",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY01.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S04",
@@ -47,7 +65,13 @@
       "title": "分组与聚合",
       "prerequisites": "DB02",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB03.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S05",
@@ -56,7 +80,13 @@
       "title": "Java数组诊断与复杂度",
       "prerequisites": "无",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG01.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S06",
@@ -65,7 +95,13 @@
       "title": "第一阶段检查：关系与基础",
       "prerequisites": "DB01,DB02,DB03,PY01,ALG01",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/assessments/R1.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 10,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S07",
@@ -74,7 +110,13 @@
       "title": "JOIN机制与匹配行数",
       "prerequisites": "DB03",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB04.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S08",
@@ -83,7 +125,13 @@
       "title": "JOIN统计与独立变式",
       "prerequisites": "DB04引导练习已做",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB04.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S09",
@@ -92,7 +140,13 @@
       "title": "复制、可变对象与调试",
       "prerequisites": "PY01",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY02.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S10",
@@ -101,7 +155,13 @@
       "title": "Java哈希计数与配对",
       "prerequisites": "ALG01",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG02.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S11",
@@ -110,7 +170,13 @@
       "title": "EXISTS、子查询与CTE",
       "prerequisites": "DB04",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB05.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S12",
@@ -119,7 +185,13 @@
       "title": "约束、模型与质量规则",
       "prerequisites": "DB05",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB06.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S13",
@@ -128,7 +200,13 @@
       "title": "第二次检查：查询与数据质量",
       "prerequisites": "DB04,DB05,DB06,PY02,ALG02",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/assessments/R2.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 10,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S14",
@@ -137,7 +215,13 @@
       "title": "窗口状态与边界",
       "prerequisites": "ALG02",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG03.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S15",
@@ -146,7 +230,13 @@
       "title": "索引与计划阅读",
       "prerequisites": "DB06",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB07.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S16",
@@ -155,7 +245,13 @@
       "title": "优化假设与性能验证",
       "prerequisites": "DB07引导实验已做",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB07.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S17",
@@ -164,7 +260,13 @@
       "title": "CSV解析与拒绝记录",
       "prerequisites": "PY02,DB06",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY03.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S18",
@@ -173,7 +275,13 @@
       "title": "事务与业务原子性",
       "prerequisites": "DB06",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB08.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S19",
@@ -182,7 +290,13 @@
       "title": "隔离与恢复直觉",
       "prerequisites": "DB08事务练习已做",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB08.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S20",
@@ -191,7 +305,13 @@
       "title": "二分与循环边界",
       "prerequisites": "ALG01",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG04.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S21",
@@ -200,7 +320,13 @@
       "title": "第三次检查：机制与验证",
       "prerequisites": "DB07,DB08,PY03,ALG03,ALG04",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/assessments/R3.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 10,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S22",
@@ -209,7 +335,13 @@
       "title": "栈队列与摊还成本",
       "prerequisites": "ALG01",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG05.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S23",
@@ -218,7 +350,13 @@
       "title": "综合实践一：SQL与Python",
       "prerequisites": "DB01–DB06,PY01–PY03",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/labs/integration.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S24",
@@ -227,7 +365,13 @@
       "title": "综合实践二：变式与排错",
       "prerequisites": "LAB第一次已做",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/labs/integration.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S25",
@@ -236,7 +380,13 @@
       "title": "综合技术模拟",
       "prerequisites": "R1,R2,R3,ALG05,LAB完成",
       "lesson_url": "https://github.com/Desolate-Jix/course-review/blob/main/curriculum/assessments/FINAL.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 10,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     },
     {
       "id": "S26",
@@ -245,7 +395,13 @@
       "title": "月度复盘与下一阶段",
       "prerequisites": "根据实际完成情况",
       "lesson_url": "https://github.com/Desolate-Jix/learning-plan/blob/main/STUDY_PROGRESS.md",
-      "status": "not_started"
+      "status": "not_started",
+      "gui_project_study": {
+        "selection": "refresh_at_session_start",
+        "minutes": 15,
+        "included_in_standard_minutes": true,
+        "policy": "GUI_PROJECT_STUDY.md"
+      }
     }
   ],
   "lesson_prerequisites": {
@@ -294,5 +450,12 @@
     "ALG05": [
       "ALG01"
     ]
+  },
+  "gui_project_study": {
+    "primary_repository": "Desolate-Jix/agent-gui-runtime",
+    "default_branch": "main",
+    "refresh": "when_starting_a_study_session",
+    "fixed_question_bank": false,
+    "free_days_required_minutes": 0
   }
 }

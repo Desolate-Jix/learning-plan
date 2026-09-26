@@ -6,6 +6,8 @@
 
 **面试八股按知识点覆盖，不限题量：** [覆盖地图](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/interview/COVERAGE.md) · [当前290道主问题及追问](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/interview/README.md) · [分阶段学习接入](INTERVIEW_COVERAGE.md)。原学习时段分批学习，未覆盖点保留并顺延。
 
+**每日以GUI项目为主要案例：** [动态项目学习](GUI_PROJECT_STUDY.md)。正常学习日15分钟、验收日10分钟，均含在原120分钟内；每次开课刷新当前资料，再选内容，不编固定项目题库。
+
 ## 第一阶段怎么学
 
 |主线|范围|完成时的能力|
