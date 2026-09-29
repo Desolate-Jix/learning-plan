@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated": "2026-09-26",
+  "updated": "2026-09-29",
   "timezone": "Pacific/Auckland",
   "start_date": "2026-09-29",
   "review_date": "2026-10-28",
@@ -457,5 +457,20 @@
     "refresh": "when_starting_a_study_session",
     "fixed_question_bank": false,
     "free_days_required_minutes": 0
+  },
+  "session_opening_review": {
+    "minutes": 10,
+    "mode": "active_recall",
+    "priority": "due_review_queue_then_previous_actual_content",
+    "methods": [
+      "closed_book_explanation",
+      "one_small_variant_or_followup",
+      "short_code_or_reasoning_trace"
+    ],
+    "included_in_standard_minutes": true
+  },
+  "session_opening_prerequisite_check": {
+    "minutes": 5,
+    "included_in_standard_minutes": true
   }
 }
