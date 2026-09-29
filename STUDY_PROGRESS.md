@@ -1,8 +1,8 @@
 # 当前学习进度｜体系课程v2
 
-更新：2026-09-29。S01 已正式开始；DB01 概念与关系建模诊断已进行，但独立 SQL/练习证据与英文总结尚未完成。
+更新：2026-09-29。S01 已完成第一轮教学与独立验收；DB01 当前评为 C，需用新数据独立复测 SQL 完整性与 N:N 关联表约束后才能达到 B。
 
-- **当前队列位置：S01（进行中）**。下一步先完成 DB01 独立验收与英文总结；未通过前不推进 S02。
+- **当前队列位置：S01（进行中）**。下一步先做10分钟主动复测；DB01 达到 B 前不推进 S02。
 - **LeetCode历史：24/75，最近已有记录2026-08-11，主语言Java。** 剩余51题；本次重构没有产生新Accepted。
 - **当前熟练程度：待诊断**，不能因为有旧Accepted就默认B，也不能把历史题数清零。
 - [每日队列](SCHEDULE.md) · [现行规则](LEARNING_RULES.md) · [课程目录](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/README.md) · [历史完整记录](archive/STUDY_PROGRESS_before_2026-09-26.md)
@@ -11,7 +11,7 @@
 
 |单元|等级|最近独立验收日期|证据|
 |---|---|---|---|
-|[DB01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB01.md)|待诊断|未记录|无|
+|[DB01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB01.md)|C|2026-09-29（第一轮验收）|[当天记录](daily/2026-09-29.md)：机制较稳；SQL完整性与N:N防重复约束需新变式复测|
 |[DB02](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB02.md)|待诊断|未记录|无|
 |[DB03](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB03.md)|待诊断|未记录|无|
 |[DB04](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB04.md)|待诊断|未记录|无|
@@ -34,7 +34,7 @@
 
 |编号|单元|执行状态|实际日期|证据|
 |---|---|---|---|---|
-|S01|DB01|进行中|2026-09-29|[当天记录](daily/2026-09-29.md)：概念/建模口答与GUI-00；独立SQL及英文总结待补|
+|S01|DB01|进行中|2026-09-29|[当天记录](daily/2026-09-29.md)：第一轮独立验收完成，当前C；SQL完整性与N:N约束待复测；GUI-00完成|
 |S02|DB02|未开始|未记录|无|
 |S03|PY01|未开始|未记录|无|
 |S04|DB03|未开始|未记录|无|
@@ -73,4 +73,4 @@
 
 ## 面试表达记录
 
-2026-09-29 已有 DB01 中文口述证据：主外键、外键重复、一对多/多对多、关联表、Candidate Key 及当前状态/历史快照等主要点回答正确；但完整题卡尚未轮转完，60秒英文总结未完成。S01 因缺少独立 SQL/练习验收仍保持进行中，DB01 等级继续待诊断。背答案不替代独立SQL/代码验收。
+2026-09-29 已有 DB01 中文口述与第一轮独立建模/SQL证据：主外键、外键重复、一对多/多对多、关联表、Candidate Key、当前状态/历史快照等主要机制回答正确。SQL 第二题首次有多余逗号且结果列不完整；N:N 变式首次遗漏组合主键/唯一性约束，因此当前评 C。已提供60秒英文总结模板，但尚无独立闭卷英文口述证据。S01 继续进行中，下一次用新数据复测后再决定是否到 B。
