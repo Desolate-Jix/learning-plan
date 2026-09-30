@@ -1,8 +1,8 @@
 # 当前学习进度｜体系课程v2
 
-更新：2026-09-29。S01 已完成第一轮教学与独立验收；DB01 当前评为 C，需用新数据独立复测 SQL 完整性与 N:N 关联表约束后才能达到 B。
+更新：2026-09-30。DB01 已通过新变式复测达到 B，S01 完成；当前进入 S02 / DB02。
 
-- **当前队列位置：S01（进行中）**。下一步先做10分钟主动复测；DB01 达到 B 前不推进 S02。
+- **当前队列位置：S02（进行中）**。DB01 已于2026-09-30复测达到B，今天继续 DB02。
 - **LeetCode历史：24/75，最近已有记录2026-08-11，主语言Java。** 剩余51题；本次重构没有产生新Accepted。
 - **当前熟练程度：待诊断**，不能因为有旧Accepted就默认B，也不能把历史题数清零。
 - [每日队列](SCHEDULE.md) · [现行规则](LEARNING_RULES.md) · [课程目录](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/README.md) · [历史完整记录](archive/STUDY_PROGRESS_before_2026-09-26.md)
@@ -11,7 +11,7 @@
 
 |单元|等级|最近独立验收日期|证据|
 |---|---|---|---|
-|[DB01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB01.md)|C|2026-09-29（第一轮验收）|[当天记录](daily/2026-09-29.md)：机制较稳；SQL完整性与N:N防重复约束需新变式复测|
+|[DB01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB01.md)|B|2026-09-30|[2026-09-30复测](daily/2026-09-30.md)：N:N关联表与SQL筛选/排序新变式通过|
 |[DB02](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB02.md)|待诊断|未记录|无|
 |[DB03](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB03.md)|待诊断|未记录|无|
 |[DB04](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB04.md)|待诊断|未记录|无|
@@ -34,8 +34,8 @@
 
 |编号|单元|执行状态|实际日期|证据|
 |---|---|---|---|---|
-|S01|DB01|进行中|2026-09-29|[当天记录](daily/2026-09-29.md)：第一轮独立验收完成，当前C；SQL完整性与N:N约束待复测；GUI-00完成|
-|S02|DB02|未开始|未记录|无|
+|S01|DB01|已完成|2026-09-29–2026-09-30|[2026-09-30复测](daily/2026-09-30.md)：达到B；GUI-00完成|
+|S02|DB02|进行中|2026-09-30|今日开始：筛选、排序与NULL|
 |S03|PY01|未开始|未记录|无|
 |S04|DB03|未开始|未记录|无|
 |S05|ALG01|未开始|未记录|无|
@@ -73,4 +73,4 @@
 
 ## 面试表达记录
 
-2026-09-29 已有 DB01 中文口述与第一轮独立建模/SQL证据：主外键、外键重复、一对多/多对多、关联表、Candidate Key、当前状态/历史快照等主要机制回答正确。SQL 第二题首次有多余逗号且结果列不完整；N:N 变式首次遗漏组合主键/唯一性约束，因此当前评 C。已提供60秒英文总结模板，但尚无独立闭卷英文口述证据。S01 继续进行中，下一次用新数据复测后再决定是否到 B。
+2026-09-30 DB01 延迟复测：N:N 场景能独立写出两侧FK与组合主键；SQL新场景能独立写出SELECT/FROM/WHERE/ORDER BY并正确处理升序。结果无需机械重复抄写即可形成足够证据，因此 DB01 评 B，S01 完成。英文60秒模板已整理，独立口述可放入后续短复习，不阻塞S02。
