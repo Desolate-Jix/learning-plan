@@ -1,8 +1,8 @@
 # 当前学习进度｜体系课程v2
 
-更新：2026-10-01。DB01 保持B；DB02 已通过 AND/OR/NULL 与粒度变式复测达到B，S02完成；下一步进入S03 / PY01。
+更新：2026-10-01。DB01/DB02 保持B；S03 / PY01 已开始，当前评 C：核心概念和两个小实作逻辑正确，但 Python 语法稳定性待复测。
 
-- **当前队列位置：S03（未开始）**。DB02 已于2026-10-01复测达到B；下一步进入 PY01。
+- **当前队列位置：S03（进行中）**。PY01 当前 C；下一步先复测 Python 基础语法与两个汇总函数，达到 B 后再推进 S04。
 - **LeetCode历史：24/75，最近已有记录2026-08-11，主语言Java。** 剩余51题；本次重构没有产生新Accepted。
 - **当前熟练程度：待诊断**，不能因为有旧Accepted就默认B，也不能把历史题数清零。
 - [每日队列](SCHEDULE.md) · [现行规则](LEARNING_RULES.md) · [课程目录](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/README.md) · [历史完整记录](archive/STUDY_PROGRESS_before_2026-09-26.md)
@@ -19,7 +19,7 @@
 |[DB06](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB06.md)|待诊断|未记录|无|
 |[DB07](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB07.md)|待诊断|未记录|无|
 |[DB08](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB08.md)|待诊断|未记录|无|
-|[PY01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY01.md)|待诊断|未记录|无|
+|[PY01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY01.md)|C|2026-10-01（第一轮实作）|[当天记录](daily/2026-10-01.md)：函数/容器/累计逻辑理解已建立，语法稳定性待复测|
 |[PY02](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY02.md)|待诊断|未记录|无|
 |[PY03](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY03.md)|待诊断|未记录|无|
 |[ALG01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG01.md)|待诊断|未记录|无|
@@ -36,7 +36,7 @@
 |---|---|---|---|---|
 |S01|DB01|已完成|2026-09-29–2026-09-30|[2026-09-30复测](daily/2026-09-30.md)：达到B；GUI-00完成|
 |S02|DB02|已完成|2026-09-30–2026-10-01|2026-10-01短变式复测通过，DB02达到B|
-|S03|PY01|未开始|未记录|无|
+|S03|PY01|进行中|2026-10-01|第一轮教学与实作完成，当前C；独立语法复测待补|
 |S04|DB03|未开始|未记录|无|
 |S05|ALG01|未开始|未记录|无|
 |S06|R1|未开始|未记录|无|
