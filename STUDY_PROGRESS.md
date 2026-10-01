@@ -1,8 +1,8 @@
 # 当前学习进度｜体系课程v2
 
-更新：2026-09-30。DB01 已达到 B，S01 完成；DB02 已完成主要理论与口头验收，当前为 C，短实作与实际查询验证待补。
+更新：2026-10-01。DB01 保持B；DB02 已通过 AND/OR/NULL 与粒度变式复测达到B，S02完成；下一步进入S03 / PY01。
 
-- **当前队列位置：S02（进行中）**。DB02 当前 C；下一次先用短 SQL + NULL/粒度变式补独立实作与验证，达到 B 后再推进 S03。
+- **当前队列位置：S03（未开始）**。DB02 已于2026-10-01复测达到B；下一步进入 PY01。
 - **LeetCode历史：24/75，最近已有记录2026-08-11，主语言Java。** 剩余51题；本次重构没有产生新Accepted。
 - **当前熟练程度：待诊断**，不能因为有旧Accepted就默认B，也不能把历史题数清零。
 - [每日队列](SCHEDULE.md) · [现行规则](LEARNING_RULES.md) · [课程目录](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/README.md) · [历史完整记录](archive/STUDY_PROGRESS_before_2026-09-26.md)
@@ -12,7 +12,7 @@
 |单元|等级|最近独立验收日期|证据|
 |---|---|---|---|
 |[DB01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB01.md)|B|2026-09-30|[2026-09-30复测](daily/2026-09-30.md)：N:N关联表与SQL筛选/排序新变式通过|
-|[DB02](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB02.md)|C|2026-09-30（口头验收）|[当天记录](daily/2026-09-30.md)：理论理解基本通过；独立实作与实际查询验证待补|
+|[DB02](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB02.md)|B|2026-10-01|[2026-10-01复测](daily/2026-10-01.md)：AND/OR/NULL 与 DISTINCT/粒度变式通过|
 |[DB03](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB03.md)|待诊断|未记录|无|
 |[DB04](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB04.md)|待诊断|未记录|无|
 |[DB05](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB05.md)|待诊断|未记录|无|
@@ -35,7 +35,7 @@
 |编号|单元|执行状态|实际日期|证据|
 |---|---|---|---|---|
 |S01|DB01|已完成|2026-09-29–2026-09-30|[2026-09-30复测](daily/2026-09-30.md)：达到B；GUI-00完成|
-|S02|DB02|进行中|2026-09-30|理论与口头验收完成，当前C；短实作/验证待补|
+|S02|DB02|已完成|2026-09-30–2026-10-01|2026-10-01短变式复测通过，DB02达到B|
 |S03|PY01|未开始|未记录|无|
 |S04|DB03|未开始|未记录|无|
 |S05|ALG01|未开始|未记录|无|
