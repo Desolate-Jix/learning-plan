@@ -4,6 +4,8 @@
 
 |实际日期|单元/题目|原判断或错误代码|错误原因|最小反例|补学动作|复测结果/证据|
 |---|---|---|---|---|---|---|
+|2026-10-03|ALG01 / Loop Invariant|首次把不变量说成“前面的区域不会变”|把“不变量=始终成立的性质”误近似成“值不变化”|应表述为 `[0, write)` 始终包含已扫描部分全部应保留元素，且相对顺序不变|下次用一句中文+一句英文闭卷说明 invariant|待复测|
+|2026-10-03|ALG01 / Java 语法|Move Zeroes 思路正确但写出 `nums.length()`、for 用逗号、`num[i]`、返回类型/return 不匹配等|Java 久未使用，算法思路保留但语法自动化下降|已复习数组 `.length`、for 分号、void/in-place；逻辑复杂度判断正确|下次闭卷重写 Move Zeroes，主要语法需正确|待复测|
 |2026-10-02|DB03 / Result Granularity|最初把 GROUP BY 后的一行描述成“有用户住在这个城市/大于两条的部门”|业务含义方向对，但没有精确到“一行代表一个分组键对应的聚合结果”|改为：one row = one group / one grouped summary；例如一行=一个 department group|下次先说 grouping key，再说 HAVING 条件是否保留该组|待延迟复测|
 |2026-10-02|DB03 / GROUP BY 查询结构|首次综合题写出 SELECT/WHERE/HAVING，但漏 `FROM orders` 和 `GROUP BY user_id`|已理解筛行与筛组，但写完整聚合查询时结构尚未自动化|后续已能独立写出 `FROM` + `WHERE` + `GROUP BY` + `HAVING` 的综合 SQL|下次闭卷写一题包含 SUM + COUNT 双 HAVING 条件的查询|待延迟复测|
 |2026-10-01|PY01 / dict 与函数语法|写出 `total{row['user_id']}`、`int row['amount']`，以及一次 `status` 拼写错误/return 缩进错误|Java→Python 语法迁移不熟；混淆 dict 创建 `{}` 与按 key 访问 `[]`，以及 Python 函数调用括号|`total[uid] = total.get(uid,0) + int(row['amount'])`|下次独立重写两个汇总函数，要求无语法提示且覆盖空输入|待复测|
