@@ -1,8 +1,8 @@
 # 当前学习进度｜体系课程v2
 
-更新：2026-10-02。DB01/DB02 保持B；PY01 延迟复测通过达到B，S03完成；当前进入 S04 / DB03。
+更新：2026-10-03。DB01/DB02/PY01 保持B；DB03 延迟闭卷验收通过达到B，S04完成；当前进入 S05 / ALG01。
 
-- **当前队列位置：S04（进行中）**。PY01 已于2026-10-02延迟复测达到B；DB03 主干已覆盖，待下一次闭卷综合变式验收。
+- **当前队列位置：S05（进行中）**。DB03 已于2026-10-03延迟闭卷验收达到B；当前进入 ALG01。
 - **LeetCode历史：24/75，最近已有记录2026-08-11，主语言Java。** 剩余51题；本次重构没有产生新Accepted。
 - **当前熟练程度：待诊断**，不能因为有旧Accepted就默认B，也不能把历史题数清零。
 - [每日队列](SCHEDULE.md) · [现行规则](LEARNING_RULES.md) · [课程目录](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/README.md) · [历史完整记录](archive/STUDY_PROGRESS_before_2026-09-26.md)
@@ -13,7 +13,7 @@
 |---|---|---|---|
 |[DB01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB01.md)|B|2026-09-30|[2026-09-30复测](daily/2026-09-30.md)：N:N关联表与SQL筛选/排序新变式通过|
 |[DB02](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB02.md)|B|2026-10-01|[2026-10-01复测](daily/2026-10-01.md)：AND/OR/NULL 与 DISTINCT/粒度变式通过|
-|[DB03](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB03.md)|C|2026-10-02（第一轮学习）|[当天记录](daily/2026-10-02.md)：GROUP BY/WHERE/HAVING/COUNT 主干已理解并完成多道独立 SQL；待延迟闭卷综合验收|
+|[DB03](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB03.md)|B|2026-10-03|[2026-10-03复测](daily/2026-10-03.md)：WHERE/GROUP BY/HAVING/SUM/COUNT 综合逻辑闭卷通过；COUNT/NULL 边界题通过|
 |[DB04](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB04.md)|待诊断|未记录|无|
 |[DB05](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB05.md)|待诊断|未记录|无|
 |[DB06](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB06.md)|待诊断|未记录|无|
@@ -37,8 +37,8 @@
 |S01|DB01|已完成|2026-09-29–2026-09-30|[2026-09-30复测](daily/2026-09-30.md)：达到B；GUI-00完成|
 |S02|DB02|已完成|2026-09-30–2026-10-01|2026-10-01短变式复测通过，DB02达到B|
 |S03|PY01|已完成|2026-10-01–2026-10-02|延迟复测通过，达到B|
-|S04|DB03|进行中|2026-10-02|主干教学与练习已完成，当前C；待闭卷综合验收后判B|
-|S05|ALG01|未开始|未记录|无|
+|S04|DB03|已完成|2026-10-02–2026-10-03|延迟闭卷综合验收通过，达到B|
+|S05|ALG01|进行中|2026-10-03|开始 Java 数组诊断、循环不变量与复杂度|
 |S06|R1|未开始|未记录|无|
 |S07|DB04|未开始|未记录|无|
 |S08|DB04|未开始|未记录|无|
