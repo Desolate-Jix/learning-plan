@@ -22,7 +22,7 @@
 |[PY01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY01.md)|B|2026-10-02|[2026-10-02复测](daily/2026-10-02.md)：两个汇总函数核心逻辑独立通过；dict.get/default 变式通过，语法错误显著减少|
 |[PY02](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY02.md)|待诊断|未记录|无|
 |[PY03](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY03.md)|待诊断|未记录|无|
-|[ALG01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG01.md)|待诊断|未记录|无|
+|[ALG01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG01.md)|C|2026-10-03（第一轮学习）|[当天记录](daily/2026-10-03.md)：Move Zeroes 思路、边界、复杂度和稳定过滤迁移基本掌握；Java语法与loop invariant表述待延迟复测|
 |[ALG02](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG02.md)|待诊断|未记录|无|
 |[ALG03](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG03.md)|待诊断|未记录|无|
 |[ALG04](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG04.md)|待诊断|未记录|无|
@@ -38,7 +38,7 @@
 |S02|DB02|已完成|2026-09-30–2026-10-01|2026-10-01短变式复测通过，DB02达到B|
 |S03|PY01|已完成|2026-10-01–2026-10-02|延迟复测通过，达到B|
 |S04|DB03|已完成|2026-10-02–2026-10-03|延迟闭卷综合验收通过，达到B|
-|S05|ALG01|进行中|2026-10-03|开始 Java 数组诊断、循环不变量与复杂度|
+|S05|ALG01|进行中|2026-10-03|第一轮教学与练习完成，当前C；待Java语法与loop invariant闭卷复测|
 |S06|R1|未开始|未记录|无|
 |S07|DB04|未开始|未记录|无|
 |S08|DB04|未开始|未记录|无|
