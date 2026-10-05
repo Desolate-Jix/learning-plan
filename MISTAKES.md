@@ -4,6 +4,8 @@
 
 |实际日期|单元/题目|原判断或错误代码|错误原因|最小反例|补学动作|复测结果/证据|
 |---|---|---|---|---|---|---|
+|2026-10-05|R1 / DB02 OR + NULL|要保留 city 非 Auckland 或 NULL，首次写成 `AND city IS NULL`|业务条件“或者”与 SQL AND/OR 映射不稳定|应为 `city <> 'Auckland' OR city IS NULL`；NULL比较为UNKNOWN，UNKNOWN OR TRUE = TRUE|下一实际学习日做一个新数据变式|待复测|
+|2026-10-05|R1 / PY01 return 控制流|`return` 放在 for 内、首行 pending 的两行输入，预测返回100|忽略 return 在第一轮就结束函数；首行 pending 不累计，所以立即返回0|正确跟踪应为 first row → if false → return 0 → 后续行永不处理|下一实际学习日做一个不同首行的新变式|待复测|
 |2026-10-03|ALG01 / Loop Invariant|首次把不变量说成“前面的区域不会变”|把“不变量=始终成立的性质”误近似成“值不变化”|2026-10-05 延迟复测能说明前部保存已扫描非零元素且相对顺序不变|后续按间隔复习继续检查表达精度|已通过|
 |2026-10-03|ALG01 / Java 语法|Move Zeroes 思路正确但写出 `nums.length()`、for 用逗号、`num[i]`、返回类型/return 不匹配等|Java 久未使用，算法思路保留但语法自动化下降|已复习数组 `.length`、for 分号、void/in-place；逻辑复杂度判断正确|下次闭卷重写 Move Zeroes，主要语法需正确|待复测|
 |2026-10-02|DB03 / Result Granularity|最初把 GROUP BY 后的一行描述成“有用户住在这个城市/大于两条的部门”|业务含义方向对，但没有精确到“一行代表一个分组键对应的聚合结果”|改为：one row = one group / one grouped summary；例如一行=一个 department group|下次先说 grouping key，再说 HAVING 条件是否保留该组|待延迟复测|
