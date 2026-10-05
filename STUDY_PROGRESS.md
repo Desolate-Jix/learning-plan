@@ -1,8 +1,8 @@
 # 当前学习进度｜体系课程v2
 
-更新：2026-10-03。DB01/DB02/PY01 保持B；DB03 延迟闭卷验收通过达到B，S04完成；当前进入 S05 / ALG01。
+更新：2026-10-05。DB01/DB02/DB03/PY01 保持B；ALG01 延迟复测通过达到B，S05完成；当前进入 S06 / R1。
 
-- **当前队列位置：S05（进行中）**。DB03 已于2026-10-03延迟闭卷验收达到B；当前进入 ALG01。
+- **当前队列位置：S06（进行中）**。ALG01 已于2026-10-05延迟复测达到B；当前进入 R1 第一阶段综合检查。
 - **LeetCode历史：24/75，最近已有记录2026-08-11，主语言Java。** 剩余51题；本次重构没有产生新Accepted。
 - **当前熟练程度：待诊断**，不能因为有旧Accepted就默认B，也不能把历史题数清零。
 - [每日队列](SCHEDULE.md) · [现行规则](LEARNING_RULES.md) · [课程目录](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/README.md) · [历史完整记录](archive/STUDY_PROGRESS_before_2026-09-26.md)
@@ -22,7 +22,7 @@
 |[PY01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY01.md)|B|2026-10-02|[2026-10-02复测](daily/2026-10-02.md)：两个汇总函数核心逻辑独立通过；dict.get/default 变式通过，语法错误显著减少|
 |[PY02](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY02.md)|待诊断|未记录|无|
 |[PY03](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY03.md)|待诊断|未记录|无|
-|[ALG01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG01.md)|C|2026-10-03（第一轮学习）|[当天记录](daily/2026-10-03.md)：Move Zeroes 思路、边界、复杂度和稳定过滤迁移基本掌握；Java语法与loop invariant表述待延迟复测|
+|[ALG01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG01.md)|B|2026-10-05|[2026-10-05复测](daily/2026-10-05.md)：Move Zeroes 闭卷逻辑、O(n)/O(1) 与 loop invariant 延迟复测通过|
 |[ALG02](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG02.md)|待诊断|未记录|无|
 |[ALG03](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG03.md)|待诊断|未记录|无|
 |[ALG04](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG04.md)|待诊断|未记录|无|
@@ -38,8 +38,8 @@
 |S02|DB02|已完成|2026-09-30–2026-10-01|2026-10-01短变式复测通过，DB02达到B|
 |S03|PY01|已完成|2026-10-01–2026-10-02|延迟复测通过，达到B|
 |S04|DB03|已完成|2026-10-02–2026-10-03|延迟闭卷综合验收通过，达到B|
-|S05|ALG01|进行中|2026-10-03|第一轮教学与练习完成，当前C；待Java语法与loop invariant闭卷复测|
-|S06|R1|未开始|未记录|无|
+|S05|ALG01|已完成|2026-10-03–2026-10-05|延迟复测通过，达到B|
+|S06|R1|进行中|2026-10-05|第一阶段综合检查开始|
 |S07|DB04|未开始|未记录|无|
 |S08|DB04|未开始|未记录|无|
 |S09|PY02|未开始|未记录|无|
