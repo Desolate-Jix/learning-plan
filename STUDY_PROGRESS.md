@@ -1,8 +1,8 @@
 # 当前学习进度｜体系课程v2
 
-更新：2026-10-06。S07 / DB04 第一日目标完成；DB04 尚未定级，下一步进入 S08 / DB04 第二日综合与独立验收。R1/PY01-return 新变式通过；R1/DB02-OR-NULL 再次暴露 AND/OR 映射薄弱点。
+更新：2026-10-07。S08 / DB04 第二日核心验收完成，DB04达到B；已能独立处理零匹配统计、结果粒度、join fan-out与pre-aggregation迁移。下一主课程进入S09 / PY02。DB04-Q4物理JOIN算法仍属面试覆盖缺口，不等于题库全覆盖。
 
-- **当前队列位置：S08（未开始）**。S07 于2026-10-06完成 INNER/LEFT、ON vs WHERE、LEFT JOIN COUNT陷阱、无订单/无paid、fan-out 与 CROSS JOIN 基础；DB04 仍需第二日验收后再决定等级。
+- **当前队列位置：S09（未开始）**。DB04 于2026-10-07达到B；S08完成。当天GUI与英语尚未开始，回来后继续，不影响主课程队列。
 - **LeetCode历史：24/75，最近已有记录2026-08-11，主语言Java。** 剩余51题；本次重构没有产生新Accepted。
 - **当前熟练程度：待诊断**，不能因为有旧Accepted就默认B，也不能把历史题数清零。
 - [每日队列](SCHEDULE.md) · [现行规则](LEARNING_RULES.md) · [课程目录](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/README.md) · [历史完整记录](archive/STUDY_PROGRESS_before_2026-09-26.md)
@@ -14,7 +14,7 @@
 |[DB01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB01.md)|B|2026-09-30|[2026-09-30复测](daily/2026-09-30.md)：N:N关联表与SQL筛选/排序新变式通过|
 |[DB02](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB02.md)|B|2026-10-01|[2026-10-01复测](daily/2026-10-01.md)：AND/OR/NULL 与 DISTINCT/粒度变式通过|
 |[DB03](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB03.md)|B|2026-10-03|[2026-10-03复测](daily/2026-10-03.md)：WHERE/GROUP BY/HAVING/SUM/COUNT 综合逻辑闭卷通过；COUNT/NULL 边界题通过|
-|[DB04](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB04.md)|待诊断|未记录|[2026-10-06第一日](daily/2026-10-06.md)：S07核心机制与手推完成；尚未做第二日独立验收|
+|[DB04](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB04.md)|B|2026-10-07|[2026-10-07验收](daily/2026-10-07.md)：学生选课零匹配统计逻辑独立完成；fan-out新场景独立推导6行/重复COUNT-SUM并说明pre-aggregation到student grain|
 |[DB05](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB05.md)|待诊断|未记录|无|
 |[DB06](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB06.md)|待诊断|未记录|无|
 |[DB07](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB07.md)|待诊断|未记录|无|
@@ -41,7 +41,7 @@
 |S05|ALG01|已完成|2026-10-03–2026-10-05|延迟复测通过，达到B|
 |S06|R1|已完成|2026-10-05|6/8通过；薄弱点：OR/NULL 组合条件、Python return-inside-loop 跟踪|
 |S07|DB04|已完成|2026-10-06|[2026-10-06](daily/2026-10-06.md)：INNER/LEFT、ON/WHERE、COUNT右表字段、无订单/无paid、fan-out/CROSS JOIN；第一日目标完成，不等于DB04达到B|
-|S08|DB04|未开始|未记录|无|
+|S08|DB04|已完成|2026-10-07|[2026-10-07](daily/2026-10-07.md)：LEFT JOIN聚合新场景、grain/fan-out/pre-aggregation独立迁移通过；DB04达到B|
 |S09|PY02|未开始|未记录|无|
 |S10|ALG02|未开始|未记录|无|
 |S11|DB05|未开始|未记录|无|
