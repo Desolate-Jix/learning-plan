@@ -1,8 +1,8 @@
 # 当前学习进度｜体系课程v2
 
-更新：2026-10-07。S08 / DB04 第二日核心验收完成，DB04达到B；已能独立处理零匹配统计、结果粒度、join fan-out与pre-aggregation迁移。下一主课程进入S09 / PY02。DB04-Q4物理JOIN算法仍属面试覆盖缺口，不等于题库全覆盖。
+更新：2026-10-08。S09 / PY02 第一日已开始，当前为C/进行中：复制与共享机制基本理解，但“不修改原输入”的Python独立实现仍需语法提示，因此尚未达到B。DB02 OR+NULL、ALG01短复测、DB04 +1今日均通过。
 
-- **当前队列位置：S09（未开始）**。DB04 于2026-10-07达到B；S08完成。当天GUI与英语尚未开始，回来后继续，不影响主课程队列。
+- **当前队列位置：S09（进行中）**。下一次继续PY02独立实现与边界验收，不重复重讲assignment/shallow/deep copy基础。GUI主项目main已更新到 `db443ef9...`，下一次GUI需按新HEAD续读。
 - **LeetCode历史：24/75，最近已有记录2026-08-11，主语言Java。** 剩余51题；本次重构没有产生新Accepted。
 - **当前熟练程度：待诊断**，不能因为有旧Accepted就默认B，也不能把历史题数清零。
 - [每日队列](SCHEDULE.md) · [现行规则](LEARNING_RULES.md) · [课程目录](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/README.md) · [历史完整记录](archive/STUDY_PROGRESS_before_2026-09-26.md)
@@ -20,7 +20,7 @@
 |[DB07](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB07.md)|待诊断|未记录|无|
 |[DB08](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/DB08.md)|待诊断|未记录|无|
 |[PY01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY01.md)|B|2026-10-02|[2026-10-02复测](daily/2026-10-02.md)：两个汇总函数核心逻辑独立通过；dict.get/default 变式通过，语法错误显著减少|
-|[PY02](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY02.md)|待诊断|未记录|无|
+|[PY02](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY02.md)|C|未记录|[2026-10-08第一日](daily/2026-10-08.md)：assignment/shallow/deep copy与mutable default机制理解；独立Python实现仍需语法提示|
 |[PY03](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/PY03.md)|待诊断|未记录|无|
 |[ALG01](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG01.md)|B|2026-10-05|[2026-10-05复测](daily/2026-10-05.md)：Move Zeroes 闭卷逻辑、O(n)/O(1) 与 loop invariant 延迟复测通过|
 |[ALG02](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/lessons/ALG02.md)|待诊断|未记录|无|
@@ -42,7 +42,7 @@
 |S06|R1|已完成|2026-10-05|6/8通过；薄弱点：OR/NULL 组合条件、Python return-inside-loop 跟踪|
 |S07|DB04|已完成|2026-10-06|[2026-10-06](daily/2026-10-06.md)：INNER/LEFT、ON/WHERE、COUNT右表字段、无订单/无paid、fan-out/CROSS JOIN；第一日目标完成，不等于DB04达到B|
 |S08|DB04|已完成|2026-10-07|[2026-10-07](daily/2026-10-07.md)：LEFT JOIN聚合新场景、grain/fan-out/pre-aggregation独立迁移通过；DB04达到B|
-|S09|PY02|未开始|未记录|无|
+|S09|PY02|进行中|2026-10-08|[2026-10-08](daily/2026-10-08.md)：复制/共享机制已学；待独立实现、nested copy与默认参数边界验收后决定是否达B|
 |S10|ALG02|未开始|未记录|无|
 |S11|DB05|未开始|未记录|无|
 |S12|DB06|未开始|未记录|无|
