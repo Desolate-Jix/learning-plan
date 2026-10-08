@@ -39,7 +39,7 @@
 5. **允许跨多天完成同一 GUI 单元**：例如 GUI-01 可拆成入口层、Session Host、Coordinator、Action、InputController、Receipt 多次学习；不形成欠课，也不挤占主课程。
 6. **卡在 Python 基础时就地补最小语法**：只补当前代码需要的语法，不另开一整套 Python 课程，也不因补语法延长当日 15 分钟预算。
 
-当前 GUI-01 的实际进度（更新至2026-10-07收课）：已从 `app/instant_mcp.py` 建立最外层入口地图，并开始第一个公开Tool `instant_start`。2026-10-07核对 main HEAD 仍为 `1092a273586b07939fed5bad7d0239e3c6a457ef`。用户此前未系统学习MCP，目前采用 Java/REST 类比理解：MCP Tool≈暴露给Agent调用的方法/API，MCP Server≈对外服务端，MCP Client负责把Agent选择的工具调用发给Server；`InstantCommand.kind` 是进入Runtime后的具体命令类型，不与公开Tool混为一层。
+当前 GUI-01 的实际进度（更新至2026-10-08收课）：已从 `app/instant_mcp.py` 建立最外层入口地图，并开始第一个公开Tool `instant_start`。2026-10-08课前发现 main HEAD 已更新为 `db443ef99eee67cd4dbaf7f57ce997d1542b2fd1`（Merge optional learning preview into main）；当天因时间截止未继续GUI正文，因此**没有把旧HEAD的后续实现当作当前事实继续讲**。下一次需先按新HEAD重新核对 `instant_start` 相关代码，再从既有概念断点继续。用户此前未系统学习MCP，目前采用 Java/REST 类比理解：MCP Tool≈暴露给Agent调用的方法/API，MCP Server≈对外服务端，MCP Client负责把Agent选择的工具调用发给Server；`InstantCommand.kind` 是进入Runtime后的具体命令类型，不与公开Tool混为一层。
 
 `instant_start` 当前已理解到：
 - Session = 一次 GUI Runtime 的工作现场/状态记录；Host = 真正执行GUI任务的后台 worker/process。
