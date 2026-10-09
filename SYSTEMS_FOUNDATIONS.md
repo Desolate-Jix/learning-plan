@@ -52,6 +52,6 @@
 
 ## 当前起点
 
-- **2026-10-09：新增课程和资源已安排。F01 首次短验证通过：用户正确回答一份 notepad.exe 程序文件、两个独立 Process、CPU 调度执行 Thread。F02 已开始介绍 CPU / Registers / ALU / Control Unit，但尚未独立验收。**
-- 下次教学起点：**F02 CPU 结构 / Registers / ALU / Control Unit / 指令获取与执行**。F01 已有短理解证据，不重讲；F02 仍需从简单寄存器与内存比较及指令周期小例题完成理解检验。
+- **2026-10-09：F01 首次短理解题通过。** 用户正确回答：一份 notepad.exe（Program File）、两次独立 Process、CPU 主要调度 Thread。用户明确要求**今日系统原理只学到线程（Thread）为止**，因此 F02 **安排在2026-10-10下一实际学习日**；此前只展示过CPU/Registers/ALU/Control Unit的简要介绍，**不计F02已经学会或完成**。
+- **明日/下一次系统原理起点：F02 CPU 结构 / Registers / ALU / Control Unit / 指令获取与执行。** 不重复考F01；按用户节奏由浅入深，并统一使用中文（English Term）标注；F02还没有独立验收。
 - 每次收课在当天唯一daily笔记记录「今天的概念 / 用户自己的解释 / 一个反例或项目连接 / 下次起点」，并在STUDY_PROGRESS中更新最近理解点；不用按日历自动宣称完成。
