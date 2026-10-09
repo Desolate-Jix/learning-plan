@@ -51,6 +51,10 @@
 
 下一次 GUI 学习从 **“旧Session安全结束后，新Session如何真正创建并启动Host”** 开始，然后再完成 `instant_start` 的职责边界；不要重讲 Session/Host 定义。7个Tool仍按 Goal → Flow → Responsibility → 少量源码逐个推进，讲清后再进入 `InstantCommand.kind` 与 `run_local_step_session.py`。
 
+## 跨课程底层先修｜计算机系统原理
+
+用户明确提到曾学过但没有真正理解的CPU/寄存器、栈/堆、进程线程、内存和Windows底层。每天另有10分钟 [计算机系统原理](SYSTEMS_FOUNDATIONS.md) 按先修顺序推进；GUI实际操作学习不再默认用户理解PID/TID/HWND/虚拟内存。遇到相关术语只解释当前必需的一点，并指向系统微课，不把GUI15分钟变成整门OS课程。GUI仍优先学习discover→select→capture→click→type_text等实际操作原语。
+
 ## 实际操作原语优先｜2026-10-09起
 
 用户明确希望 GUI 学习暂时避开仍在频繁变化的上层 workflow / learning / recovery 逻辑，优先理解较稳定的 Windows 实际操作链。后续 GUI 学习顺序改为：
