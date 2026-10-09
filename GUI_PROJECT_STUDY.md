@@ -51,6 +51,20 @@
 
 下一次 GUI 学习从 **“旧Session安全结束后，新Session如何真正创建并启动Host”** 开始，然后再完成 `instant_start` 的职责边界；不要重讲 Session/Host 定义。7个Tool仍按 Goal → Flow → Responsibility → 少量源码逐个推进，讲清后再进入 `InstantCommand.kind` 与 `run_local_step_session.py`。
 
+## 实际操作原语优先｜2026-10-09起
+
+用户明确希望 GUI 学习暂时避开仍在频繁变化的上层 workflow / learning / recovery 逻辑，优先理解较稳定的 Windows 实际操作链。后续 GUI 学习顺序改为：
+
+1. **绑定窗口 / select**：handle + process_id 如何确认并保存为当前 target；理解 target identity 与前台窗口约束。
+2. **观察 / capture / read_text**：当前绑定窗口如何截图、读取可见内容，观察和执行权限如何分开。
+3. **点击 / step: execute_recognition_plan**：goal 如何进入识别/grounding，再怎样落到一次受控 click。
+4. **输入 / step: type_text**：焦点、click_before_typing、clear_existing 与最终键盘输入链。
+5. **按键 / step: press_key**：Enter/Tab/Escape 等如何依赖当前 foreground/focus。
+6. **滚动 / step: scroll**：滚轮动作、坐标与前置检查。
+7. **最后再看 input_sequence / form_fill 等组合能力**，因为它们是上述原语的编排层。
+
+教学时先区分“公开 MCP Tool”和“Runtime command kind”：Agent 通常仍通过 `instant_run` / `instant_submit` 进入，但实际操作能力由 `select`、`capture`、`step(operation=...)` 等 command 表达。每个操作都按 Goal → 输入 → 当前 target/state → 实际 Windows 动作 → 回执/证据 → 边界 来讲，并尽量追到 `InputController` / WindowManager 等真正执行层。上层正在开发的 learning/recovery/continuous execution 只在它们直接影响这些原语时补充，不作为当前主线。
+
 ## 执行模式代码梳理期｜2026-10-01起
 
 用户此前正在梳理执行模式代码。2026-10-05 已以当前 main `1092a273...` 恢复小步源码复盘；恢复不代表结构永久冻结，后续每次仍先核对 HEAD。源码学习继续严格限制为小切面，若用户再次说明结构正在大改则立即暂停。
