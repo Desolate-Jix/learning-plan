@@ -3,6 +3,7 @@
 更新：2026-10-08。S09 / PY02 第一日已开始，当前为C/进行中：复制与共享机制基本理解，但“不修改原输入”的Python独立实现仍需语法提示，因此尚未达到B。DB02 OR+NULL、ALG01短复测、DB04 +1今日均通过。
 
 - **当前队列位置：S09（进行中）**。下一次继续PY02独立实现与边界验收，不重复重讲assignment/shallow/deep copy基础。GUI主项目main已更新到 `db443ef9...`，下一次GUI需按新HEAD续读。
+- **计算机系统原理（跨课程每日10分钟）**：2026-10-09新建 [SYSTEMS_FOUNDATIONS.md](SYSTEMS_FOUNDATIONS.md) 路线，包含CPU/寄存器/栈堆/进程线程/虚拟内存/Windows；当前仅创建计划，尚未开展独立学习和验收。首课F01「程序如何运行」，随后F02 CPU结构/寄存器。
 - **LeetCode历史：24/75，最近已有记录2026-08-11，主语言Java。** 剩余51题；本次重构没有产生新Accepted。
 - **当前熟练程度：待诊断**，不能因为有旧Accepted就默认B，也不能把历史题数清零。
 - [每日队列](SCHEDULE.md) · [现行规则](LEARNING_RULES.md) · [课程目录](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/README.md) · [历史完整记录](archive/STUDY_PROGRESS_before_2026-09-26.md)
