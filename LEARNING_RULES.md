@@ -8,6 +8,7 @@
 - 先修与掌握：[评分](https://github.com/Desolate-Jix/course-review/blob/main/curriculum/ASSESSMENT.md)。当前能力用证据判断，旧24题Accepted记录保留。
 - 算法继续Java，Python独立用于语言/数据处理；新LeetCode题继续按75白名单，不强制每天两题。
 - 原创变式、SQL、Python练习不计入LeetCode 75。复刷不重复加题数。
+- **专业术语统一中英对照**：所有课程（计算机系统原理、OS、AI Agent、GUI、SQL/Python/Java）出现的专有名词首次用 **中文（English Term / Common Abbreviation）** 标注，并用通俗中文解释；后续也尽量保留英文关键词以便面试表达。示例：进程（Process）、线程（Thread）、寄存器（Register）、指令指针（Instruction Pointer, IP）、栈帧（Stack Frame）、虚拟内存（Virtual Memory）。关键代码注释尽量中英对照，不因注释堆满页面；此前讲过但用户忘记时重新标注。
 - 先中文解释准确，再练英语术语和简短表达；GUI项目每天融入：正常日15分钟、验收日10分钟，均纳入原学习预算，按[动态规则](GUI_PROJECT_STUDY.md)更新。
 - 每个非自由学习日固定加入 **5分钟 AI Agent 基础/进阶**，不增加120分钟总预算，默认从原15分钟“面试八股/口述”中切5分钟。每次只覆盖一个小概念＋一个理解题，优先补系统性空缺，而不是追新闻或堆术语。范围包括：Agent基本架构、MCP与Tool Calling、Planner/Executor、Memory/RAG、Context Engineering、Evaluation、训练与对齐（SFT/RL/RFT等）、Computer Use、可靠性/权限边界。GUI当天若刚好涉及同一概念，可互相连接，但不把GUI源码理解冒充为Agent通识已掌握。
 - 每个非自由学习日再加入 **10分钟「计算机系统原理」微课程**，从CPU结构与寄存器、指令执行、存储层次、栈/堆、虚拟内存、进程/线程、调度一路连接到Windows HWND/消息循环/输入API。按 [SYSTEMS_FOUNDATIONS.md](SYSTEMS_FOUNDATIONS.md) 的先修路线教学，先白话与图，再小实验和项目代码；与原OS八股衔接，不随机跳跃。正常日预算从主课讲解30→25分钟、复盘15→10分钟调剂，**总学习时间仍为120分钟**；GUI15分钟、Agent5分钟、独立练习30分钟、前序复习15分钟仍保留。自由日不强制，也不把未做的微课积成欠账。
