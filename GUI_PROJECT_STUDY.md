@@ -51,6 +51,10 @@
 
 下一次 GUI 学习从 **“旧Session安全结束后，新Session如何真正创建并启动Host”** 开始，然后再完成 `instant_start` 的职责边界；不要重讲 Session/Host 定义。7个Tool仍按 Goal → Flow → Responsibility → 少量源码逐个推进，讲清后再进入 `InstantCommand.kind` 与 `run_local_step_session.py`。
 
+### 2026-10-09 实际窗口操作学习断点
+
+本次按最新可访问源码核对 `scripts/run_local_step_session.py` 的 `kind=select`（预览→确认→`target=response.result.window`）；并核对 `app/desktop_review/window_preparation.py` 的 `discover_applications`、`app/core/window_manager.py` 的 `list_visible_windows`、`_get_process_id`。用户已了解 `discover` 枚举可见顶层窗口，返回handle/title/process_id/process_name；核心代码通过 `pywinauto.Desktop(backend='win32').windows()` 获得窗口handle，经 `win32process.GetWindowThreadProcessId(handle)` 获取PID，经 `psutil` 获取进程名。**尚未独立验收底层实现**；下一起点是收到handle+PID后如何确认当前仍是原窗口、怎样绑定target并截图；之后再讲点击/输入。用户明确希望只追稳定的Windows实际操作原语，不追持续变化的上层项目架构。
+
 ## 跨课程底层先修｜计算机系统原理
 
 用户明确提到曾学过但没有真正理解的CPU/寄存器、栈/堆、进程线程、内存和Windows底层。每天另有10分钟 [计算机系统原理](SYSTEMS_FOUNDATIONS.md) 按先修顺序推进；GUI实际操作学习不再默认用户理解PID/TID/HWND/虚拟内存。遇到相关术语只解释当前必需的一点，并指向系统微课，不把GUI15分钟变成整门OS课程。GUI仍优先学习discover→select→capture→click→type_text等实际操作原语。
