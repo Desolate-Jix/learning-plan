@@ -57,7 +57,7 @@
 
 ## 跨课程底层先修｜计算机系统原理
 
-用户明确提到曾学过但没有真正理解的CPU/寄存器、栈/堆、进程线程、内存和Windows底层。每天另有10分钟 [计算机系统原理](SYSTEMS_FOUNDATIONS.md) 按先修顺序推进；GUI实际操作学习不再默认用户理解PID/TID/HWND/虚拟内存。遇到相关术语只解释当前必需的一点，并指向系统微课，不把GUI15分钟变成整门OS课程。GUI仍优先学习discover→select→capture→click→type_text等实际操作原语。
+用户明确提到曾学过但没有真正理解的CPU/寄存器、栈/堆、进程线程、内存和Windows底层。实际学习日优先留10–15分钟 [计算机系统原理](SYSTEMS_FOUNDATIONS.md) 按先修顺序推进（v3已正式纳入核心学习预算）；GUI实际操作学习不再默认用户理解PID/TID/HWND/虚拟内存。遇到相关术语先解释当前必需的一点，并指向系统短课；新阶段GUI通常约30–50分钟，可与系统原理共享案例但需记录独立的系统概念证据，不把GUI源码浏览当成整门OS已通过。GUI仍优先学习discover→select→capture→click→type_text等实际操作原语。
 
 ## 实际操作原语优先｜2026-10-09起
 
